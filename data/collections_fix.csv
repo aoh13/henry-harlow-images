@@ -1,0 +1,19 @@
+Handle,Command,Title,Body HTML,Sort Order,Published,Must Match,Rule: Product Column,Rule: Relation,Rule: Condition
+turkish-stone,DELETE,,,,,,,,
+italian-marble,DELETE,,,,,,,,
+spanish-stone,DELETE,,,,,,,,
+greek-marble,DELETE,,,,,,,,
+mexican-stone,DELETE,,,,,,,,
+egyptian-stone,DELETE,,,,,,,,
+portuguese-stone,DELETE,,,,,,,,
+terrazzo,DELETE,,,,,,,,
+pebble-tile,DELETE,,,,,,,,
+charcoal-stone,DELETE,,,,,,,,
+light-grey-stone,DELETE,,,,,,,,
+taupe-stone,DELETE,,,,,,,,
+cream-stone,DELETE,,,,,,,,
+arabesque-and-lantern,UPDATE,Arabesque Mosaics,"<p>Arabesque and lantern shapes, cut and mesh-mounted. Sold by the box with 4 inch samples available. Ships across the continental US.</p>",best-selling,TRUE,all conditions,Tag,Equals,Arabesque
+versailles-pattern,UPDATE,Versailles Pattern,"<p>Multi-size French pattern sets, sold as a repeating module. Sold by the box with 4 inch samples available. Ships across the continental US.</p>",best-selling,TRUE,all conditions,Tag,Equals,Versailles
+slate,NEW,Slate,<p>Cleft-faced slate in earth tones. Sold by the box with 4 inch samples available. Ships across the continental US.</p>,best-selling,TRUE,all conditions,Tag,Equals,Slate
+picket-mosaics,NEW,Picket Mosaics,<p>Picket and elongated hexagon mosaics. Sold by the box with 4 inch samples available. Ships across the continental US.</p>,best-selling,TRUE,all conditions,Tag,Equals,Picket
+checkerboard-floors,NEW,Checkerboard Floors,<p>Two-tone checkerboard floors in cut marble. Sold by the box with 4 inch samples available. Ships across the continental US.</p>,best-selling,TRUE,all conditions,Tag,Equals,Checkerboard
