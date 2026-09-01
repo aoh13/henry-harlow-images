@@ -1,0 +1,974 @@
+Handle,Command,Metafield: custom.material [single_line_text_field],Metafield: custom.nominal_size [single_line_text_field],Metafield: custom.pattern [single_line_text_field],Metafield: custom.finish [single_line_text_field],Metafield: custom.color_family [single_line_text_field],Metafield: custom.units_per_box [number_integer],Metafield: custom.sqft_per_box [number_decimal],Metafield: custom.thickness_in [number_decimal],Metafield: custom.price_per_sqft [number_decimal],Metafield: custom.price_unit [single_line_text_field],Metafield: custom.source_sku [single_line_text_field]
+calgldbor1401,UPDATE,Marble,"3 7/8"" x 11 5/8""",Arabesque,Polished,White,1,,0.75,119.08,piece,CAGOMARBOR896737
+calacatta-gold-large-basketweave-mosaic-with-ming-green-dots-matte,UPDATE,Marble,"12"" x 12""",Basketweave,Matte,White,1,,0.375,233.33,piece,CAGOMARMOS424949
+calgldbor1403,UPDATE,Marble,,Arabesque,Polished,White,1,,0.75,95.27,piece,CAGOMARBOR476193
+calgldmol1509,UPDATE,Marble,"4 3/4"" x 12""",,Polished,White,1,,0.75,242.50,piece,CAGOMARTRI169889
+calgldmol1505,UPDATE,Marble,"2"" x 12""",,Polished,White,1,,0.75,169.00,piece,CAGOMARTRI363681
+thaswhtbor1421,UPDATE,Marble,"4 3/4"" x 12""",Basketweave,Polished,White,1,,0.75,95.56,piece,THWHMARBOR600033
+calacatta-viola-marble-18x36-inch-polished-wall-floor-tile,UPDATE,Marble,"18"" x 36""",,Polished,White,1,,0.375,105.57,piece,CAVIMARTIL563189
+calgldmol1503,UPDATE,Marble,"3/4"" x 12""",,Polished,White,1,,0.75,103.60,piece,CAGOMARTRI288417
+calgldmol1501,UPDATE,Marble,"1/2"" x 12""",,Polished,White,1,,0.75,99.90,piece,CAGOMARTRI838881
+thaswhtbor1427,UPDATE,Marble,,Basketweave,Polished,White,1,,0.75,76.45,piece,THWHMARBOR351201
+calgldmos1319,UPDATE,Marble,"5/8"" x 1 1/4""",Herringbone,Polished,White,7,6.88,0.375,24.72,sq ft,CAGOMARMOS404725
+thaswhtbor1425,UPDATE,Marble,"4 3/4"" x 12""",Basketweave,Polished,White,1,,0.75,95.56,piece,THWHMARBOR518497
+thaswhtbor1423,UPDATE,Marble,"4 3/4"" x 12""",Basketweave,Polished,White,1,,0.75,89.30,piece,THWHMARBOR393185
+calgldmos1369,UPDATE,Marble,"12"" x 12""",Arabesque,Polished,White,8,8.0,0.375,23.71,sq ft,CAGOMARMOS798305
+nero-marquina-marble-16x24-leathered-tile,UPDATE,Marble,"16"" x 24""",,Leathered,Black,1,,0.375,47.39,piece,NEMAMARTIL670005
+checkers-with-thassos-white-calacatta-gold-24x24-polished-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Polished,White,10,40.0,0.375,57.71,sq ft,CHTHMARTIL153397
+celeste-honed-marble-blend-mosaic-tile-in-cinder-grey-calacatta-losanna,UPDATE,Marble,"14 1/16"" x 16 1/8""",Leaf,Honed,Grey,8,7.85,0.375,36.99,sq ft,CEHOMARMOS095221
+checkerboard-bianco-dolomite-calacatta-gold-24x24-polished-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Polished,White,10,40.0,0.375,52.65,sq ft,CHBIMARTIL426165
+calgldmos1357,UPDATE,Marble,"12"" x 12""",Chevron,Polished,White,8,8.0,0.375,22.89,sq ft,CAGOMARMOS494113
+calgldmos1367,UPDATE,Marble,"12"" x 12""",Versailles,Polished,White,8,8.0,0.375,22.89,sq ft,CAGOMARMOS247841
+thaswhtbor1443,UPDATE,Marble,,Greek Key,Polished,White,1,,0.75,107.82,piece,THWHMARBOR973345
+calgldswtplt2047,UPDATE,Marble,,,Matte,White,1,,0.375,41.58,piece,CAGOMARACC815541
+polar-white-marble-2x12-chair-rail-trim-tile,UPDATE,Marble,"2"" x 12""",,Polished,Grey,1,,0.75,99.00,piece,POWHMARTRI281141
+calgldmos1335,UPDATE,Marble,"1"" x 1""",Hexagon,Polished,White,7,6.8,0.375,25.01,sq ft,CAGOMARMOS845345
+thaswhtbor1445,UPDATE,Marble,"5 3/4"" x 11 1/4""",,Polished,White,1,,0.75,95.56,piece,THWHMARBOR655713
+thaswhtbor1447,UPDATE,Marble,"5 3/4"" x 11 1/4""",,Polished,White,1,,0.75,95.56,piece,THWHMARBOR822689
+thassos-white-hexagon-combination-w-black-mosaic-tile-5x5,UPDATE,Marble,"5"" x 5""",Hexagon,Polished,White,6,5.6,0.375,38.16,sq ft,THWHMARMOS808053
+checkers-with-thassos-white-calacatta-gold-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,White,10,22.5,0.375,43.20,sq ft,CHTHMARTIL086709
+polar-white-marble-2x12-pencil-liner-trim-tile,UPDATE,Marble,"3/4"" x 12""",,Polished,Grey,1,,0.75,87.00,piece,POWHMARTRI465077
+thaswhtbor1429,UPDATE,Marble,"2"" x 12""",,Polished,White,1,,0.75,79.35,piece,THWHMARBOR279905
+thaswhtbor1435,UPDATE,Marble,,,Polished,White,1,,0.75,77.74,piece,THWHMARBOR834849
+chevron-carrara-thassos-marble-polished-floor-wall-mosaic,UPDATE,Marble,"12"" x 12""",Chevron,Polished,White,8,8.0,0.375,30.32,sq ft,CATHMARMOS202677
+thaswhtmol1509,UPDATE,Marble,"4 3/4"" x 12""",,Polished,White,1,,0.75,231.60,piece,THWHMARTRI070369
+thaswhtbor1452,UPDATE,Marble,,,Polished,White,1,,0.75,76.45,piece,THWHMARBOR722913
+thaswhtmol1511,UPDATE,Marble,"1"" x 12""",,Polished,White,1,,0.75,174.40,piece,THWHMARTRI049953
+thaswhtmol1507,UPDATE,Marble,"2"" x 12""",,Polished,White,1,,0.75,166.20,piece,THWHMARTRI943905
+checkers-with-nero-marquina-calacatta-gold-24x24-polished-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Polished,White,10,40.0,0.375,37.80,sq ft,CHNEMARTIL554741
+thaswhtmol1505,UPDATE,Marble,"2"" x 12""",,Polished,White,1,,0.75,149.90,piece,THWHMARTRI619681
+checkerboard-thassos-white-calacatta-gold-24x24-honed-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Matte,White,10,40.0,0.375,57.71,sq ft,CHTHMARTIL677685
+celeste-honed-marble-blend-mosaic-tile-in-nero-marquina-calacatta-losanna,UPDATE,Marble,"14 1/16"" x 16 1/8""",Leaf,Matte,Black,8,7.85,0.375,36.99,sq ft,CEHOMARMOS305333
+thassos-white-greek-marble-border-3-1-2-x-7-3-8-greek-key-border-w-ming-green,UPDATE,Marble,"3 1/2"" x 7""",Greek Key,Polished,White,1,,0.75,130.06,piece,THWHMARBOR774837
+checkerboard-bianco-dolomite-calacatta-gold-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,White,10,22.5,0.375,36.45,sq ft,CHBIMARTIL491701
+checkerboard-bianco-dolomite-calacatta-gold-24x24-honed-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Matte,White,10,40.0,0.375,52.65,sq ft,CHBIMARTIL360629
+thassos-white-box-liner-trim-tile-3-4x12,UPDATE,Marble,"3/4"" x 12""",,Polished,White,1,,0.75,120.00,piece,THWHMARTRI212341
+calgldmos1331,UPDATE,Marble,"1"" x 2""",Basketweave,Polished,White,8,8.0,0.375,21.26,sq ft,CAGOMARMOS708001
+thassos-white-greek-marble-border-3-1-2-x-7-3-8-greek-key-border-w-blue-gray,UPDATE,Marble,"3 1/2"" x 7""",Greek Key,Polished,White,1,,0.75,130.06,piece,THWHMARBOR977205
+calgldmos1347,UPDATE,Marble,"1"" x 2""",Basketweave,Polished,White,6,6.4,0.375,27.60,sq ft,CAGOMARMOS967137
+thassos-white-bullnose-liner-trim-tile,UPDATE,Marble,"3/4"" x 12""",,Polished,White,1,,0.75,98.10,piece,THWHMARTRI967777
+thaswhtmol1501,UPDATE,Marble,"1/2"" x 12""",,Polished,White,1,,0.75,98.10,piece,THWHMARTRI042529
+checkers-with-thassos-white-calacatta-gold-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,White,10,22.5,0.375,43.20,sq ft,CHTHMARTIL201973
+thassos-white-hexagon-combination-w-ming-green-mosaic-tile-5x5,UPDATE,Marble,"5"" x 5""",Hexagon,Polished,White,6,5.6,0.375,38.16,sq ft,THWHMARMOS874421
+thassos-white-polished-hexagon-combination-w-blue-gray-mosaic-tile-5x5,UPDATE,Marble,"5"" x 5""",Hexagon,Polished,White,6,5.6,0.375,38.16,sq ft,THWHMARMOS229045
+checkerboard-bardiglio-calacatta-gold-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,White,10,22.5,0.375,32.06,sq ft,CHBAMARTIL391093
+chevron-shadow-calacatta-12-x-11-75-mosaic-tile,UPDATE,Marble,"12"" x 11 3/4""",Chevron,,White,11,10.77,0.375,33.75,sq ft,CHSHMARMOS778677
+thaswhtbor1431,UPDATE,Marble,"2"" x 12""",,Polished,White,1,,0.75,79.35,piece,THWHMARBOR261153
+calacatta-michelangelo-marble-tile-18-x-18-3-8-tile-micro-beveled,UPDATE,Marble,"12"" x 24""",,Polished,White,1,,0.375,66.60,piece,CAMIMARTIL404405
+checkers-with-nero-marquina-calacatta-gold-24x24-honed-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Matte,White,10,40.0,0.375,37.80,sq ft,CHNEMARTIL094837
+alice-precious-calacatta-11-5-x-12-waterjet-mosaic,UPDATE,Marble,"11 1/2"" x 12""",Arabesque,,White,9,8.62,0.375,111.18,sq ft,ALPRMARMOS215093
+checkerboard-bianco-dolomite-calacatta-gold-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,White,10,22.5,0.375,36.45,sq ft,CHBIMARTIL179829
+solis-honed-marble-blend-mosaic-tile-in-white-carrara-white-thassos,UPDATE,Marble,"14 1/4"" x 14 1/4""",,Honed,White,7,7.05,0.375,45.99,sq ft,SOHOMARMOS353909
+calgldmos1314,UPDATE,Marble,"1"" x 2""",Brick,Split Face,White,8,8.0,0.375,22.89,sq ft,CAGOMARMOS888821
+thaswhttil1217,UPDATE,Marble,"18"" x 18""",Square,Polished,White,1,,0.375,64.37,piece,THWHMARTIL033697
+calacatta-gold-marble-brass-inlay-polished-waterjet-mosaic-tile,UPDATE,Marble,,,Polished,Gold,1,,0.375,36.88,piece,CAGOMARWAT742517
+checkers-with-nero-marquina-calacatta-gold-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,White,10,22.5,0.375,28.69,sq ft,CHWIMARTIL405557
+thassos-white-hexagon-mosaic-tile-6x6,UPDATE,Marble,"6"" x 6""",Hexagon,Polished,White,7,6.72,0.375,31.80,sq ft,THWHMARMOS070645
+calacatta-gold-white-marble-octagon-backsplash-mosaic-with-ming-green-dots,UPDATE,Marble,"1"" x 2""",Octagon,Polished,White,8,8.0,0.375,22.89,sq ft,CAGOMARMOS916149
+calgldmos1325,UPDATE,Marble,"1"" x 2""",Diamond,Polished,White,8,8.0,0.375,22.89,sq ft,CAGOMARMOS312289
+calgldmos1341,UPDATE,Marble,"12"" x 12""",Penny Round,Polished,White,8,8.0,0.375,22.89,sq ft,CAGOMARMOS355489
+calgldmos1345,UPDATE,Marble,"12"" x 12""",,Polished,White,8,8.0,0.375,22.89,sq ft,CAGOMARMOS658401
+white-galaxy-thassos-black-marble-polished-floor-wall-mosaic,UPDATE,Marble,"10"" x 10""",Hexagon,Polished,Grey,6,5.6,0.375,33.14,sq ft,DAFLMARMOS056629
+white-galaxy-thassos-grey-marble-polished-floor-wall-mosaic,UPDATE,Marble,"10"" x 10""",,Polished,Grey,6,5.6,0.375,33.14,sq ft,DAFLMARMOS349237
+white-galaxy-thassos-blue-marble-polished-floor-wall-mosaic,UPDATE,Marble,"10"" x 10""",Hexagon,Polished,Grey,6,5.6,0.375,33.14,sq ft,DAFLMARMOS186549
+calgldmos1305,UPDATE,Marble,"5/8"" x 5/8""",Square,Polished,White,8,8.0,0.375,22.35,sq ft,CAGOMARMOS930209
+arabesque-calacatta-gold-12-x-12-mosaic-tile-1,UPDATE,Marble,"12"" x 12""",Arabesque,,White,8,8.0,0.375,29.36,sq ft,ARCAMARMOS744117
+atrium-honed-marble-blend-mosaic-tile-in-nero-marquina-bardiglio-myra-beige,UPDATE,Marble,"15 3/4"" x 15 3/4""",Square,Matte,Beige,9,8.6,0.375,46.99,sq ft,ATHOMARTIL507701
+thassos-white-greek-marble-border-3-8-basketweave-border-corner-w-ming-green,UPDATE,Marble,,Basketweave,Polished,White,1,,0.75,77.74,piece,THWHMARBOR356597
+combhex-thassos-grey-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 12""",Hexagon,Polished,Grey,7,6.72,0.375,32.29,sq ft,HETHMARMOS309109
+combhex-thassos-nero-marquina-marble-polished-wall-mosaic,UPDATE,Marble,"12"" x 12""",Hexagon,Polished,Grey,7,6.72,0.375,32.29,sq ft,HETHMARMOS368565
+thassos-classic-1-2-x12-honed-marble-pencil-liner-trim-tile,UPDATE,Marble,"1/2"" x 12""",,Matte,White,1,,0.75,75.00,piece,THCLMARTRI720245
+thassos-white-greek-marble-polished-3-8-basketweave-border-corner-w-blue-gray,UPDATE,Marble,,Basketweave,Polished,White,1,,0.75,76.45,piece,THWHMARBOR553653
+checkers-with-thassos-white-calacatta-gold-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,White,10,10.0,0.375,25.99,sq ft,CHTHMARTIL610997
+north-pole-labyrinth-thassos-marble-polished-backsplash,UPDATE,Marble,"12"" x 12""",,Polished,White,7,6.72,0.375,31.43,sq ft,CAMAMARMOS902901
+bower-thassos-black-basalt-marble-polished-floor-wall-mosaic,UPDATE,Marble,"12"" x 12""",,Polished,Grey,8,8.0,0.375,31.12,sq ft,BOTHMARMOS726325
+bardiglio-imperiale-box-liner-trim-tile-3-4x12,UPDATE,Marble,"3/4"" x 12""",,Polished,Grey,1,,0.75,120.00,piece,BAIMMARTRI462133
+water-drop-calacatta-gold-honed-11-x-11-mosaic-tile,UPDATE,Marble,"11"" x 11""",Arabesque,Honed,White,8,7.56,0.375,37.14,sq ft,WADRMARMOS502581
+geometric-thassos-black-marble-polished-floor-wall-mosaic,UPDATE,Marble,"10 1/8"" x 10""",Hexagon,Polished,Grey,6,5.6,0.375,30.86,sq ft,GETHMARMOS524085
+geometric-thassos-carrara-marble-polished-floor-wall-mosaic,UPDATE,Marble,"10 1/8"" x 10""",Hexagon,Polished,Grey,6,5.6,0.375,30.86,sq ft,GETHMARMOS522357
+calgldmos1356,UPDATE,Marble,"12"" x 12""",,Polished,White,8,8.0,0.375,21.26,sq ft,CAGOMARMOS859361
+alice-pearl-calacatta-11-5-x-12-waterjet-mosaic,UPDATE,Marble,"11 1/2"" x 12""",Arabesque,,White,9,8.62,0.375,111.18,sq ft,ALPEMARMOS952181
+carrara-white-marble-16x24-leathered-tile,UPDATE,Marble,"16"" x 24""",,Leathered,White,1,,0.375,47.39,piece,CAWHMARTIL481141
+thassos-white-greek-marble-mosaic-3-8-chevron-large-thassos-black-thin-strips-mosaic,UPDATE,Marble,,Chevron,Polished,White,8,8.0,0.375,21.90,sq ft,THWHMARMOS827317
+willow-leaf-carrara-thassos-marble-polished-backsplash,UPDATE,Marble,"12"" x 12""",,Polished,White,7,7.36,0.375,30.43,sq ft,WATERJET127
+penny-calacatta-marble-11-x-11-75-mosaic-tile-1,UPDATE,Marble,"11"" x 11 3/4""",Penny Round,Polished,White,9,8.98,0.375,34.76,sq ft,PECAMARMOS727477
+checkerboard-bianco-dolomite-calacatta-gold-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,White,10,10.0,0.375,24.98,sq ft,CHBIMARTIL802421
+aether-calacatta-11-5-x-12-mosaic-tile,UPDATE,Marble,"11 1/2"" x 12""",,Polished,White,11,10.54,0.375,34.49,sq ft,AECAMARMOS547573
+checkerboard-thassos-white-crema-marfil-24x24-polished-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Polished,Beige,10,39.99,0.375,38.48,sq ft,CHTHMARTIL417845
+checkerboard-with-thassos-white-absolute-black-24x24-polished-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Polished,White,10,39.99,0.375,38.48,sq ft,CHTHMARTIL977205
+checkers-with-thassos-white-carrara-white-24x24-polished-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Polished,White,10,39.99,0.375,38.48,sq ft,CHTHMARTIL856181
+checkers-with-nero-marquina-calacatta-gold-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,White,10,22.5,0.375,28.69,sq ft,CHNEMARTIL782965
+checkerboard-with-thassos-white-nero-marquina-24x24-polished-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Polished,Black,10,40.0,0.375,38.14,sq ft,CHWIMARTIL287925
+white-carrara-polished-1x6-herringbone-marble-mosaic,UPDATE,Marble,"1"" x 6""",Herringbone,Polished,White,10,9.6,0.375,107.92,sq ft,WHCAMARMOS426933
+thassos-white-greek-marble-mosaic-3-8-berlinetta-design-thassos-w-blue-gray-mosaic,UPDATE,Marble,"12"" x 9 3/8""",,Polished,White,6,6.4,0.375,29.62,sq ft,THWHMARMOS263349
+royal-block-thassos-black-marble-polished-backsplash,UPDATE,Marble,"10"" x 10""",Brick,Polished,White,8,5.6,0.375,29.59,sq ft,BRTHMARMOS181045
+royal-block-thassos-carrara-marble-polished-backsplash,UPDATE,Marble,"10"" x 10""",Brick,Polished,Grey,6,5.6,0.375,29.59,sq ft,BRTHMARMOS030133
+daisy-bloom-calacatta-11-75-x-13-25-mosaic-tile-1,UPDATE,Marble,"11 3/4"" x 13 1/4""",,,White,12,11.89,0.375,42.46,sq ft,DABLMARMOS104565
+calacatta-oliva-marble-molding-1-2-x-12-pencil-liner,UPDATE,Marble,"1/2"" x 12""",,,White,1,,0.75,78.00,piece,CAOLMARTRI190901
+crema-marfil-leathered-marble-tile-16-x-24,UPDATE,Marble,"16"" x 24""",,Leathered,Beige,1,,0.375,49.40,piece,CRMAMARTIL942325
+artistic-ex-thassos-blue-marble-polished-floor-wall-mosaic,UPDATE,Marble,"12"" x 12""",Square,Polished,Blue,7,6.72,0.375,28.57,sq ft,ARTHMARMOS665589
+fraser-river-thassos-blue-marble-polished-floor-wall-mosaic,UPDATE,Marble,"12"" x 12""",,Polished,Blue,7,6.72,0.375,28.48,sq ft,TELUMARMOS306229
+fraser-river-thassos-grey-marble-polished-floor-wall-mosaic,UPDATE,Marble,"12"" x 12""",,Polished,Grey,7,6.72,0.375,28.48,sq ft,TELUMARMOS415733
+checkerboard-bardiglio-calacatta-gold-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,White,10,10.0,0.375,23.63,sq ft,CHBAMARTIL620469
+palace-block-thassos-black-marble-polished-backsplash,UPDATE,Marble,"12 3/8"" x 12 3/8""",,Polished,Grey,8,8.56,0.375,28.34,sq ft,EDTHMARMOS497013
+calacatta-viola-marble-18x18-inch-wall-floor-tile,UPDATE,Marble,"18"" x 18""",,Polished,White,3,6.75,0.375,23.46,sq ft,CAVIMARTIL885621
+nermrqmol1505,UPDATE,Marble,"4 3/4"" x 12""",,Polished,Black,1,,0.75,160.80,piece,NEMAMARTRI090721
+herringbone-calacatta-gold-honed-11-25-x-11-25-mosaic-tile,UPDATE,Marble,"11 1/4"" x 11 1/4""",Herringbone,Honed,White,10,9.67,0.375,33.40,sq ft,HECAMARMOS642677
+checkerboard-thassos-white-bardiglio-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,White,10,22.5,0.375,34.09,sq ft,CHTHMARTIL812213
+water-drop-calacatta-gold-polished-11-x-11-mosaic-tile,UPDATE,Marble,"11"" x 11""",Arabesque,Polished,White,8,7.56,0.375,31.69,sq ft,WADRMARMOS633653
+thassos-white-greek-marble-polished-3-8-greek-key-border-corner-w-blue-gray,UPDATE,Marble,,Greek Key,Polished,White,1,,0.75,107.82,piece,THWHMARBOR241141
+thassos-white-greek-marble-border-3-1-2-x-7-3-8-greek-key-border-w-black,UPDATE,Marble,"3 1/2"" x 7""",Greek Key,Polished,White,1,,0.75,130.06,piece,THWHMARBOR682293
+checkers-with-thassos-white-calacatta-gold-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,White,10,10.0,0.375,25.99,sq ft,CHTHMARTIL168053
+solis-honed-marble-blend-mosaic-tile-in-white-carrara-bardiglio,UPDATE,Marble,"14 1/4"" x 14 1/4""",,Honed,White,7,7.05,0.375,45.99,sq ft,SOHOMARMOS775605
+nermrqtil1205,UPDATE,Marble,"18"" x 18""",Square,Polished,Black,1,,0.375,32.49,piece,NEMAMARTIL402593
+thaswhttil1216,UPDATE,Marble,"12"" x 24""",,Polished,White,1,,0.375,52.86,piece,THWHMARTIL409441
+nero-marquina-4x12-leather-tumbled-rectangle-tile,UPDATE,Marble,"4"" x 12""",,Tumbled,Black,15,5.0,0.375,27.46,sq ft,NEMAMARTIL594677
+net-thassos-carrara-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 10 1/2""",,Polished,Grey,7,7.04,0.375,27.18,sq ft,HATHMARMOS673525
+checkers-with-nero-marquina-bianco-dolomite-24x24-polished-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Polished,Black,10,39.99,0.375,33.08,sq ft,CHNEMARTIL607541
+daisy-wild-calacatta-gold-12-75-x-13-25-mosaic-tile,UPDATE,Marble,"12 3/4"" x 13 1/4""",,,White,13,12.9,0.375,36.01,sq ft,DAWIMARMOS825461
+calacatta-viola-marble-12x24-inch-polished-wall-floor-tile,UPDATE,Marble,"12"" x 24""",,Polished,White,5,10.0,0.375,21.76,sq ft,CAVIMARTIL219701
+trove-thassos-w-black-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,,Square,Polished,Grey,11,11.28,0.375,26.04,sq ft,TRTHMARMOS507637
+trove-thassos-w-blue-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,,Square,Polished,Grey,11,11.28,0.375,26.04,sq ft,TRTHMARMOS848821
+trove-thassos-w-grey-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,,,Polished,Grey,11,11.28,0.375,26.04,sq ft,TRTHMARMOS535797
+calacatta-gold-10-hexagon-tile-matte,UPDATE,Marble,,Hexagon,Matte,White,1,,0.375,19.99,piece,CAGOMARTIL834549
+looming-star-thassos-black-marble-polished-floor-wall-mosaic,UPDATE,Marble,"12"" x 12""",Square,Polished,White,7,7.36,0.375,26.00,sq ft,SITHMARMOS419957
+looming-star-thassos-blue-marble-polished-floor-wall-mosaic,UPDATE,Marble,"12"" x 12""",Square,Polished,White,7,7.36,0.375,26.00,sq ft,SITHMARMOS894517
+looming-star-thassos-grey-marble-polished-floor-wall-mosaic,UPDATE,Marble,"12"" x 12""",Square,Polished,White,7,7.36,0.375,26.00,sq ft,SITHMARMOS958901
+thassos-white-greek-marble-polished-3-8-greek-key-border-corner-w-ming-green,UPDATE,Marble,,Greek Key,Polished,White,1,,0.75,107.82,piece,THWHMARBOR591221
+thassos-white-greek-marble-polished-3-8-florida-flower-border-corner-w-blue-gray,UPDATE,Marble,,,Polished,White,1,,0.75,76.45,piece,THWHMARBOR348149
+slot-calacatta-11-75-x-11-75-mosaic-tile,UPDATE,Marble,"11 3/4"" x 11 3/4""",,,White,11,10.55,0.375,34.46,sq ft,SLCAMARMOS220469
+jumbo-lantern-carrara-black-dot-marble-polished-wall-mosaic,UPDATE,Marble,"12"" x 12""",Arabesque,Polished,Grey,8,8.0,0.375,28.72,sq ft,ARCAMARMOS873269
+jumbo-lantern-carrara-blue-dot-marble-polished-wall-mosaic,UPDATE,Marble,"12"" x 12""",Arabesque,Polished,Blue,8,8.0,0.375,28.72,sq ft,ARCAMARMOS098037
+checkersboard-bianco-dolomite-calacatta-gold-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,White,10,10.0,0.375,24.98,sq ft,CHBIMARTIL867957
+checkerboard-thassos-white-crema-marfil-24x24-honed-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Matte,Beige,10,39.99,0.375,38.48,sq ft,CHTHMARTIL942133
+checkers-with-thassos-white-carrara-white-24x24-honed-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Matte,White,10,39.99,0.375,38.48,sq ft,CHTHMARTIL871989
+bianco-carrara-box-liner-trim-tile-3-4x12,UPDATE,Marble,"3/4"" x 12""",,Polished,White,1,,0.75,120.00,piece,BICAMARTRI666805
+carwhtmol1507,UPDATE,Marble,"2"" x 12""",,Polished,White,1,,0.75,119.90,piece,CAITMARTRI973153
+calacatta-viola-marble-12x12-inch-wall-floor-tile,UPDATE,Marble,"12"" x 12""",,Polished,White,7,7.0,0.375,21.76,sq ft,CAVIMARTIL141173
+thaswhtmos1417,UPDATE,Marble,"12"" x 12""",Versailles,Polished,White,8,8.0,0.375,20.71,sq ft,THWHMARMOS382305
+nero-marquina-4x4-leather-tumbled-square-tile,UPDATE,Marble,"4"" x 4""",Square,Tumbled,Black,45,5.0,0.375,25.62,sq ft,NEMAMARTIL124597
+checkerboard-thassos-white-crema-marfil-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Honed,Beige,10,22.5,0.375,31.05,sq ft,CHTHMARTIL695797
+checkerboard-thassos-white-nero-marquina-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Black,10,22.5,0.375,31.05,sq ft,CHWIMARTIL320693
+checkerboard-thassos-white-crema-marfil-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Beige,10,22.5,0.375,31.05,sq ft,CHTHMARTIL416693
+empdrkbor1403,UPDATE,Marble,"2"" x 12""",,Polished,Brown,1,,0.75,57.96,piece,EMDAMARBOR651681
+checkerboard-thassos-white-nero-marquina-24x24-honed-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Matte,Black,10,40.0,0.375,38.14,sq ft,CHWIMARTIL255157
+thassos-white-greek-marble-mosaic-3-8-triple-weave-w-black,UPDATE,Marble,"1"" x 2""",Basketweave,Polished,White,6,6.4,0.375,25.50,sq ft,THWHMARMOS566005
+thaswhtbor1449,UPDATE,Marble,"5 3/4"" x 11 1/4""",,Polished,White,1,,0.75,95.56,piece,THWHMARBOR557089
+carwhtmol1509,UPDATE,Marble,"4 3/4"" x 12""",,Polished,White,1,,0.75,152.60,piece,CAITMARTRI457761
+checkerboard-with-thassos-white-absolute-black-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Black,10,22.5,0.375,30.71,sq ft,CHWIMARTIL156853
+carwhtmol1505,UPDATE,Marble,"2"" x 12""",,Polished,White,1,,0.75,106.30,piece,CAITMARTRI472737
+maze-bardiglio-w-thassos-white-marble-carrara-white-polished-waterjet-mosaic-tile,UPDATE,Marble,,,Polished,Grey,1,,0.375,41.77,piece,MABAMARWAT631477
+celeste-honed-marble-blend-mosaic-tile-in-white-carrara-bardiglio,UPDATE,Marble,"14 1/16"" x 16 1/8""",Leaf,Honed,White,8,7.85,0.375,36.99,sq ft,CEHOMARMOS889717
+checkers-with-nero-marquina-calacatta-gold-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,White,10,10.0,0.375,20.93,sq ft,CHNEMARTIL191989
+thassos-white-basketweave-blue-grey-dots-mosaic-tile-large,UPDATE,Marble,"2"" x 4""",Basketweave,Polished,White,8,8.0,0.375,22.35,sq ft,THWHMARMOS012597
+checkers-with-thassos-white-carrara-white-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,White,10,22.5,0.375,30.38,sq ft,CHTHMARTIL313781
+checkerboard-bardiglio-calacatta-gold-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,White,10,10.0,0.375,23.63,sq ft,CHBAMARTIL587701
+eclipse-calacatta-gold-12-25-x-12-25-mosaic-tile,UPDATE,Marble,"12 1/4"" x 12 1/4""",Hexagon,,White,8,8.34,0.375,31.70,sq ft,ECCAMARMOS332789
+calacatta-oliva-marble-mosaic-3-8-chevron-mosaic,UPDATE,Marble,"1"" x 3""",Chevron,Polished,White,7,7.04,0.375,19.09,sq ft,CAOLMARMOS413749
+empdrkbor1406,UPDATE,Marble,,,Polished,Brown,1,,0.75,77.74,piece,EMDAMARBOR913825
+checkerboard-thassos-white-bardiglio-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,Grey,10,22.5,0.375,34.09,sq ft,CHTHMARTIL779445
+thassos-white-greek-marble-polished-3-8-bias-border-corner-w-ming-green,UPDATE,Marble,,,Polished,White,1,,0.75,77.74,piece,THWHMARBOR846901
+hnyonxmos1321,UPDATE,Onyx,"12"" x 12""",Versailles,Polished,Gold,8,8.0,0.375,14.44,sq ft,10002627
+thassos-white-greek-marble-polished-3-8-florida-flower-border-corner-w-ming-green,UPDATE,Marble,,,Polished,White,1,,0.75,76.45,piece,THWHMARBOR458805
+calacatta-blanco-pattern-polished-mosaic-tile,UPDATE,Marble,,,Polished,White,11,10.8,0.375,29.81,sq ft,CABLMARMOS801525
+stellare-with-carrara-white-and-nero-marquina-marble,UPDATE,Marble,,,Matte,White,6,6.0,0.375,33.67,sq ft,STWIMARTIL642549
+stellare-with-oriental-white-and-nero-marquina-marble,UPDATE,Marble,,,Matte,White,6,6.0,0.375,33.67,sq ft,STWIMARTIL064117
+penny-marble-calacatta-honed-11-x-11-75-mosaic-tile,UPDATE,Marble,"11"" x 11 3/4""",,Honed,White,9,8.98,0.375,34.76,sq ft,PEMAMARMOS596085
+crema-marfil-box-liner-trim-tile-3-4x12,UPDATE,Marble,"3/4"" x 12""",,Polished,Beige,1,,0.75,120.00,piece,CRMAMARTRI600117
+checkers-with-nero-marquina-bianco-dolomite-24x24-honed-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Matte,Black,10,39.99,0.375,33.08,sq ft,CHNEMARTIL426741
+arabescato-carrara-pencil-liner-trim-tile,UPDATE,Marble,"3/4"" x 12""",,,White,1,,0.75,98.60,piece,ARCAMARTRI184821
+thassos-carrara-marble-mother-of-pearl-petal-mosaic-polished-tile,UPDATE,Marble,,Leaf,Polished,White,8,8.0,0.375,22.99,sq ft,THCAMARMOS842677
+thassos-white-greek-marble-mosaic-5-x-5-3-8-hexagon-mosaic,UPDATE,Marble,"5"" x 5""",Hexagon,Polished,White,7,7.2,0.375,29.94,sq ft,THWHMARMOS363253
+calgldtil1211,UPDATE,Marble,"3"" x 6""",,Polished,White,56,7.0,0.375,28.20,sq ft,CAGOMARTIL644533
+thaswhtbor1433,UPDATE,Marble,"2"" x 12""",,Polished,White,1,,0.75,79.35,piece,THWHMARBOR894945
+checkerboard-thassos-white-nero-marquina-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,Black,10,22.5,0.375,31.05,sq ft,CHTHMARTIL353461
+celestiale-with-oriental-white-and-nero-marquina-marble,UPDATE,Marble,,,Matte,White,8,7.5,0.375,30.58,sq ft,CEWIMARTIL100725
+celestiale-with-carrara-white-and-nero-marquina-marble,UPDATE,Marble,,,Matte,White,8,7.5,0.375,30.58,sq ft,CEWIMARTIL964789
+checkers-with-nero-marquina-calacatta-gold-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,White,10,10.0,0.375,20.93,sq ft,CHNEMARTIL501557
+monet-honed-marble-mosaic-10-tile-in-nero-marquina,UPDATE,Marble,"11 1/2"" x 11 3/4""",Penny Round,Matte,Black,5,4.69,0.375,36.49,sq ft,MOMAMARMOS186933
+aphrodite-onyx-12-x-12-mosaic-tile,UPDATE,Marble,"12"" x 12""",,,Green,11,11.0,0.375,40.39,sq ft,APONMARMOS619317
+alice-pearl-thassos-new-11-5-x-12-waterjet-mosaic,UPDATE,Marble,"11 1/2"" x 12""",,,White,9,8.62,0.375,111.18,sq ft,ALPEMARMOS032309
+calacatta-oliva-marble-mosaic-1-x-2-3-8-herringbone-mosaic,UPDATE,Marble,"1"" x 2""",Herringbone,Polished,White,7,7.36,0.375,16.63,sq ft,CAOLMARMOS647221
+checkers-with-thassos-white-carrara-white-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,White,10,22.5,0.375,30.38,sq ft,CHTHMARTIL887797
+light-beige-botticino-marble-quarter-round-trim-tile-1-x-12,UPDATE,Marble,"1"" x 12""",,Polished,Beige,1,,0.75,117.10,piece,LIBEMARTRI303329
+calacatta-oliva-marble-mosaic-3-8-p-octave-long-octagon-mosaic-w-black-calacatta-oliva,UPDATE,Marble,"2"" x 4""",Octagon,Polished,White,7,7.12,0.375,18.88,sq ft,CAOLMARMOS525557
+elara-with-carrara-white-and-nero-marquina-marble,UPDATE,Marble,,,Matte,White,5,5.44,0.375,30.25,sq ft,ELWIMARTIL769141
+elara-with-oriental-white-and-nero-marquina-marble,UPDATE,Marble,,,Matte,White,5,5.44,0.375,30.25,sq ft,ELWIMARTIL507125
+carrara-white-marble-6x36-polished-threshold-trim-tile,UPDATE,Marble,"6"" x 36""",,Polished,White,1,,0.75,49.60,piece,CAWHMARBOR110133
+jumbo-basketweave-matte-marble-in-glorious-blue-with-thassos-dot,UPDATE,Marble,"11 1/4"" x 11 1/4""",Basketweave,Matte,White,10,8.74,0.375,19.39,sq ft,JUBAMARMOS104629
+carrara-italian-white-basketweave-border-w-black-dots,UPDATE,Marble,"4 3/4"" x 12""",Basketweave,Polished,White,1,,0.75,62.67,piece,CAITMARBOR684193
+empdrkbor1401,UPDATE,Marble,"4 3/4"" x 12""",Basketweave,Polished,Brown,1,,0.75,62.67,piece,EMDAMARBOR898017
+solis-honed-marble-blend-mosaic-tile-in-nero-bardiglio-myra-beige,UPDATE,Marble,"14 1/4"" x 14 1/4""",,Honed,Black,7,7.05,0.375,45.99,sq ft,SOHOMARMOS863541
+bardiglio-imperial-4x12-leather-tumbled-rectangle-tile,UPDATE,Marble,"4"" x 12""",,Tumbled,Grey,15,5.0,0.375,27.46,sq ft,BAIMMARTIL193013
+empress-green-4x12-leather-tumbled-rectangle-tile,UPDATE,Marble,"4"" x 12""",,Tumbled,Green,15,5.0,0.375,27.46,sq ft,EMGRMARTIL938165
+rosso-levanto-4x12-leather-tumbled-rectangle-tile,UPDATE,Marble,"4"" x 12""",,Tumbled,Red,15,5.0,0.375,27.46,sq ft,ROLEMARTIL547125
+carrara-white-marble-4x36-threshold-trim-tile,UPDATE,Marble,"4"" x 36""",,Polished,White,1,,0.75,46.00,piece,CAWHMARBOR265077
+thassos-white-greek-marble-polished-3-8-fan-raindrop-mosaic,UPDATE,Marble,,,Polished,White,8,8.0,0.375,23.71,sq ft,THWHMARMOS988405
+belfast-large-carrara-black-marble-polished-wall-mosaic,UPDATE,Marble,"11"" x 11 1/4""",,Polished,Grey,7,6.88,0.375,32.56,sq ft,CACAMARMOS941301
+empdrkbor1402,UPDATE,Marble,,Basketweave,Polished,Brown,1,,0.75,50.14,piece,EMDAMARBOR930785
+checkers-with-nero-marquina-bianco-dolomite-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Black,10,22.5,0.375,24.30,sq ft,CHNEMARTIL914805
+combhex-carrara-blue-non-space-marble-polished-wall-mosaic,UPDATE,Marble,"12"" x 10 1/4""",Hexagon,Polished,Blue,7,6.72,0.375,32.29,sq ft,HECAMARMOS972533
+combhex-carrara-blue-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 10 1/4""",Hexagon,Polished,Blue,7,6.72,0.375,32.29,sq ft,HECAMARMOS492533
+trove-mini-thassos-black-marble-polished-floor-wall-mosaic,UPDATE,Marble,,Square,Polished,Grey,11,11.28,0.375,20.37,sq ft,TRMIMARMOS082805
+thassos-white-greek-marble-mosaic-3-8-stanza-mosaic-w-black-dots,UPDATE,Marble,"12"" x 12""",,Polished,White,8,8.0,0.375,20.40,sq ft,THWHMARMOS288501
+bardiglio-imperial-4x4-leather-tumbled-square-tile,UPDATE,Marble,"4"" x 4""",Square,Tumbled,Grey,45,5.0,0.375,25.62,sq ft,BAIMMARTIL230453
+empress-green-4x4-leather-tumbled-square-tile,UPDATE,Marble,"4"" x 4""",Square,Tumbled,Green,45,5.0,0.375,25.62,sq ft,EMGRMARTIL076661
+rosso-levanto-4x4-leather-tumbled-square-tile,UPDATE,Marble,"4"" x 4""",Square,Tumbled,Red,45,5.0,0.375,25.62,sq ft,ROLEMARTIL936885
+tracery-oriental-white-c-bardiglio-marble-polished-backsplash,UPDATE,Marble,"11 1/4"" x 11 1/4""",,Polished,White,8,7.04,0.375,25.36,sq ft,SIGRMARMOS742773
+thassos-white-greek-marble-mosaic-3-8-bubbles-mosaic,UPDATE,Marble,"12"" x 12""",,Polished,White,8,8.0,0.375,22.50,sq ft,THWHMARMOS513781
+calacatta-oliva-marble-mosaic-3-8-basketweave-mosaic-w-black-1,UPDATE,Marble,"1"" x 2""",Basketweave,Polished,White,8,8.0,0.375,16.20,sq ft,CAOLMARMOS143861
+empdrkbor1405,UPDATE,Marble,"3 7/8"" x 12""",,Polished,Brown,1,,0.75,128.51,piece,EMDAMARBOR848289
+emperador-light-marble-5x12-baseboard-polished,UPDATE,Marble,"4 3/4"" x 12""",,Polished,Brown,1,,0.75,123.50,piece,EMLIMARMOL397877
+dolomite-w-bardiglio-mother-of-pearl-polished-waterjet-mosaic-tile,UPDATE,Marble,,,Polished,Grey,1,,0.375,39.80,piece,DOWMARWAT112181
+monet-honed-marble-mosaic-4-tile-in-nero-marquina,UPDATE,Marble,"10 7/8"" x 12 1/8""",,Matte,Black,5,4.58,0.375,30.39,sq ft,MOMAMARMOS254773
+monet-honed-marble-mosaic-6-tile-in-nero-marquina,UPDATE,Marble,"12 1/8"" x 12 1/8""",,Matte,Black,5,5.1,0.375,30.39,sq ft,MOMAMARMOS844597
+monet-honed-marble-mosaic-7-tile-in-nero-marquina,UPDATE,Marble,"12"" x 12 1/4""",,Matte,Black,5,5.1,0.375,30.39,sq ft,MOMAMARMOS052405
+calacatta-gold-wall-backsplash-and-floor-tile,UPDATE,Marble,"3"" x 6""",,Polished,White,56,7.0,0.375,23.10,sq ft,CAGOMARTIL248757
+nermrqmos1304,UPDATE,Marble,"1"" x 1""",Hexagon,Polished,Black,8,8.0,0.375,13.90,sq ft,NEMAMARMOS566433
+carwhtbor1405,UPDATE,Marble,,Basketweave,Polished,White,1,,0.75,50.14,piece,CAITMARBOR074785
+atrium-honed-marble-blend-mosaic-tile-in-white-carrara-bardiglio,UPDATE,Marble,"15 3/4"" x 15 3/4""",Square,Matte,Beige,9,8.6,0.375,46.99,sq ft,ATHOMARTIL830773
+light-beige-botticino-marble-bullnose-liner-trim-tile,UPDATE,Marble,"3/4"" x 12""",,Polished,Beige,1,,0.75,62.10,piece,LIBEMARTRI124065
+monet-honed-marble-mosaic-10-tile-in-white-carrara,UPDATE,Marble,"11 1/2"" x 11 3/4""",,Matte,White,5,4.69,0.375,36.49,sq ft,MOMAMARMOS582453
+textured-thassos-11-75-x-11-75-mosaic-tile,UPDATE,Marble,"11 3/4"" x 11 3/4""",Square,,White,11,10.56,0.375,34.43,sq ft,TETUMARMOS586229
+nermrqmos1303,UPDATE,Marble,"1"" x 2""",Basketweave,Polished,Black,8,8.0,0.375,12.54,sq ft,NEMAMARMOS533665
+cremrfbor1402,UPDATE,Marble,,Basketweave,Polished,Beige,1,,0.75,46.41,piece,CRMAMARBOR062177
+fraser-river-carrara-black-marble-polished-floor-wall-mosaic,UPDATE,Marble,"12"" x 12""",,Polished,Grey,7,6.72,0.375,28.48,sq ft,TELUMARMOS641973
+sora-with-oriental-white-and-nero-marquina-marble,UPDATE,Marble,,,Matte,White,8,7.5,0.375,24.83,sq ft,SOWIMARTIL098613
+sora-with-carrara-white-and-nero-marquina-marble,UPDATE,Marble,,,Matte,White,8,7.5,0.375,24.83,sq ft,SOWIMARTIL588597
+carwhtbor1403,UPDATE,Marble,"4 3/4"" x 12""",Basketweave,Polished,White,1,,0.75,62.67,piece,CAITMARBOR398177
+manhattan-weave-blue-white-dot-corner-marble-polished-accent,UPDATE,Marble,"12"" x 12""",Basketweave,Polished,White,1,,0.375,128.00,piece,MEBLMARMOS917429
+noche-travertine-16x24-antique-leathered-tile,UPDATE,Travertine,"16"" x 24""",,Leathered,Brown,1,,0.375,47.39,piece,NOTRTRATIL148725
+empress-green-12x12-leather-tumbled-square-tile,UPDATE,Marble,"12"" x 12""",Square,Tumbled,Green,5,5.0,0.375,23.32,sq ft,EMGRMARTIL051893
+rosso-levanto-12x12-modern-tumbled-square-tile,UPDATE,Marble,"12"" x 12""",Square,Tumbled,Red,5,5.0,0.375,23.32,sq ft,ROLEMARTIL332021
+checkerboard-thassos-white-bardiglio-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Grey,10,10.0,0.375,21.26,sq ft,CHTHMARTIL533109
+empdrkbor1409,UPDATE,Marble,"5 3/4"" x 11 1/4""",,Polished,Brown,1,,0.75,92.46,piece,EMDAMARBOR044897
+matisse-mosaic-1-marble-blend-in-white-carrara-nero-marquina,UPDATE,Marble,"11 1/4"" x 11 1/4""",Square,,White,4,4.39,0.375,21.14,sq ft,MAMOMARMOS205045
+matisse-mosaic-2-marble-blend-in-white-carrara-nero-marquina,UPDATE,Marble,"12 1/8"" x 12 1/8""",,,White,5,5.1,0.375,21.14,sq ft,MAMOMARMOS091765
+matisse-mosaic-3-marble-blend-in-white-carrara-nero-marquina,UPDATE,Marble,"12 1/8"" x 12 1/8""",Square,,White,5,5.1,0.375,21.14,sq ft,MAMOMARMOS592821
+thassos-white-greek-marble-mosaic-1-x-2-random-split-faced-brick-mosaic,UPDATE,Marble,"1"" x 2""",Brick,,White,8,8.0,0.375,20.70,sq ft,THWHMARMOS895605
+checkers-with-nero-marquina-bianco-dolomite-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,Black,10,22.5,0.375,24.30,sq ft,CHNEMARTIL392821
+empdrkbor1407,UPDATE,Marble,"3 1/2"" x 7""",Greek Key,Polished,Brown,1,,0.75,87.75,piece,EMDAMARBOR979361
+cremrfbor1405,UPDATE,Marble,"3 7/8"" x 12""",,Polished,Cream,1,,0.75,128.51,piece,CRMAMARBOR945761
+skywalk-carrara-w-blue-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 12""",,Polished,Grey,7,7.36,0.375,27.74,sq ft,WATERJET104
+skywalk-carrara-w-black-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 12""",,Polished,Grey,7,7.36,0.375,27.74,sq ft,WATERJET103
+absolute-black-granite-2x12-polished-chair-rail-trim-tile,UPDATE,Granite,"2"" x 12""",,Polished,White,1,,0.75,108.00,piece,ABBLMARTRI691317
+checkerboard-bardiglio-bianco-dolomite-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Beige,10,22.5,0.375,27.68,sq ft,CHBAMARTIL735733
+emperador-brown-4x12-leather-tumbled-rectangle-tile,UPDATE,Limestone,"4"" x 12""",,Tumbled,Brown,15,5.0,0.375,27.46,sq ft,EMBRLIMTIL365301
+checkerboard-bianco-dolomite-carrara-white-24x24-polished-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Polished,White,10,40.0,0.375,33.41,sq ft,CHBIMARTIL933493
+carrara-italian-marble-4-inch-lantern-arabesque-mosaic-tile,UPDATE,Marble,,Arabesque,Polished,White,8,8.0,0.375,13.99,sq ft,CAITMARMOS657141
+ferrara-honed-chevron-marble-mosaic-tile-in-bianco,UPDATE,Marble,"11 3/4"" x 11 3/4""",Chevron,Matte,White,9,8.96,0.375,49.99,sq ft,FEHOMARMOS736565
+chevron-long-thassos-11-x-12-50-mosaic-tile,UPDATE,Marble,"11"" x 12 1/2""",Herringbone,,White,10,10.5,0.375,25.97,sq ft,CHLOMARMOS265269
+net-light-dark-carrara-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 10 1/2""",,Polished,Grey,7,7.04,0.375,27.18,sq ft,HACAMARMOS018165
+fantasy-square-carrara-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 11""",Square,Polished,Grey,7,7.36,0.375,26.96,sq ft,SECAMARMOS422453
+thassos-white-greek-marble-mosaic-3-8-chevron-mini-mosaic,UPDATE,Marble,,Chevron,Polished,White,8,8.0,0.375,20.40,sq ft,THWHMARMOS321141
+tndgrymol1505,UPDATE,Marble,"2"" x 12""",,Polished,Grey,1,,0.75,100.80,piece,TUGRMARTRI527265
+monet-honed-marble-mosaic-3-tile-in-nero-marquina,UPDATE,Marble,"11 3/4"" x 12""",,Matte,Black,5,4.9,0.375,20.59,sq ft,MOMAMARMOS892021
+dragon-scale-calacatta-gold-9-75-x-10-mosaic-tile,UPDATE,Marble,"9 3/4"" x 10""",,,White,7,7.45,0.375,32.53,sq ft,DRSCMARMOS158261
+polar-white-hexagon-mosaic-tile,UPDATE,Marble,"2"" x 2""",Hexagon,Polished,White,8,7.84,0.375,15.15,sq ft,POWHMARMOS639797
+celestiale-with-carrara-white-and-empress-green-marble,UPDATE,Marble,,,Matte,White,8,7.5,0.375,30.58,sq ft,CEWIMARTIL648309
+thassos-white-greek-marble-mosaic-1-x-2-3-8-diamond-rhomboid-mosaic,UPDATE,Marble,"1"" x 2""",Diamond,Polished,White,8,8.0,0.375,20.40,sq ft,THWHMARMOS549813
+thassos-white-greek-marble-mosaic-1-x-3-3-8-herringbone-mosaic,UPDATE,Marble,"1"" x 3""",Herringbone,Polished,White,6,6.4,0.375,19.94,sq ft,THWHMARMOS687477
+empdrkbor1410,UPDATE,Marble,,,Polished,Brown,1,,0.75,73.97,piece,EMDAMARBOR405345
+tndgrymol1507,UPDATE,Marble,"2"" x 12""",,Polished,Grey,1,,0.75,93.50,piece,TUGRMARTRI917537
+arabescato-carrara-3x12-picket-tile,UPDATE,Marble,"3"" x 12""",Picket,,White,9,8.9,0.375,20.98,sq ft,ARCAMARMOS722229
+thassos-white-greek-marble-mosaic-3-8-berlinetta-design-thassos-w-ming-green-mosaic,UPDATE,Marble,"12"" x 9 3/8""",,Polished,White,6,6.4,0.375,29.62,sq ft,THWHMARMOS951477
+honeycomb-carrara-bardiglio-marble-polished-floor-wall-mosaic,UPDATE,Marble,"12 1/4"" x 12""",Hexagon,Polished,Grey,8,8.0,0.375,21.60,sq ft,HECAMARMOS384053
+slvrtrvcop310014,UPDATE,Travertine,"12"" x 24""",,Tumbled,Grey,1,,1.25,90.80,piece,SITRTRAPOO629025
+calacatta-gold-tumbled-flat-pebble-mosaic-12-x-12,UPDATE,Marble,"12"" x 12""",,Tumbled,Gold,5,5.0,0.375,14.42,sq ft,CAGOMARMOS828213
+nermrqmos1301,UPDATE,Marble,"1"" x 2""",Brick,Split Face,Black,8,8.0,0.375,13.90,sq ft,NEMAMARMOS468129
+porto-light-beige-limestone-19x33-brushed-floor-wall-tile,UPDATE,Limestone,"19"" x 33""",,Brushed,Beige,1,,0.375,62.12,piece,POLILIMTIL073269
+emperador-browns-4x4-leather-tumbled-square-tile,UPDATE,Marble,"4"" x 4""",Square,Tumbled,Brown,45,5.0,0.375,25.62,sq ft,EMBRMARTIL636533
+elara-with-carrara-white-and-empress-green-marble,UPDATE,Marble,,,Matte,White,5,5.44,0.375,30.25,sq ft,ELWIMARTIL447221
+empdrkbor1408,UPDATE,Marble,,Greek Key,Polished,Brown,1,,0.75,63.94,piece,EMDAMARBOR012129
+cremrfbor1409,UPDATE,Marble,"5 3/4"" x 11 1/4""",,Polished,Cream,1,,0.75,92.46,piece,CRMAMARBOR732193
+checkerboard-nero-marquina-bardiglio-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Black,10,22.5,0.375,19.91,sq ft,CHNEMARTIL202805
+tracery-oriental-white-c-carrara-marble-polished-backsplash,UPDATE,Marble,"11 1/4"" x 11 1/4""",,Polished,White,8,7.04,0.375,25.36,sq ft,SIGRMARMOS446709
+queen-beige-marble-shower-niche-large,UPDATE,Marble,"12"" x 16""",,Matte,Brown,1,,0.375,248.00,piece,QUBEMARACC068469
+nero-marquina-12x12-leather-tumbled-square-tile,UPDATE,Marble,"12"" x 12""",Square,Tumbled,Black,5,5.0,0.375,23.32,sq ft,NEMAMARTIL628085
+cremrfbor1407,UPDATE,Marble,"3 1/2"" x 7""",Greek Key,Polished,Beige,1,,0.75,87.75,piece,CRMAMARBOR076833
+leaves-nero-marquina-marble-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Black,1,,0.375,18.95,piece,LENELIMTIL227957
+serene-crest-nero-marquina-marble-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Black,1,,0.375,18.95,piece,SECRLIMTIL738229
+thassos-classic-1-x4-honed-herringbone-marble-mosaic-tile,UPDATE,Marble,"1"" x 4""",Herringbone,Matte,White,7,7.36,0.375,11.34,sq ft,THCLMARMOS818549
+nero-marquina-matte-2-hexagon-mosaic-tile,UPDATE,Marble,"2"" x 2""",Hexagon,Matte,Black,8,8.0,0.375,13.35,sq ft,NEMAMARMOS631969
+manhattan-weave-blue-white-dot-4x12-marble-honed-accent,UPDATE,Marble,"4"" x 12""",Basketweave,Matte,White,1,,0.375,153.60,piece,MEBLMARMOS659893
+checkerboard-thassos-white-crema-marfil-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Beige,10,10.0,0.375,19.24,sq ft,CHTHMARTIL940981
+carrara-3-8-x-3-8-interlock-marble-polished-wall-mosaic,UPDATE,Marble,"3/8"" x 3/8""",Square,Polished,White,8,8.0,0.375,24.80,sq ft,CAPOMARMOS707573
+chevron-oriental-blue-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 12""",Chevron,Polished,White,8,8.0,0.375,30.32,sq ft,ORCHMARMOS987957
+monet-honed-marble-mosaic-4-tile-in-white-carrara,UPDATE,Marble,"10 7/8"" x 12 1/8""",,Matte,White,5,4.58,0.375,30.39,sq ft,MOMAMARMOS827637
+monet-honed-marble-mosaic-6-tile-in-white-carrara,UPDATE,Marble,"12 1/8"" x 12 1/8""",,Matte,White,5,5.1,0.375,30.39,sq ft,MOMAMARMOS779061
+monet-honed-marble-mosaic-7-tile-in-white-carrara,UPDATE,Marble,"12"" x 12 1/4""",Brick,Matte,White,5,5.1,0.375,30.39,sq ft,MOMAMARMOS745141
+rosso-levanto-marble-12x12-wall-floor-tile,UPDATE,Marble,"12"" x 12""",Square,,Red,5,5.0,0.375,23.46,sq ft,ROLEMARTIL905397
+checkerboard-bianco-dolomite-crema-marfil-24x24-polished-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Polished,Beige,10,40.0,0.375,33.41,sq ft,CHBIMARTIL313205
+emperador-light-marble-2x12-polished-og-1-chair-rail-trim,UPDATE,Marble,"2"" x 12""",,Polished,Brown,1,,0.75,102.00,piece,EMLIMARMOL466421
+matisse-mosaic-3-marble-blend-in-white-carrara-thassos,UPDATE,Marble,"12 1/8"" x 12 1/8""",Square,,White,5,5.1,0.375,24.79,sq ft,MAMOMARMOS512629
+stripe-quilt-carrara-grey-marble-polished-backsplash,UPDATE,Marble,"11 7/8"" x 11 7/8""",,Polished,White,8,7.84,0.375,24.41,sq ft,STCAMARMOS335093
+trove-thassos-w-black-r-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,,Square,Polished,Grey,11,11.28,0.375,15.04,sq ft,TRTHMARMOS932469
+trove-thassos-w-blue-r-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,,Square,Polished,Grey,11,11.28,0.375,15.04,sq ft,TRTHMARMOS192309
+trove-thassos-w-grey-r-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,,,Polished,Grey,11,11.28,0.375,15.04,sq ft,TRTHMARMOS647605
+scatrvmol1311,UPDATE,Travertine,"3"" x 12""",,Matte,Brown,1,,0.75,128.10,piece,SCTRTRATRI279265
+calacatta-oliva-marble-mosaic-5-8-x-5-8-staggered-3-8-mosaic,UPDATE,Marble,"5/8"" x 5/8""",Square,Polished,White,8,8.0,0.375,17.70,sq ft,CAOLMARMOS136949
+checkerboard-thassos-white-bardiglio-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Grey,10,10.0,0.375,21.26,sq ft,CHWIMARTIL057397
+thassos-white-greek-marble-mosaic-1-x-1-3-8-hexagon-mosaic,UPDATE,Marble,"1"" x 1""",Hexagon,Polished,White,8,8.0,0.375,21.90,sq ft,THWHMARMOS990453
+absolute-black-granite-1-2x12-polished-pencil-liner-trim-tile,UPDATE,Granite,"1/2"" x 12""",,Polished,White,1,,0.75,72.00,piece,ABBLMARTRI454197
+scbstrvcop310003,UPDATE,Travertine,"12"" x 24""",,Tumbled,Gold,1,,1.25,72.00,piece,SCTRTRAPOO533025
+carwhtmos1411,UPDATE,Marble,"12"" x 9 3/8""",,Polished,White,6,6.4,0.375,24.19,sq ft,CAITMARMOS105249
+carwhtmos1413,UPDATE,Marble,"12"" x 9 3/8""",,Polished,White,6,6.4,0.375,24.19,sq ft,CAITMARMOS235169
+matisse-mosaic-4-marble-blend-in-white-carrara-thassos,UPDATE,Marble,"10 1/2"" x 12""",Hexagon,,White,4,4.38,0.375,24.29,sq ft,MAMOMARMOS922805
+cremrfbor1410,UPDATE,Marble,,,Polished,Cream,1,,0.75,77.65,piece,CRMAMARBOR994337
+light-beige-botticino-marble-wave-emp-dark-border-corner,UPDATE,Marble,,,Polished,Beige,1,,0.75,141.68,piece,LIBEMARBOR491809
+copper-slate-4x12-tumbled-border-tile,UPDATE,Slate,"4"" x 12""",,Tumbled,Brown,1,,0.75,67.50,piece,COSLSLABOR474869
+light-beige-botticino-marble-wave-emp-dark-border,UPDATE,Marble,"3 7/8"" x 12""",,Polished,Beige,1,,0.75,139.03,piece,LIBEMARBOR337185
+oriwhtmol1505,UPDATE,Marble,"2"" x 12""",,Polished,White,1,,0.75,132.90,piece,ORWHMARTRI301025
+scatrvmol1312,UPDATE,Travertine,"5"" x 12""",,Matte,Brown,1,,0.75,117.20,piece,SCTRTRATRI312033
+thassos-square-9x9-mosaic-tile,UPDATE,Marble,"9"" x 9""",Square,,Gold,6,6.26,0.375,28.47,sq ft,THSQMARMOS115637
+monet-honed-marble-mosaic-8-tile-in-nero-marquina,UPDATE,Marble,"11 1/4"" x 11 3/4""",Penny Round,Matte,Black,5,4.59,0.375,24.09,sq ft,MOMAMARMOS515573
+nero-marquina-matte-16x24-marble-tile,UPDATE,Marble,"16"" x 24""",,Matte,Black,1,,0.375,25.37,piece,NEMAMARTIL349685
+thassos-hexagon-12x13-mosaic-tile,UPDATE,Marble,"12"" x 13""",Hexagon,,White,12,11.92,0.375,22.15,sq ft,THHEMARMOS213941
+stellare-with-carrara-white-and-giallo-reale-marble,UPDATE,Marble,,,Matte,White,6,6.0,0.375,33.67,sq ft,STWIMARTIL126005
+stellare-with-carrara-white-and-empress-green-marble,UPDATE,Marble,,,Matte,White,6,6.0,0.375,33.67,sq ft,STWIMARTIL689973
+stellare-with-carrara-white-and-rojo-alicante-marble,UPDATE,Marble,,,Matte,White,6,6.0,0.375,33.67,sq ft,STWIMARTIL307957
+jumbo-lantern-white-black-marble-polished-wall-mosaic,UPDATE,Marble,"12"" x 12""",Arabesque,Polished,White,8,8.0,0.375,28.72,sq ft,ARWHMARMOS884469
+jumbo-lantern-white-blue-marble-polished-wall-mosaic,UPDATE,Marble,"12"" x 12""",Arabesque,Polished,White,8,8.0,0.375,28.72,sq ft,ARWHMARMOS916085
+checkerboard-thassos-white-absolute-black-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Black,10,10.0,0.375,18.90,sq ft,CHTHMARTIL189621
+checkerboard-bardiglio-bianco-dolomite-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,Beige,10,22.5,0.375,27.68,sq ft,CHBAMARTIL801269
+verona-with-carrara-and-nero-marquina-patterned-marble,UPDATE,Marble,,,Matte,White,9,9.0,0.375,20.66,sq ft,VEWIMARTIL760757
+verona-with-oriental-white-and-nero-marquina-marble,UPDATE,Marble,,,Matte,White,9,9.0,0.375,20.66,sq ft,VEWIMARTIL480885
+empdrkbor1404,UPDATE,Marble,,,Polished,Brown,1,,0.75,46.37,piece,EMDAMARBOR717217
+oriental-white-box-liner-trim-tile-3-4x12,UPDATE,Marble,"3/4"" x 12""",,Polished,White,1,,0.75,120.00,piece,ORWHMARTRI300597
+queen-beige-polished-one-step-box-liner-trim-tile-3-4x12,UPDATE,Marble,"3/4"" x 12""",,Polished,Beige,1,,0.75,120.00,piece,QUBEMARTRI657973
+checkerboard-bianco-dolomite-carrara-white-24x24-honed-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Matte,White,10,40.0,0.375,33.41,sq ft,CHBIMARTIL178677
+serratone-with-oriental-white-and-nero-marquina-marble,UPDATE,Marble,,,Matte,White,9,9.33,0.375,20.64,sq ft,SEWIMARTIL891765
+serratone-with-carrara-white-and-nero-marquina-marble,UPDATE,Marble,,,Matte,White,9,9.33,0.375,20.64,sq ft,SEWIMARTIL441973
+queen-beige-box-liner-trim-tile-3-4x12,UPDATE,Marble,"3/4"" x 12""",,Polished,Beige,1,,0.75,114.00,piece,QUBEMARTRI010165
+thassos-white-greek-marble-mosaic-3-8-octave-pattern-w-ming-green-long-octagon-mosaic,UPDATE,Marble,"2"" x 4""",Octagon,Polished,White,8,8.0,0.375,21.90,sq ft,THWHMARMOS960821
+thaswhttil1214,UPDATE,Marble,"12"" x 12""",,Polished,White,5,5.0,0.375,17.95,sq ft,THWHMARTIL587105
+princess-rosettes-grey-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 12""",,Polished,Grey,8,8.0,0.375,67.12,sq ft,POSTMARMOS427381
+light-beige-botticino-marble-florida-flower-emp-dark-border,UPDATE,Marble,"5 3/4"" x 11 1/4""",,Polished,Beige,1,,0.75,113.28,piece,LIBEMARBOR426401
+cremrfbor1408,UPDATE,Marble,,Greek Key,Polished,Beige,1,,0.75,63.94,piece,CRMAMARBOR109601
+checkerboard-thassos-white-nero-marquina-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Black,10,10.0,0.375,18.56,sq ft,CHTHMARTIL451765
+checkers-with-nero-marquina-carrara-white-24x24-polished-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Polished,Black,10,40.01,0.375,18.56,sq ft,CHNEMARTIL711669
+thassos-white-greek-marble-mosaic-3-8-florida-flower-thassos-white-carrara-oval-blue-gray-dots-mosaic,UPDATE,Marble,,,Polished,White,8,8.0,0.375,23.70,sq ft,THWHMARMOS405941
+checkers-with-thassos-white-carrara-white-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,White,10,10.0,0.375,18.23,sq ft,CHTHMARTIL936373
+princess-rosettes-black-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 12""",,Polished,White,8,8.0,0.375,67.12,sq ft,POSTMARMOS495861
+princess-rosettes-blue-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 12""",,Polished,White,8,8.0,0.375,67.12,sq ft,POSTMARMOS199157
+crema-marfil-marble-4x36-polished-threshold-trim-tile,UPDATE,Marble,"4"" x 36""",,Polished,White,1,,0.75,33.20,piece,CRMAMARTRI353013
+extra-light-travertine-16-x-24-chiseled-brushed-tile,UPDATE,Travertine,"16"" x 24""",,Brushed,Beige,1,,0.375,27.71,piece,EXTRTRATIL934325
+calacatta-oliva-marble-mosaic-3-8-diamond-rhomboid-mosaic,UPDATE,Marble,,Diamond,Polished,White,8,7.68,0.375,16.20,sq ft,CAOLMARMOS495093
+qnbgmol1505,UPDATE,Marble,"2"" x 12""",,Polished,Beige,1,,0.75,100.80,piece,QUBEMARTRI956001
+monet-honed-marble-mosaic-5-tile-in-nero-marquina,UPDATE,Marble,"10 1/8"" x 10 1/8""",,Matte,Black,4,3.56,0.375,22.99,sq ft,MOMAMARMOS481845
+slvrtrvpav,UPDATE,Travertine,"24"" x 24""",Square,Tumbled,Grey,1,,1.25,52.00,piece,SITRTRAEXT415457
+thassos-white-greek-marble-mosaic-3-8octagon-mosaic-w-ming-green-dots,UPDATE,Marble,"2"" x 2""",Octagon,Polished,White,6,6.4,0.375,25.50,sq ft,THWHMARMOS766517
+carwhtbor1415,UPDATE,Marble,,,Polished,White,1,,0.75,57.68,piece,CAITMARBOR000097
+blomma-honed-marble-mosaic-tile-in-grigio,UPDATE,Marble,"11 7/8"" x 11 7/8""",,Matte,,10,9.81,0.375,30.39,sq ft,BLMAMARMOS626421
+carwhtmos1401,UPDATE,Marble,"12"" x 12""",Chevron,Polished,White,8,8.0,0.375,15.26,sq ft,CAITMARMOS631009
+checkerboard-thassos-white-queen-beige-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Beige,10,10.0,0.375,17.89,sq ft,CHWIMARTIL484533
+arabescato-carrara-herringbone-honed-mosaic-tile,UPDATE,Marble,"1"" x 2""",Herringbone,Matte,White,10,10.0,0.375,16.86,sq ft,ARCAMARMOS936949
+glorious-blue-3-matte-hexagon-marble-mosaic,UPDATE,Marble,"3"" x 3""",Hexagon,Matte,Blue,4,4.38,0.375,37.89,sq ft,GLBLMARMOS261173
+roman-autumn-slate-3x12-tumbled-border-tile,UPDATE,Slate,"3"" x 12""",,Tumbled,,1,,0.75,47.50,piece,ROAUSLABOR539893
+checkers-with-nero-marquina-bianco-dolomite-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Black,10,10.0,0.375,17.55,sq ft,CHNEMARTIL042421
+nermrqmos1307,UPDATE,Marble,"12"" x 12""",Pinwheel,Polished,Black,8,8.0,0.375,12.81,sq ft,NEMAMARMOS697505
+checkers-with-nero-marquina-bardiglio-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,Black,10,22.5,0.375,19.91,sq ft,CHNEMARTIL383605
+nblbor1411,UPDATE,Marble,,,Polished,Beige,1,,0.75,90.62,piece,LIBEMARBOR662369
+carwhtmos1349,UPDATE,Marble,"5/8"" x 1 1/4""",Herringbone,Polished,White,7,6.88,0.375,14.57,sq ft,CAITMARMOS444961
+celestiale-with-carrara-white-and-giallo-reale-marble,UPDATE,Marble,,,Matte,White,8,7.5,0.375,30.58,sq ft,CEWIMARTIL256245
+celestiale-with-carrara-white-and-rojo-alicante-marble,UPDATE,Marble,,,Matte,White,8,7.5,0.375,30.58,sq ft,CEWIMARTIL403125
+checkers-with-nero-marquina-crema-marfil-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Beige,10,22.49,0.375,16.88,sq ft,CHNEMARTIL279093
+nermrqmos1302,UPDATE,Marble,"5/8"" x 5/8""",Square,Polished,Black,8,8.0,0.375,12.54,sq ft,NEMAMARMOS500897
+carwhtmos1399,UPDATE,Marble,,Chevron,Polished,White,8,8.0,0.375,14.17,sq ft,CAITMARMOS857889
+checkerboard-thassos-white-crema-marfil-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Beige,10,10.0,0.375,19.24,sq ft,CHTHMARTIL629109
+oriwhtmol1511,UPDATE,Marble,"1"" x 12""",,Polished,White,1,,0.75,133.50,piece,ORWHMARTRI052065
+cremrfbor1404,UPDATE,Marble,,,Polished,Beige,1,,0.75,46.41,piece,CRMAMARBOR912993
+honeycomb-carrara-black-marble-polished-floor-wall-mosaic,UPDATE,Marble,"12 1/4"" x 12""",Hexagon,Polished,Grey,8,8.0,0.375,21.60,sq ft,HECAMARMOS300405
+checkerboard-bianco-dolomite-crema-marfil-24x24-honed-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Matte,Beige,10,40.0,0.375,33.41,sq ft,CHBIMARTIL345973
+sora-carrara-white-and-empress-green-patterned-marble,UPDATE,Marble,,,Matte,White,8,7.5,0.375,24.83,sq ft,SOCAMARTIL010421
+ivrtrvmol1503,UPDATE,Travertine,"1"" x 12""",,Matte,Beige,1,,0.75,76.30,piece,IVTRTRATRI093985
+hnyonxmos1319,UPDATE,Onyx,,Penny Round,Polished,Gold,8,8.0,0.375,19.08,sq ft,HOONONYMOS486369
+thassos-white-greek-marble-mosaic-3-8-lattice-thassos-carrara-white-blue-gray-mosaic,UPDATE,Marble,,,Polished,White,8,8.0,0.375,21.90,sq ft,THWHMARMOS182005
+thassos-white-greek-marble-mosaic-3-8-penny-round-mosaic-thassos-carrara-black,UPDATE,Marble,"1"" x 1""",Penny Round,Polished,White,8,8.0,0.375,21.90,sq ft,THWHMARMOS400821
+carwhtmos1373,UPDATE,Marble,,,Polished,White,7,7.2,0.375,21.14,sq ft,CAITMARMOS604577
+elara-with-carrara-white-and-giallo-reale-marble,UPDATE,Marble,,,Matte,White,5,5.44,0.375,30.25,sq ft,ELWIMARTIL020917
+elara-with-carrara-white-and-rojo-alicante-marble,UPDATE,Marble,,,Matte,White,5,5.44,0.375,30.25,sq ft,ELWIMARTIL800757
+plaid-beige-thassos-marble-6-x6-laser-engraved-tile,UPDATE,Marble,"6"" x 6""",Square,,Beige,1,,0.375,14.95,piece,PLBEMARTIL798773
+bardiglio-imperiale-10-hexagon-tile-matte,UPDATE,Marble,,Hexagon,Matte,Grey,1,,0.375,15.99,piece,BAIMMARTIL002165
+checkers-with-nero-marquina-bardiglio-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Black,10,10.0,0.375,16.20,sq ft,CHNEMARTIL447989
+checkers-with-nero-marquina-carrara-white-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Black,10,22.5,0.375,16.20,sq ft,CHNEMARTIL368181
+matisse-mosaic-4-marble-blend-in-white-carrara-nero-marquina,UPDATE,Marble,"10 1/2"" x 12""",Hexagon,,White,4,4.38,0.375,21.14,sq ft,MAMOMARMOS912757
+walnut-travertine-molding-honed-5x12-baseboard-trim,UPDATE,Travertine,"5"" x 12""",,Matte,Brown,1,,0.75,106.30,piece,WATRTRATRI175477
+antico-ony-travertine-tile-versailles-pattern-antiqued-hand-tumbled-french-pattern,UPDATE,Travertine,,Versailles,Tumbled,,16,16.0,0.375,8.95,sq ft,ANONTRAVER419189
+zayra-arabesque-matte-limestone-mosaic-tile,UPDATE,Limestone,"10"" x 10""",Arabesque,Matte,,8,7.52,0.375,253.05,sq ft,ZAARLIMMOS615029
+arabescato-carrara-basketweave-honed-mosaic-tile,UPDATE,Marble,"1"" x 2""",Basketweave,Matte,White,10,10.0,0.375,16.86,sq ft,ARCAMARMOS896437
+thassos-white-greek-marble-mosaic-3-8-3-d-small-bread-mosaic,UPDATE,Marble,"1"" x 1""",Square,Polished,White,8,8.0,0.375,24.60,sq ft,THWHMARMOS665269
+ferrara-honed-chevron-marble-mosaic-tile-with-brass-in-argento,UPDATE,Marble,"11 3/4"" x 11 3/4""",Chevron,Matte,Grey,9,8.96,0.375,48.99,sq ft,FEHOMARMOS746293
+thassos-white-marble-octagon-patio-w-blue-polished,UPDATE,Marble,"12"" x 12""",Octagon,Matte,White,10,10.48,0.375,18.89,sq ft,THWHMARMOS501749
+checkerboard-thassos-white-nero-marquina-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Black,10,10.0,0.375,18.56,sq ft,CHWIMARTIL418997
+checkers-with-nero-marquina-carrara-white-24x24-honed-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Matte,Black,10,40.01,0.375,18.56,sq ft,CHNEMARTIL055157
+checkers-with-nero-marquina-crema-marfil-24x24-honed-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Matte,Beige,10,40.01,0.375,18.56,sq ft,CHNEMARTIL919797
+monet-2-x-8-honed-marble-decorative-tile-in-nero-marquina,UPDATE,Marble,"2"" x 8""",,Matte,Black,40,4.44,0.375,20.59,sq ft,MO2MARTIL969077
+monet-honed-marble-mosaic-1-tile-in-nero-marquina,UPDATE,Marble,"11 1/4"" x 11 1/4""",Square,Matte,Black,4,4.39,0.375,20.59,sq ft,MOMAMARMOS313717
+monet-honed-marble-mosaic-9-tile-in-nero-marquina,UPDATE,Marble,"9 5/8"" x 9 3/4""",,Matte,Black,3,3.26,0.375,20.59,sq ft,MOMAMARMOS927093
+monet-honed-marble-mosaic-2-tile-in-nero-marquina,UPDATE,Marble,"11 3/4"" x 11 3/4""",Square,Matte,Black,5,4.79,0.375,20.49,sq ft,MOMAMARMOS932533
+checkers-with-thassos-white-carrara-white-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,White,10,10.0,0.375,18.23,sq ft,CHTHMARTIL722805
+qnbgmol1503,UPDATE,Marble,"3/4"" x 12""",,Polished,Beige,1,,0.75,62.70,piece,QUBEMARTRI607905
+tndgrymol1502,UPDATE,Marble,"1/2"" x 12""",,Polished,Grey,1,,0.75,62.70,piece,TUGRMARTRI957665
+tndgrymol1503,UPDATE,Marble,"3/4"" x 12""",,Polished,Grey,1,,0.75,62.70,piece,TUGRMARTRI518689
+lymra-linen-limestone-16x24-tile,UPDATE,Limestone,"16"" x 24""",,,Beige,1,,0.375,53.27,piece,LYLILIMTIL650421
+monet-honed-marble-mosaic-8-tile-in-white-carrara,UPDATE,Marble,"11 1/4"" x 11 3/4""",Penny Round,Matte,Black,5,4.59,0.375,24.09,sq ft,MOMAMARMOS124853
+qnbgmol1506,UPDATE,Marble,"2"" x 12""",,Matte,Beige,1,,0.75,100.80,piece,QUBEMARTRI626209
+checkerboard-bianco-dolomite-carrara-white-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,White,10,22.5,0.375,23.96,sq ft,CHBIMARTIL309749
+checkers-with-thassos-white-queen-beige-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Beige,10,10.0,0.375,17.89,sq ft,CHTHMARTIL517301
+emperador-light-tumbled-coasters-4x4,UPDATE,Marble,"4"" x 4""",Square,Tumbled,Brown,1,,0.375,19.95,piece,EMLIMARACC310965
+checkers-with-nero-marquina-crema-marfil-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Black,10,10.0,0.375,14.18,sq ft,CHNEMARTIL260981
+phltrvmol1504,UPDATE,Travertine,"2 1/2"" x 12""",,Matte,Beige,1,,0.75,98.10,piece,PHTRTRATRI922273
+slvtrvmol1504,UPDATE,Travertine,"2 1/2"" x 12""",,Matte,Grey,1,,0.75,98.10,piece,SITRTRATRI786593
+valtrvmol1504,UPDATE,Travertine,"2 1/2"" x 12""",,Matte,Brown,1,,0.75,98.10,piece,VATRTRATRI481313
+thassos-white-greek-marble-mosaic-3-8-stanza-mosaic-w-blue-gray-dots,UPDATE,Marble,"12"" x 12""",,Polished,White,8,8.0,0.375,20.40,sq ft,THWHMARMOS352885
+antico-onyx-travertine-tumbled-mini-versailles-mosaic,UPDATE,Travertine,"12"" x 12""",Versailles,Tumbled,,8,8.0,0.375,11.40,sq ft,ANONTRAMOS640757
+carrara-marble-3d-cube-illusion-diamond-hex-mosaic-bush-hammered,UPDATE,Marble,,Diamond,,White,8,8.0,0.375,22.50,sq ft,CAMAMARMOS979765
+ferrara-honed-chevron-marble-mosaic-tile-in-nero,UPDATE,Marble,"11 3/4"" x 11 3/4""",Chevron,Matte,Black,9,8.96,0.375,42.67,sq ft,FEMAMARTIL734773
+checkers-with-nero-marquina-bianco-dolomite-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Black,10,10.0,0.375,17.55,sq ft,CHNEMARTIL257141
+cremrfbor1403,UPDATE,Marble,"2"" x 12""",,Polished,Beige,1,,0.75,57.96,piece,CRMAMARBOR995489
+coral-sea-islands-black-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 12""",,Polished,Black,8,8.0,0.375,34.40,sq ft,WATERJET29
+thassos-white-greek-marble-mosaic-3-8-lattice-thassos-carrara-white-black-mosaic,UPDATE,Marble,,,Polished,White,8,8.0,0.375,21.90,sq ft,THWHMARMOS805749
+tangier-blue-dot-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"10 1/4"" x 10 1/4""",,Polished,White,6,5.84,0.375,33.97,sq ft,MABLMARMOS312373
+checkerboard-bardiglio-bianco-dolomite-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Beige,10,10.0,0.375,19.91,sq ft,CHBAMARTIL932341
+checkerboard-bardiglio-crema-marfil-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Beige,10,22.5,0.375,19.91,sq ft,CHBAMARTIL096181
+bardiglio-imperial-12x12-leather-tumbled-square-tile,UPDATE,Marble,"12"" x 12""",Square,Tumbled,Grey,5,5.0,0.375,23.32,sq ft,BAIMMARTIL185141
+checkerboard-nero-marquina-bianco-dolomite-marble-tile,UPDATE,Marble,"12"" x 24""",Checkerboard,Polished,Black,1,2.0,0.375,14.99,sq ft,CHNEMARTIL796853
+glorious-white-3-hexagon-brushed-marble-mosaic,UPDATE,Marble,"3"" x 3""",Hexagon,Brushed,White,9,8.75,0.375,23.99,sq ft,GLWHMARMOS283061
+valtrvmol1503,UPDATE,Travertine,"2"" x 12""",,Matte,Brown,1,,0.75,87.20,piece,VATRTRATRI448545
+checkers-with-nero-marquina-crema-marfil-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,Beige,10,22.49,0.375,16.88,sq ft,CHNEMARTIL263285
+micro-herringbone-black-dot-marble-polished-backsplash,UPDATE,Marble,"10 7/8"" x 9 3/4""",Herringbone,Polished,White,8,5.92,0.375,33.51,sq ft,MIBLMARMOS075125
+nermrqtil1201,UPDATE,Marble,"4"" x 4""",Square,Tumbled,Black,63,7.0,0.375,10.89,sq ft,NEMAMARTIL943841
+monet-honed-marble-mosaic-5-tile-in-white-carrara,UPDATE,Marble,"10 1/8"" x 10 1/8""",,Matte,White,4,3.56,0.375,22.99,sq ft,MOMAMARMOS546229
+scbstrvcop300045,UPDATE,Travertine,"12"" x 24""",,Matte,Brown,1,,1.25,44.00,piece,SCTRTRAPOO303649
+green-polished-12x12-onyx-tile,UPDATE,Onyx,"12"" x 12""",Square,Polished,Green,7,7.0,0.375,15.98,sq ft,GRPOONYTIL517045
+checkerboard-bardiglio-carrara-white-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Grey,10,22.5,0.375,19.24,sq ft,CHBAMARTIL522165
+tiramisu-travertine-24-x-24-matte-filled-tile,UPDATE,Travertine,"24"" x 24""",Square,Matte,Brown,1,,0.375,42.32,piece,TITRTRATIL212277
+checkerboard-nero-marquina-carrara-white-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Black,10,10.0,0.375,13.16,sq ft,CHWIMARTIL757941
+scatrvmol1308,UPDATE,Travertine,"1/2"" x 12""",,Matte,Brown,1,,0.75,81.80,piece,SCTRTRATRI918817
+scatrvmol1309,UPDATE,Travertine,"3"" x 12""",,Matte,Brown,1,,0.75,81.80,piece,SCTRTRATRI951585
+checkerboard-bianco-dolomite-crema-marfil-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Beige,10,22.5,0.375,24.64,sq ft,CHBIMARTIL820533
+checkers-with-nero-marquina-bardiglio-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Black,10,10.0,0.375,16.20,sq ft,CHNEMARTIL136117
+checkers-with-nero-marquina-carrara-white-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,Black,10,22.5,0.375,16.20,sq ft,CHNEMARTIL070965
+thassos-triangle-12x14-mosaic-tile,UPDATE,Marble,"12"" x 14""",,,White,13,12.95,0.375,21.66,sq ft,THTRMARMOS050101
+checkers-with-nero-marquina-queen-beige-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Beige,10,10.0,0.375,12.82,sq ft,CHNEMARTIL696629
+oriwhtmos1390,UPDATE,Marble,"3"" x 3""",Arabesque,Polished,White,8,8.0,0.375,21.80,sq ft,ORWHMARMOS845473
+scatrvmol1307,UPDATE,Travertine,"2 1/2"" x 12""",,Matte,Brown,1,,0.75,70.90,piece,SCTRTRATRI886049
+latttrvpav,UPDATE,Travertine,"24"" x 24""",Square,Tumbled,Beige,1,,1.25,41.84,piece,10001282
+verona-carrara-and-verde-alpi-patterned-marble,UPDATE,Marble,,,Matte,White,9,9.0,0.375,20.66,sq ft,VECAMARTIL718389
+scatrvmol1306,UPDATE,Travertine,"2"" x 12""",,Matte,Brown,1,,0.75,68.10,piece,SCTRTRATRI656673
+scatrvmol1310,UPDATE,Travertine,"1"" x 6""",,Matte,Brown,1,,0.75,68.10,piece,SCTRTRATRI115425
+sora-with-carrara-white-and-giallo-reale-marble,UPDATE,Marble,,,Matte,White,8,7.5,0.375,24.83,sq ft,SOWIMARTIL270965
+sora-with-carrara-white-and-rojo-alicante-marble,UPDATE,Marble,,,Matte,White,8,7.5,0.375,24.83,sq ft,SOWIMARTIL765941
+serratone-carrara-and-verde-alpi-patterned-marble,UPDATE,Marble,,,Matte,White,9,9.33,0.375,20.64,sq ft,SECAMARTIL346421
+empress-green-marble-tile,UPDATE,Marble,"12"" x 12""",Square,Matte,Green,5,5.0,0.375,17.25,sq ft,EMGRMARTIL413877
+thassos-white-greek-marble-mosaic-3-8-bamboo-sticks-single-color-thassos-mosaic,UPDATE,Marble,"12"" x 12""",,Polished,White,8,8.0,0.375,20.40,sq ft,THWHMARMOS228597
+thassos-white-greek-marble-mosaic-5-8-x-1-1-4-3-8-mini-brick-mosaic,UPDATE,Marble,"5/8"" x 1 1/4""",Brick,Polished,White,8,8.0,0.375,20.40,sq ft,THWHMARMOS863989
+pietra-grey-marble-pencil-liner-trim-tile,UPDATE,Marble,"1/2"" x 12""",,Matte,Grey,1,,0.75,65.00,piece,PIGRMARTRI624693
+oriwhtbor1401,UPDATE,Marble,"3 7/8"" x 12""",,Polished,White,1,,0.75,160.65,piece,ORWHMARBOR768097
+slvrtrvcop310103,UPDATE,Travertine,"12"" x 24""",,Matte,Grey,1,,1.25,37.40,piece,SITRTRAPOO792865
+arebescato-carrara-1-honed-hexagon-mosaic-tile,UPDATE,Marble,"1"" x 1""",Hexagon,Matte,White,9,8.7,0.375,14.15,sq ft,ARCAMARMOS373045
+monet-4-x-4-honed-marble-decorative-tile-in-nero-marquina,UPDATE,Marble,"4"" x 4""",Square,Matte,Black,46,5.11,0.375,18.19,sq ft,MO4MARTIL986037
+polar-white-crystal-thassos-2-x2-matte-marble-square-mosaic,UPDATE,Marble,"2"" x 2""",Square,Matte,White,7,7.36,0.375,11.34,sq ft,POWHMARMOS301877
+thassos-white-greek-marble-mosaic-3-8-penny-round-mosaic-single-color-thassos,UPDATE,Marble,"1"" x 1""",Penny Round,Polished,White,8,8.0,0.375,18.25,sq ft,THWHMARMOS713845
+chevron-long-carrara-11-x-12-5-mosaic-tile,UPDATE,Marble,"11"" x 12 1/2""",Herringbone,,White,10,10.5,0.375,25.97,sq ft,CHLOMARMOS669685
+antico-onyx-travertine-mosaic-1-x-2-wavy-herringbone,UPDATE,Travertine,"1"" x 2""",Herringbone,,,8,8.0,0.375,11.50,sq ft,ANONTRAMOS199861
+checkerboard-bianco-dolomite-carrara-white-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,White,10,22.5,0.375,23.96,sq ft,CHWIMARTIL244213
+scbstrvcop300046,UPDATE,Travertine,"12"" x 24""",,Matte,Brown,1,,1.25,72.00,piece,SCTRTRAPOO598561
+antico-onyx-travertine-tumbled-round-faced-mosaic-tile-2x2,UPDATE,Travertine,"2"" x 2""",,Tumbled,,8,8.0,0.375,13.20,sq ft,ANONTRAMOS348597
+cappuccino-beige-basketweave-mosaic-polished-tile-with-thassos-white-dots,UPDATE,Marble,"1"" x 2""",Basketweave,Polished,Beige,8,8.0,0.375,2.99,sq ft,CABEMARMOS656501
+phltrvmol1501,UPDATE,Travertine,"1/2"" x 12""",,Matte,Beige,1,,0.75,57.20,piece,PHTRTRATRI627361
+slvtrvmol1502,UPDATE,Travertine,"3/4"" x 12""",,Matte,Grey,1,,0.75,57.20,piece,SITRTRATRI688289
+valtrvmol1502,UPDATE,Travertine,"3/4"" x 12""",,Matte,Brown,1,,0.75,57.20,piece,VATRTRATRI415777
+valtrvmol1501,UPDATE,Travertine,"1/2"" x 12""",,Matte,Brown,1,,0.75,57.20,piece,VATRTRATRI383009
+checkerboard-nero-marquina-crema-marfil-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Beige,10,10.0,0.375,14.18,sq ft,CHNEMARTIL538933
+walnut-travertine-molding-honed-1x12-dome-cane-liner,UPDATE,Travertine,"1"" x 12""",,Matte,Brown,1,,0.75,54.50,piece,WATRTRATRI305717
+carwhtmos1343,UPDATE,Marble,"1"" x 2""",Basketweave,Polished,White,6,6.4,0.375,17.38,sq ft,CAITMARMOS743905
+nero-marquina-triangle-12x14-mosaic-tile,UPDATE,Marble,"12"" x 14""",,,Black,13,12.95,0.375,20.39,sq ft,NEMAMARMOS082869
+oriental-white-asian-statuary-marble-polished-3-8-berlinetta-design-w-black-1,UPDATE,Marble,"12"" x 9 3/8""",,Polished,White,6,6.4,0.375,30.24,sq ft,ORWHMARMOS714785
+hnyonxtil1203,UPDATE,Onyx,"18"" x 18""",Square,Polished,Gold,3,6.75,0.375,12.54,sq ft,HOONONYTIL918113
+calacatta-cressa-3x6-white-subway-tile,UPDATE,Marble,"3"" x 6""",Subway,,White,40,5.0,0.375,14.34,sq ft,CACRMARTIL421493
+walnut-travertine-paver-24x24-1-25-tumbled,UPDATE,Travertine,"24"" x 24""",Square,Tumbled,Brown,1,,1.25,39.60,piece,WATRTRAEXT293921
+checkerboard-bardiglio-bianco-dolomite-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Beige,10,10.0,0.375,19.91,sq ft,CHBAMARTIL866805
+checkerboard-bardiglio-crema-marfil-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,Beige,10,22.5,0.375,19.91,sq ft,CHBAMARTIL161717
+absolute-black-polished-granite-hexagon-mosaic,UPDATE,Granite,"2"" x 2""",Hexagon,Polished,Black,7,7.36,0.375,23.10,sq ft,ABBLGRAMOS008757
+arabescato-venato-white-2x6-marble-tile,UPDATE,Marble,"2"" x 6""",,,White,115,9.6,0.375,18.54,sq ft,ARVEMARTIL673845
+cremrfmos1343,UPDATE,Marble,"12"" x 9 3/8""",,Polished,Beige,6,6.4,0.375,26.22,sq ft,CRMAMARMOS309665
+empdrkmos1338,UPDATE,Marble,"12"" x 9 3/8""",,Polished,Brown,6,6.4,0.375,26.22,sq ft,EMDAMARMOS766945
+nermrqtil1202,UPDATE,Marble,"6"" x 6""",Square,Tumbled,Black,28,7.0,0.375,10.92,sq ft,NEMAMARTIL205985
+tangier-grey-dot-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"10 1/4"" x 10 1/4""",,Polished,White,6,5.84,0.375,33.97,sq ft,MAGRMARMOS982389
+carwhtmos1375,UPDATE,Marble,,Penny Round,Polished,White,8,8.0,0.375,16.35,sq ft,CAITMARMOS993185
+checkerboard-bardiglio-carrara-white-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,Grey,10,22.5,0.375,19.24,sq ft,CHBAMARTIL859893
+checkerboard-bardiglio-crema-marfil-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Beige,10,10.0,0.375,16.54,sq ft,CHBAMARTIL227253
+solenne-honed-limestone-mosaic,UPDATE,Limestone,"11 5/8"" x 11 5/8""",,Honed,,9,8.77,0.375,263.29,sq ft,SOHOLIMMOS138165
+extra-light-travertine-24-x-24-matte-filled-tile,UPDATE,Travertine,"24"" x 24""",Square,Matte,Beige,1,,0.375,50.32,piece,EXTRTRATIL113973
+antico-onyx-travertine-tumbled-round-faced-mosaic-tile-4x4,UPDATE,Travertine,"4"" x 4""",,Tumbled,,7,7.0,0.375,12.33,sq ft,ANONTRAMOS823861
+scatrvmol1301,UPDATE,Travertine,"3/8"" x 12""",,Matte,Brown,1,,0.75,46.30,piece,SCTRTRATRI361761
+scatrvmol1302,UPDATE,Travertine,"1/2"" x 12""",,Matte,Brown,1,,0.75,46.30,piece,SCTRTRATRI394529
+scatrvmol1303,UPDATE,Travertine,"3/4"" x 12""",,Matte,Brown,1,,0.75,46.30,piece,SCTRTRATRI427297
+carrara-white-marble-hexagon-2-tumbled,UPDATE,Marble,"2"" x 2""",Hexagon,Tumbled,White,288,8.0,0.375,14.49,sq ft,CAWHMARMOS859573
+checkers-with-nero-marquina-carrara-white-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Black,10,10.0,0.375,13.16,sq ft,CHNEMARTIL414453
+arabescato-carrara-2x4-honed-and-beveled-subway-tile,UPDATE,Marble,"2"" x 4""",Brick,Matte,White,180,10.0,0.375,17.99,sq ft,ARCAMARTIL810165
+nctrvcop300044,UPDATE,Travertine,"12"" x 24""",,Matte,Brown,1,,1.25,64.00,piece,NOTRTRAPOO154465
+nermrqtil1203,UPDATE,Marble,"12"" x 12""",Square,Polished,Black,5,5.0,0.375,10.90,sq ft,NEMAMARTIL549237
+micro-herringbone-grey-dot-marble-polished-backsplash,UPDATE,Marble,"10 7/8"" x 9 3/4""",Herringbone,Polished,Grey,6,5.92,0.375,33.51,sq ft,MIGRMARMOS671157
+micro-herringbone-blue-dot-marble-polished-backsplash,UPDATE,Marble,"10 7/8"" x 9 3/4""",Herringbone,Polished,White,6,5.92,0.375,33.51,sq ft,MIBLMARMOS274485
+checkerboard-bianco-dolomite-crema-marfil-18x18-honed-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Matte,Beige,10,22.5,0.375,24.64,sq ft,CHBIMARTIL477045
+spanish-grey-marble-polished-hexagon-mosaic,UPDATE,Marble,"1"" x 1""",Hexagon,Polished,Grey,7,7.2,0.375,22.10,sq ft,SPGRMARMOS910517
+oriwhtbor1405,UPDATE,Marble,"3 7/8"" x 12""",,Polished,White,1,,0.75,160.65,piece,ORWHMARBOR470561
+checkers-with-nero-marquina-queen-beige-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Beige,10,10.0,0.375,12.82,sq ft,CHNEMARTIL236725
+carwhtmos1415,UPDATE,Marble,"12"" x 12""",Versailles,Polished,White,8,8.0,0.375,9.99,sq ft,CAITMARMOS332321
+emperador-brown-12x12-modern-tumbled-square-tile,UPDATE,Limestone,"12"" x 12""",Square,Tumbled,Brown,5,5.0,0.375,23.32,sq ft,EMBRLIMTIL975029
+aqua-petal-carrara-marble-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Beige,1,,0.375,18.95,piece,AQPELIMTIL725685
+catacomb-teal-carrara-marble-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,White,1,,0.375,18.95,piece,CATELIMTIL317813
+leaves-carrara-blue-marble-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Blue,1,,0.375,18.95,piece,LECALIMTIL001269
+leaves-carrara-taupe-marble-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Blue,1,,0.375,18.95,piece,LECALIMTIL355317
+leaves-carrara-gray-marble-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Grey,1,,0.375,18.95,piece,LECALIMTIL595381
+plaid-gray-carrara-marble-6x6-laser-engraved-tile,UPDATE,Marble,"6"" x 6""",Square,,Grey,1,,0.375,18.95,piece,PLGRLIMTIL087605
+rays-gray-carrara-marble-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Grey,1,,0.375,18.95,piece,RAGRLIMTIL927221
+serene-crest-carrara-blue-marble-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Blue,1,,0.375,18.95,piece,SECRLIMTIL650293
+serene-crest-carrara-gray-marble-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Grey,1,,0.375,18.95,piece,SECRLIMTIL407413
+serene-crest-carrara-marble-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Grey,1,,0.375,18.95,piece,SECRLIMTIL510325
+checkerboard-bardiglio-carrara-white-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Grey,10,10.0,0.375,15.86,sq ft,CHBAMARTIL325557
+verde-tunas-granite-tile-12-x-12-polished,UPDATE,Granite,"12"" x 12""",Square,Polished,Green,5,5.0,0.375,11.99,sq ft,VETUGRATIL547637
+belgium-blue-chevron-limestone-waterjet-mosaic,UPDATE,Marble,"13"" x 10""",Chevron,,Black,5,5.46,0.375,47.06,sq ft,BEBLMARMOS516277
+arebescato-carrara-2-honed-octagon-mosaic-tile,UPDATE,Marble,"2"" x 2""",Octagon,Matte,White,10,10.0,0.375,16.86,sq ft,ARCAMARMOS212021
+haisa-dark-marble-2x12-chair-rail-bullnose-trim-molding-polished,UPDATE,Marble,"2"" x 12""",,Polished,White,1,,0.75,85.00,piece,HADAMARMOL081013
+haisa-dark-marble-2x12-chair-rail-trim-molding-polished,UPDATE,Marble,"2"" x 12""",,Polished,White,1,,0.75,85.00,piece,HADAMARMOL734069
+haisa-dark-marble-4x12-baseboard-crown-molding-polished,UPDATE,Marble,"4"" x 12""",,Polished,Beige,1,,0.75,85.00,piece,HADAMARMOL197429
+haisa-dark-marble-4x12-baseboard-trim-molding-polished,UPDATE,Marble,"4"" x 12""",,Polished,White,1,,0.75,85.00,piece,HADAMARMOL162357
+haisa-dark-marble-5x12-baseboard-trim-molding-polished,UPDATE,Marble,"5"" x 12""",,Polished,White,1,,0.75,85.00,piece,HADAMARMOL505845
+haisa-light-marble-5x12-baseboard-trim-molding-polished,UPDATE,Marble,"5"" x 12""",,Polished,White,1,,0.75,85.00,piece,HALIMARMOL682933
+lymra-capri-limestone-tile-18-x-36-1-2-brushed-tile,UPDATE,Limestone,"18"" x 36""",,Brushed,Beige,1,,0.375,52.65,piece,LYMRATIL1836B
+manhattan-basketweave-grey-black-dot-marble-polished-mosaic,UPDATE,Marble,"11 3/4"" x 11 3/4""",Basketweave,Polished,Grey,8,7.68,0.375,26.58,sq ft,MEBLMARMOS666869
+manhattan-basketweave-grey-white-dot-polished-12x12-mosaic,UPDATE,Marble,"11 3/4"" x 11 3/4""",Basketweave,Polished,Grey,8,7.68,0.375,26.58,sq ft,MEBLMARMOS206645
+manhattan-weave-black-white-dot-marble-polished-wall-mosaic,UPDATE,Marble,"11 3/4"" x 11 3/4""",Basketweave,Polished,White,8,7.68,0.375,26.58,sq ft,MEBLMARMOS36341
+manhattan-weave-blue-white-dot-marble-polished-wall-mosaic,UPDATE,Marble,"11 3/4"" x 11 3/4""",Basketweave,Polished,White,8,7.68,0.375,26.58,sq ft,MEBLMARMOS100277
+checkerboard-bardiglio-queen-beige-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Beige,10,10.0,0.375,15.19,sq ft,CHBAMARTIL997877
+checkerboard-with-thassos-white-and-nero-marquina-marble,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,White,10,10.0,0.375,12.27,sq ft,CHWIMARTIL757557
+lymra-capri-limestone-tile-36-x-36-1-2-honed-tile,UPDATE,Limestone,"36"" x 36""",Square,Matte,Beige,1,,0.375,152.91,piece,LYMRATIL3636
+oyster-travertine-tile-16-x-24-3-8-unfilled-brushed-chiseled-tile,UPDATE,Travertine,"16"" x 24""",,Brushed,Beige,1,,0.375,22.34,piece,OYTRTRATIL060277
+herringbone-sunrise-11-x-12-5-mosaic-tile,UPDATE,Marble,"11"" x 12 1/2""",Herringbone,,White,10,10.5,0.375,34.62,sq ft,HESUMARMOS861045
+daisy-wild-carrara-12-50-x-12-75-mosaic-tile-1,UPDATE,Marble,"12 1/2"" x 12 3/4""",,,White,12,12.17,0.375,38.17,sq ft,DAWIMARMOS596405
+athens-grey-polished-chair-rail-marble-molding,UPDATE,Marble,"2"" x 12""",,Polished,Grey,1,,0.75,47.50,piece,ATGRMARMOL541813
+glorious-blue-2-x-12-matte-chair-rail-trim,UPDATE,Marble,"2"" x 12""",,Matte,Blue,1,,0.75,37.89,piece,GLBLMARTRI013045
+thassos-white-greek-marble-mosaic-3-8-penny-round-mosaic-carrara-thassos-blue-gray,UPDATE,Marble,"12"" x 12""",Penny Round,Polished,White,8,8.0,0.375,16.99,sq ft,THWHMARMOS728501
+nctrvpav130009,UPDATE,Travertine,"24"" x 24""",Square,Tumbled,Brown,1,,1.25,38.72,piece,NOTRTRAEXT940897
+carwhtmos1407,UPDATE,Marble,,,Polished,White,8,8.0,0.375,14.27,sq ft,CAITMARMOS927905
+afyon-white-arabesque-polished-mosaic-tile,UPDATE,Marble,"12"" x 12""",Arabesque,Polished,White,8,8.0,0.375,18.59,sq ft,AFWHMARMOS723425
+carwhtmos1383,UPDATE,Marble,"12"" x 12""",,Polished,White,7,7.2,0.375,14.17,sq ft,CAITMARMOS417697
+city-brick-w-black-dot-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"11 3/4"" x 11 3/4""",Brick,Polished,Black,8,7.68,0.375,25.83,sq ft,UREDMARMOS654773
+verona-with-carrara-and-giallo-reale-patterned-marble,UPDATE,Marble,,,Matte,White,9,9.0,0.375,20.66,sq ft,VEWIMARTIL288501
+verona-with-carrara-and-rojo-alicante-patterned-marble,UPDATE,Marble,,,Matte,White,9,9.0,0.375,20.66,sq ft,VEWIMARTIL364085
+extra-light-travertine-12-x-24-tumbled-pavers-2-inch,UPDATE,Travertine,"12"" x 24""",,Tumbled,Beige,1,,1.25,25.78,piece,EXTRTRAEXT096053
+chevron-shadow-blue-11-75-x-12-mosaic-tile,UPDATE,Marble,"11 3/4"" x 12""",Chevron,,Blue,11,10.77,0.375,33.75,sq ft,CHSHMARMOS310709
+barimptil1201,UPDATE,Marble,"12"" x 12""",Square,Polished,Grey,5,5.0,0.375,16.50,sq ft,BAIMMARTIL730593
+serratone-with-carrara-and-giallo-reale-patterned-marble,UPDATE,Marble,,,Matte,White,9,9.33,0.375,20.64,sq ft,SEWIMARTIL455861
+serratone-with-carrara-and-rojo-alicante-patterned-marble,UPDATE,Marble,,,Matte,White,9,9.33,0.375,20.64,sq ft,SEWIMARTIL361013
+pietra-grey-12x24-matte-marble-tile,UPDATE,Marble,"12"" x 24""",,Matte,Grey,1,,0.375,30.00,piece,PIGRMARTIL936053
+oriwhtbor1403,UPDATE,Marble,,,Polished,White,1,,0.75,97.20,piece,ORWHMARBOR219937
+glorious-white-4x4-leather-tumbled-square-tile,UPDATE,Marble,"4"" x 4""",Square,Tumbled,White,45,5.0,0.375,25.62,sq ft,GLWHMARTIL129845
+oriental-white-4x4-leather-tumbled-square-tile,UPDATE,Marble,"4"" x 4""",Square,Tumbled,White,45,5.0,0.375,25.62,sq ft,ORWHMARTIL753589
+porto-beige-4x4-leather-tumbled-square-tile,UPDATE,Limestone,"4"" x 4""",Square,Tumbled,Beige,45,5.0,0.375,25.62,sq ft,POBELIMTIL607733
+checkers-with-emperador-dark-polar-crystal-white-24x24-polished-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Polished,Brown,10,40.01,0.375,18.56,sq ft,CHEMMARTIL427637
+empdrkmos1332,UPDATE,Marble,"1"" x 1""",Penny Round,Polished,Brown,8,8.0,0.375,18.80,sq ft,EMDAMARMOS079969
+arabescato-venato-white-4x12-marble-tile,UPDATE,Marble,"4"" x 12""",,,White,21,7.0,0.375,15.30,sq ft,ARVEMARTIL856501
+tracery-oriental-white-c-spgr-marble-polished-backsplash,UPDATE,Marble,"11 1/4"" x 11 1/4""",,Polished,White,8,7.04,0.375,25.36,sq ft,SIGRMARMOS921269
+checkers-with-emperador-dark-tundra-gray-24x24-polished-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Polished,Brown,10,39.99,0.375,18.23,sq ft,CHEMMARTIL331637
+nero-metal-arrow-10x12-mosaic-tile,UPDATE,Marble,"10"" x 12""",,,Black,9,9.33,0.375,24.76,sq ft,NEMAMARMOS984565
+light-beige-botticino-marble-hexagon-combination-mosaic-tile,UPDATE,Marble,"3"" x 3""",Hexagon,,Beige,9,9.36,0.375,15.66,sq ft,LIBEMARMOS787617
+moonwalk-w-black-dot-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"11 3/4"" x 11 3/4""",,Polished,White,8,7.68,0.375,24.92,sq ft,SEBLMARMOS470325
+elemental-hexagon-blue-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 12""",Hexagon,Polished,Blue,8,8.0,0.375,20.00,sq ft,PRHEMARMOS632629
+carrara-white-4x4-inch-tumbled-marble-tile,UPDATE,Marble,"4"" x 4""",Square,Tumbled,White,63,7.0,0.375,13.16,sq ft,CAWHMARTIL885109
+madria-matte-limestone-mosaic,UPDATE,Limestone,"11 5/8"" x 11 5/8""",,Matte,,8,7.52,0.375,271.74,sq ft,MAMALIMMOS967413
+checkerboard-bardiglio-crema-marfil-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Beige,10,10.0,0.375,16.54,sq ft,CHBAMARTIL260021
+sfax-matte-limestone-mosaic,UPDATE,Limestone,"11 5/8"" x 11 5/8""",,Matte,,8,8.13,0.375,270.74,sq ft,SFMALIMMOS883765
+glorious-blue-3-x-12-brushed-marble-tile,UPDATE,Marble,"3"" x 12""",,Brushed,Blue,20,4.92,0.375,22.89,sq ft,GLBLMARTIL742645
+carrara-italian-deep-beveled-3x6-marble-subway-tile,UPDATE,Marble,"3"" x 6""",Brick,Polished,White,56,7.0,0.375,13.12,sq ft,CAITMARTIL902901
+checkerboard-bardiglio-imperiale-bianco-dolomite-marble-tile,UPDATE,Marble,"12"" x 24""",Checkerboard,Polished,White,1,2.0,0.375,17.99,sq ft,CHBAMARTIL956085
+zeuren-matte-limestone-mosaic,UPDATE,Limestone,"11 5/8"" x 11 5/8""",,Matte,,9,9.34,0.375,251.96,sq ft,ZEMALIMMOS482805
+ferrara-1-x-1-honed-marble-mosaic-tile-with-brass-in-bianco,UPDATE,Marble,"1"" x 1""",Square,Matte,White,10,9.56,0.375,47.99,sq ft,FE1MARMOS452213
+dougga-honed-limestone-mosaic-x1-4,UPDATE,Limestone,"11 5/8"" x 11 5/8""",,Matte,,10,9.8,0.375,224.91,sq ft,DOHOLIMMOS682869
+soltierra-matte-medley-limestone-mosaic,UPDATE,Limestone,"10"" x 10""",Square,Matte,,7,6.95,0.375,186.89,sq ft,SOMALIMMOS966517
+herringbone-city-grey-11-25-x-11-25-mosaic-tile,UPDATE,Marble,"11 1/4"" x 11 1/4""",Herringbone,,Grey,10,9.67,0.375,31.33,sq ft,HECIMARMOS394037
+hexagon-italian-blue-10-25-x-11-75-mosaic-tile-1,UPDATE,Marble,"10 1/4"" x 11 3/4""",Hexagon,,Blue,9,9.2,0.375,38.42,sq ft,HEAGMARMOS771445
+carwhtmos1365,UPDATE,Marble,"2"" x 4""",Octagon,Polished,White,8,8.0,0.375,12.81,sq ft,CAITMARMOS661537
+carwhtmos1369,UPDATE,Marble,"12"" x 12""",,Polished,White,8,8.0,0.375,12.81,sq ft,CAITMARMOS877089
+checkerboard-bianco-dolomite-carrara-white-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,White,10,10.0,0.375,17.21,sq ft,CHBIMARTIL375285
+checkers-with-emperador-dark-emperador-light-24x24-polished-tile,UPDATE,Marble,"24"" x 24""",Checkerboard,Polished,Brown,10,40.01,0.375,17.21,sq ft,CHEMMARTIL278453
+checkers-with-emperador-dark-polar-crystal-white-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Brown,10,22.5,0.375,17.21,sq ft,CHEMMARTIL246837
+micro-basketweave-black-dot-marble-polished-mosaic,UPDATE,Marble,"11 3/4"" x 11 3/4""",Basketweave,Polished,Grey,8,7.68,0.375,24.17,sq ft,MIBLMARMOS572405
+micro-basketweave-grey-dot-marble-polished-mosaic,UPDATE,Marble,"11 3/4"" x 11 3/4""",Basketweave,Polished,Grey,8,7.68,0.375,24.17,sq ft,MIGRMARMOS698165
+slvrtrvcop310102,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Grey,1,,1.25,24.00,piece,SITRTRAPOO530721
+antico-onyx-travertine-split-faced-ledger-6x24,UPDATE,Travertine,"6"" x 24""",,Split Face,,1,,0.6,11.75,piece,ANONTRALED052149
+herringbone-green-11-x-12-5-mosaic-tile,UPDATE,Marble,"11"" x 12 1/2""",Herringbone,,Green,10,10.5,0.375,30.78,sq ft,HEGRMARMOS172917
+checkerboard-bardiglio-carrara-white-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Grey,10,10.0,0.375,15.86,sq ft,CHBAMARTIL456629
+black-basalt-12-matte-hexagon-tile-copy,UPDATE,Basalt,"12"" x 12""",Hexagon,Matte,Black,1,,0.375,37.59,piece,BLBABASTIL723253
+fishing-net-white-black-dot-marble-polished-wall-mosaic,UPDATE,Marble,"12"" x 13""",Diamond,Polished,White,9,8.64,0.375,23.92,sq ft,DINEMARMOS444533
+fishing-net-white-blue-dot-marble-polished-wall-mosaic-1,UPDATE,Marble,"12"" x 13""",Diamond,Polished,White,9,8.64,0.375,23.92,sq ft,DINEMARMOS109941
+herringbone-blue-11-x-12-5-mosaic-tile,UPDATE,Marble,"11"" x 12 1/2""",Herringbone,,Blue,10,10.5,0.375,30.78,sq ft,HEBLMARMOS133365
+carwhtmos1361,UPDATE,Marble,"12"" x 12""",Pinwheel,Polished,White,8,8.0,0.375,12.54,sq ft,CAITMARMOS739745
+carwhtmos1359,UPDATE,Marble,"2"" x 2""",Octagon,Polished,White,8,8.0,0.375,12.54,sq ft,CAITMARMOS220065
+ferrara-3-x-6-honed-marble-decorative-tile-with-brass-in-bianco,UPDATE,Marble,"3"" x 6""",,Matte,White,40,4.96,0.375,45.99,sq ft,FE3MARTIL928053
+ferrara-1-x-1-honed-marble-mosaic-tile-with-brass-in-argento,UPDATE,Marble,"1"" x 1""",Square,Matte,Grey,10,9.56,0.375,45.99,sq ft,FE1MARMOS658037
+carrara-with-nero-marquina,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Black,10,10.0,0.375,10.90,sq ft,CHWIMARTIL020405
+queen-beige-polished-arabesque-lantern-mosaic-tile,UPDATE,Marble,"3"" x 3""",Arabesque,Polished,Beige,8,8.0,0.375,18.00,sq ft,QUBEMARMOS856821
+ferrara-3-x-6-honed-marble-decorative-tile-with-brass-in-argento,UPDATE,Marble,"3"" x 6""",,Matte,Grey,40,4.96,0.375,43.99,sq ft,FE3MARTIL602037
+ferrara-1-x-1-honed-marble-mosaic-tile-with-brass-in-nero,UPDATE,Marble,"1"" x 1""",Square,Matte,Black,10,9.56,0.375,43.99,sq ft,FE1MARMOS487285
+slvtrvmol1503,UPDATE,Travertine,"2"" x 12""",,Matte,Grey,1,,0.75,87.20,piece,SITRTRATRI721057
+athen-gold-regency-polished-mosaic,UPDATE,Marble,"10"" x 10""",,Polished,White,7,6.9,0.375,67.66,sq ft,ATGOMARMOS465077
+checkers-marble-mosaic-2-x-2-with-thassos-white,UPDATE,Marble,"2"" x 2""",Square,,White,8,8.0,0.375,16.20,sq ft,CHMAMARMOS563637
+thassos-nero-marquina-dot-11x12-mosaic-tile,UPDATE,Marble,"11"" x 12""",Hexagon,,White,11,10.61,0.375,15.55,sq ft,THNEMARMOS181173
+napolina-matte-filled-24x24-travertine-tile,UPDATE,Travertine,"24"" x 24""",Square,Matte,Beige,1,,0.375,52.00,piece,NAMATRATIL015861
+ivory-travertine-tumbled-tile-24x24-1-2,UPDATE,Travertine,"24"" x 24""",Square,Tumbled,Beige,1,,0.375,39.80,piece,IVRTRATIL713825
+ivrtrvpav130015,UPDATE,Travertine,"24"" x 24""",,Tumbled,Beige,1,,1.25,39.80,piece,IVTRTRAEXT713825
+hexagon-crystal-ocean-11-75-x-12-mosaic-tile,UPDATE,Marble,"11 3/4"" x 12""",Hexagon,,Blue,9,9.2,0.375,35.12,sq ft,HEAGMARMOS020085
+checkerboard-bardiglio-queen-beige-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Beige,10,10.0,0.375,15.19,sq ft,CHBAMARTIL030645
+glorious-white-12x12-leather-tumbled-square-tile,UPDATE,Marble,"12"" x 12""",Square,Tumbled,White,5,5.0,0.375,23.32,sq ft,GLWHMARTIL441077
+plaid-beige-carrara-marble-6-x6-laser-engraved-tile,UPDATE,Marble,"6"" x 6""",Square,,Beige,1,,0.375,14.95,piece,PLBEMARTIL306101
+glorious-white-brushed-3-x-12-in-white,UPDATE,Marble,"3"" x 12""",,Brushed,White,28,7.0,0.375,20.99,sq ft,GLWHMARTIL989301
+scatrvtil1214,UPDATE,Travertine,"18"" x 18""",Square,Brushed,Brown,1,,0.375,15.95,piece,SCTRTRATIL914337
+georama-grigio-polished-marble-tile,UPDATE,Marble,"12"" x 12""",Hexagon,Polished,White,10,9.9,0.375,25.73,sq ft,GEGRMARMOS305141
+glorious-white-4x12-leather-tumbled-rectangle-tile,UPDATE,Marble,"4"" x 12""",,Tumbled,White,15,5.0,0.375,27.46,sq ft,GLWHMARTIL808245
+oriental-white-4x12-leather-tumbled-rectangle-tile,UPDATE,Marble,"4"" x 12""",,Tumbled,White,15,5.0,0.375,27.46,sq ft,ORWHMARTIL343029
+porto-beige-4x12-leather-tumbled-rectangle-tile,UPDATE,Limestone,"4"" x 12""",,Tumbled,Beige,15,5.0,0.375,27.46,sq ft,POBELIMTIL151733
+nova-grey-matte-24x24-limestone-tile,UPDATE,Limestone,"24"" x 24""",Square,Matte,Grey,1,,0.375,47.80,piece,NOGRLIMTIL022261
+atlantic-grey-marble-12-x24-matte-floor-wall-tile,UPDATE,Marble,"12"" x 24""",,Matte,Grey,1,,0.375,25.98,piece,ATGRMARTIL698293
+absolute-black-granite-6x36-polished-threshold-trim-tile,UPDATE,Granite,"6"" x 36""",,Polished,White,1,,0.75,41.40,piece,ABBLMARTRI859189
+checkers-with-emperador-dark-tundra-gray-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Brown,10,22.51,0.375,15.52,sq ft,CHEMMARTIL461557
+american-chestnut-travertine-12-x-24-bullnose-coping-2-inch,UPDATE,Travertine,"12"" x 24""",,,Brown,1,,0.75,25.78,piece,AMCHTRAPOO047285
+checkerboard-bianco-dolomite-crema-marfil-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Beige,10,10.0,0.375,17.89,sq ft,CHBIMARTIL886069
+bianco-gridwork-polished-tile,UPDATE,Marble,"12"" x 12""",,Polished,White,10,10.0,0.375,55.30,sq ft,BIGRMARTIL202933
+botticino-beige-marble-brushed-and-straight-edge-versailles-pattern-tileclearance,UPDATE,Marble,,Versailles,Brushed,Beige,8,8.0,0.375,16.14,sq ft,BOBEMARTIL205877
+stacked-mosaic-with-bianco-carrara,UPDATE,Marble,"1"" x 6""",,,White,192,8.0,0.375,13.80,sq ft,STMOMARMOS812277
+checkers-with-emperador-dark-emperador-light-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Brown,10,22.5,0.375,15.19,sq ft,CHEMMARTIL327029
+monet-honed-marble-mosaic-1-tile-in-white-carrara,UPDATE,Marble,"11 1/4"" x 11 1/4""",Square,Matte,White,4,4.39,0.375,20.59,sq ft,MOMAMARMOS568629
+monet-honed-marble-mosaic-3-tile-in-white-carrara,UPDATE,Marble,"11 3/4"" x 12""",,Matte,White,5,4.9,0.375,20.59,sq ft,MOMAMARMOS279477
+monet-honed-marble-mosaic-9-tile-in-white-carrara,UPDATE,Marble,"9 5/8"" x 9 3/4""",,Matte,White,3,3.26,0.375,20.59,sq ft,MOMAMARMOS647989
+monet-honed-marble-mosaic-2-tile-in-white-carrara,UPDATE,Marble,"11 3/4"" x 11 3/4""",Square,Matte,White,5,4.79,0.375,20.49,sq ft,MOMAMARMOS368885
+azula-floret-pattern-mosaic-tile,UPDATE,Marble,"12"" x 12""",,,White,10,10.0,0.375,41.95,sq ft,AZFLMARMOS066613
+checkerboard-emperador-dark-polar-crystal-white-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Brown,10,10.0,0.375,14.85,sq ft,CHEMMARTIL076085
+checkers-with-emperador-dark-cappuccino-18x18-polished-tile,UPDATE,Marble,"18"" x 18""",Checkerboard,Polished,Brown,10,22.5,0.375,14.85,sq ft,CHEMMARTIL280757
+carrara-italian-marble-penny-round-mosaic-copy,UPDATE,Marble,"5/8"" x 1 1/4""",Penny Round,Polished,White,8,7.76,0.375,11.33,sq ft,CAITMARMOS610485
+monet-honed-marble-mosaic-10-tile-in-oriental-white,UPDATE,Marble,"11 1/2"" x 11 3/4""",Penny Round,Matte,White,5,4.69,0.375,36.49,sq ft,MOMAMARMOS336117
+chevron-ravenna-loft-11-75-x-12-25-mosaic-tile,UPDATE,Marble,"11 3/4"" x 12 1/4""",Chevron,,White,11,10.77,0.375,28.13,sq ft,CHRAMARMOS920629
+octave-patio-grey-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"13 5/8"" x 13 5/8""",,Polished,Grey,10,10.32,0.375,21.71,sq ft,SUGRMARMOS645045
+alice-pearl-snow-white-11-5-x-12-waterjet-mosaic,UPDATE,Marble,"11 1/2"" x 12""",Arabesque,,White,9,8.62,0.375,111.18,sq ft,ALPEMARMOS713845
+absolute-black-polished-granite-square-mosaic,UPDATE,Granite,"5/8"" x 5/8""",Square,Polished,Black,8,8.0,0.375,21.59,sq ft,ABBLGRAMOS754677
+alice-precious-blue-11-5-x-12-waterjet-mosaic,UPDATE,Marble,"11 1/2"" x 12""",Arabesque,,White,9,8.62,0.375,111.18,sq ft,ALPRMARMOS401653
+antico-onyx-travertine-mosaic-1-x-2-random-split-faced-brick-mosaic,UPDATE,Travertine,"1"" x 2""",Brick,,,8,8.0,0.375,11.40,sq ft,ANONTRAMOS936501
+medallion-gr-marble-12x12-mosaic-tile,UPDATE,Marble,"12"" x 12""",,,White,1,1.06,0.375,140.09,sq ft,MEGRMARMOS705461
+modni-arlo-honed-marble-mosaic-tile-in-warm-blend,UPDATE,Marble,"10 1/8"" x 15 7/8""",,Matte,,6,5.6,0.375,34.99,sq ft,MOARMARMOS860405
+modni-beckett-honed-marble-mosaic-tile-in-warm-blend,UPDATE,Marble,"11 3/4"" x 12 7/8""",,Matte,,11,10.51,0.375,34.99,sq ft,MOBEMARMOS383541
+modni-emery-honed-marble-mosaic-tile-in-warm-blend,UPDATE,Marble,"13 5/8"" x 13 5/8""",,Matte,,13,12.89,0.375,34.99,sq ft,MOEMMARMOS239797
+modni-jett-honed-marble-mosaic-tile-in-warm-blend,UPDATE,Marble,"12"" x 12""",,Matte,,10,10.1,0.375,34.99,sq ft,MOJEMARMOS773301
+modni-lennox-honed-marble-mosaic-tile-in-warm-blend,UPDATE,Marble,"16"" x 16""",,Matte,,9,8.85,0.375,34.99,sq ft,MOLEMARMOS798005
+modni-monroe-honed-marble-mosaic-tile-in-warm-blend,UPDATE,Marble,"12"" x 12""",Square,Matte,,10,10.1,0.375,34.99,sq ft,MOMOMARMOS534709
+tndgrytil1220,UPDATE,Marble,,Versailles,Brushed,Grey,16,16.0,0.375,9.00,sq ft,TUGRMARVER575009
+nero-marquina-dots-12x12-mosaic-tile,UPDATE,Marble,"12"" x 12""",,,Black,11,10.76,0.375,13.80,sq ft,NEMAMARMOS673845
+carrara-white-tumbled-jade-pebble-mosaic-12-x-12,UPDATE,Marble,"12"" x 12""",,Tumbled,White,5,5.0,0.375,11.02,sq ft,CAWHMARMOS029685
+lymra-capri-limestone-tile-18-x-36-1-2-honed-tile,UPDATE,Limestone,"18"" x 36""",,Matte,Beige,1,,0.375,52.65,piece,LYMRATIL1836H
+moonwalk-w-grey-dot-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"11 3/4"" x 11 3/4""",,Polished,Grey,8,7.68,0.375,24.92,sq ft,SEGRMARMOS544693
+moonwalk-w-blue-dot-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"11 3/4"" x 11 3/4""",,Polished,White,8,7.68,0.375,24.92,sq ft,SEBLMARMOS297205
+oyster-travertine-molding-2-x-12-honed-og-1-single-step-chair-rail-trim,UPDATE,Travertine,"2"" x 12""",,Matte,Beige,1,,0.75,99.00,piece,OYTRTRATRI756469
+alice-precious-bianco-11-5-x-12-waterjet-mosaic,UPDATE,Marble,"11 1/2"" x 12""",Arabesque,,White,9,8.62,0.375,111.18,sq ft,ALPRMARMOS816437
+checkerboard-bianco-dolomite-carrara-white-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,White,10,10.0,0.375,17.21,sq ft,CHBIMARTIL702965
+octave-patio-black-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"13 5/8"" x 13 5/8""",,Polished,Grey,10,10.32,0.375,20.78,sq ft,SUBLMARMOS093749
+octave-patio-blue-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"13 5/8"" x 13 5/8""",,Polished,Grey,10,10.32,0.375,20.78,sq ft,SUBLMARMOS090293
+checkerboard-with-carrara-and-verdi-alpi-marble,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,White,10,10.0,0.375,12.82,sq ft,CHWIMARTIL934709
+octave-canvas-grey-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 12""",,Polished,Grey,8,7.68,0.375,20.72,sq ft,HIGRMARMOS459957
+octave-canvas-white-marble-polished-floor-and-wall-mosaic,UPDATE,Marble,"12"" x 12""",,Polished,White,8,7.68,0.375,20.72,sq ft,HIWHMARMOS473461
+checkerboard-carrara-white-bardiglio-imperiale-marble-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,White,2,2.0,0.375,13.90,sq ft,CHCAMARTIL836085
+chevron-blue-8-x-12-mosaic-tile,UPDATE,Marble,"8"" x 12""",Chevron,,Blue,7,7.34,0.375,35.77,sq ft,CHBLMARMOS562805
+checkerboard-with-carrara-and-rojo-alicante-marble,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,White,10,10.0,0.375,16.95,sq ft,CHWIMARTIL985589
+carwhtmos1347,UPDATE,Marble,"12"" x 12""",,Polished,White,8,8.0,0.375,19.62,sq ft,CAITMARMOS108641
+athena-gold-chevron-pattern-honed-mosaic-tile,UPDATE,Marble,"12"" x 12""",Chevron,Matte,White,10,10.0,0.375,29.56,sq ft,ATGOMARMOS334389
+micro-basketweave-blue-dot-marble-polished-mosaic,UPDATE,Marble,"11 3/4"" x 11 3/4""",Basketweave,Polished,Grey,8,7.68,0.375,24.17,sq ft,MIBLMARMOS154613
+checkers-with-emperador-dark-tundra-gray-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Brown,10,10.0,0.375,13.16,sq ft,CHEMMARTIL445749
+mnktil1207,UPDATE,Marble,"18"" x 18""",Square,Polished,White,1,,0.375,28.82,piece,MAMAMARTIL043105
+nero-marquina-metal-geo-12x14-mosaic-tile,UPDATE,Marble,"12"" x 14""",,,Black,13,13.37,0.375,17.28,sq ft,NEMAMARMOS919029
+polar-white-marble-tile-12-x-12-1-2-polished-tile,UPDATE,Marble,"4"" x 12""",,Polished,White,21,7.0,0.375,10.83,sq ft,POWHMARTIL409141
+aphrodite-sky-12-x-12-mosaic-tile,UPDATE,Marble,"12"" x 12""",,,Blue,11,11.0,0.375,45.90,sq ft,APSKMARMOS131061
+glorious-blue-12-x-24-matte-marble-tile,UPDATE,Marble,"12"" x 24""",,Matte,Blue,5,10.0,0.375,23.29,sq ft,GLBLMARTIL691765
+athena-gold-lola-polished-marble-mosaic,UPDATE,Marble,"10"" x 10""",,Polished,White,7,7.3,0.375,38.38,sq ft,ATGOMARMOS320821
+burlington-4-square-black-dot-marble-polished-wall-mosaic,UPDATE,Marble,"12"" x 12""",Square,Matte,Black,8,8.0,0.375,23.20,sq ft,TEMAMARMOS087221
+checkers-with-emperador-dark-emperador-light-12x12-polished-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Polished,Brown,10,10.0,0.375,12.82,sq ft,CHEMMARTIL262645
+qnbgtil1212,UPDATE,Marble,,Versailles,Brushed,Beige,16,16.0,0.375,8.45,sq ft,QUBEMARVER610401
+daisy-bloom-ocean-11-75-x-13-25-mosaic-tile,UPDATE,Marble,"11 3/4"" x 13 1/4""",,,Blue,12,11.89,0.375,42.46,sq ft,DABLMARMOS346933
+ferrara-3-x-6-honed-marble-decorative-tile-with-brass-in-nero,UPDATE,Marble,"3"" x 6""",,Matte,Black,40,4.96,0.375,42.99,sq ft,FE3MARTIL964469
+cremrfmos1338,UPDATE,Marble,"1"" x 1""",Penny Round,Polished,Beige,8,8.0,0.375,19.35,sq ft,CRMAMARMOS424929
+hexagon-beach-11-75-x-12-mosaic-tile-1,UPDATE,Marble,"2"" x 2""",Hexagon,,Blue,11,10.77,0.375,30.00,sq ft,HEAGMARMOS734389
+belgium-blue-textura-leaf-limestone-mosaic-11-13-16x13-9-16,UPDATE,Marble,"11 13/16"" x 13 9/16""",Leaf,,Black,6,5.94,0.375,62.42,sq ft,BEBLMARMOS864373
+aphrodite-grassland-12-x-12-mosaic-tile,UPDATE,Marble,"12"" x 12""",,,Grey,11,11.0,0.375,40.39,sq ft,APGRMARMOS302645
+water-drop-silver-grey-10-75-x-11-mosaic-tile,UPDATE,Marble,"10 3/4"" x 11""",Arabesque,,Grey,9,9.03,0.375,40.26,sq ft,WADRMARMOS185909
+checkerboard-bianco-dolomite-crema-marfil-12x12-honed-tile,UPDATE,Marble,"12"" x 12""",Checkerboard,Matte,Beige,10,10.0,0.375,17.89,sq ft,CHBIMARTIL082677
+hexagon-blue-large-10-75-x-12-5-mosaic-tile,UPDATE,Marble,"4"" x 4""",Hexagon,,Blue,10,10.26,0.375,29.53,sq ft,HEAGMARMOS784949
+symra-limestone-tile-18-x-36-1-2-brushed-tile,UPDATE,Limestone,"18"" x 36""",,Brushed,Beige,1,,0.375,43.20,piece,SYLILIMTIL974773
+italian-statuary-white-polished-12x24-marble-tile,UPDATE,Marble,"12"" x 24""",,Polished,White,5,10.0,0.375,34.45,sq ft,ITSTMARTIL186165
+aphrodite-mix-grey-honed-12-x-12-mosaic-tile,UPDATE,Marble,"12"" x 12""",,Honed,Grey,11,11.0,0.375,33.05,sq ft,APMIMARMOS901365
+glorious-white-12-x-24-floor-wall-tile,UPDATE,Marble,"12"" x 24""",,,White,5,10.0,0.375,22.39,sq ft,GLWHMARTIL167477
+daisy-crystal-ocean-12-5-x-13-mosaic-tile,UPDATE,Marble,"12 1/2"" x 13""",,,Blue,12,12.41,0.375,40.68,sq ft,DACRMARMOS801909
+bianco-dolomite-regency-polished,UPDATE,Marble,"10"" x 10""",,Polished,White,10,6.9,0.375,35.90,sq ft,BIDOMARTIL940789
+water-drop-beach-10-75-x-11-mosaic-tile,UPDATE,Marble,"10 3/4"" x 11""",Arabesque,,Blue,9,9.03,0.375,40.26,sq ft,WADRMARMOS576309
+spanish-grey-marble-polished-square-mosaic,UPDATE,Marble,"5/8"" x 5/8""",Square,Polished,Grey,8,8.0,0.375,19.89,sq ft,SPGRMARMOS143349
+malibu-travertine-tile-18-x-18-3-8-filled-honed-tile,UPDATE,Travertine,"18"" x 18""",,Matte,Beige,1,,0.375,35.10,piece,MATRTRATIL895285
+arabescato-carrara-marble-wall-and-floor-tile,UPDATE,Marble,"3"" x 6""",,,White,40,5.0,0.375,10.82,sq ft,ARCAMARTIL392053
+lymra-capri-limestone-tile-24-x-24-1-2-honed-tile,UPDATE,Limestone,"24"" x 24""",,Matte,Beige,1,,0.375,38.40,piece,LYMRATIL2424
+monet-4-x-4-honed-marble-decorative-tile-in-white-carrara,UPDATE,Marble,"4"" x 4""",Square,Matte,White,46,5.11,0.375,18.19,sq ft,MO4MARTIL464053
+carwhtmos1345,UPDATE,Marble,"1"" x 2""",Diamond,Polished,White,8,8.0,0.375,9.99,sq ft,CAITMARMOS375393
+monet-grey-marble-coping-12x12-1-25,UPDATE,Marble,"12"" x 12""",,,Grey,1,,1.25,27.46,piece,MOGRMARPOO018145
+oyster-travertine-molding-3-4-x-12-honed-bullnose-liner,UPDATE,Travertine,"3/4"" x 12""",,Matte,Beige,1,,0.75,66.00,piece,OYTRTRATRI183605
+scatrvtil1219,UPDATE,Travertine,,Versailles,Brushed,Brown,16,16.01,0.375,7.33,sq ft,SCTRTRAVER904161
+daisy-wild-grey-12-5-x-13-mosaic-tile,UPDATE,Marble,"12 1/2"" x 13""",,,Grey,12,12.41,0.375,37.43,sq ft,DAWIMARMOS907125
+hexagon-blue-11-75-x-12-mosaic-tile,UPDATE,Marble,"2"" x 2""",Hexagon,,Blue,11,10.77,0.375,28.13,sq ft,HEAGMARMOS910581
+herringbone-italian-blue-11-x-12-5-mosaic-tile,UPDATE,Marble,"11"" x 12 1/2""",Herringbone,,Grey,10,10.5,0.375,30.78,sq ft,HEITMARMOS303989
+phltrvmos1311,UPDATE,Travertine,"12"" x 12""",Versailles,Tumbled,Beige,8,8.0,0.375,11.99,sq ft,PHTRTRAMOS561825
+athena-gold-estrella-polished-marble-mosaic,UPDATE,Marble,,,Polished,White,7,7.14,0.375,34.00,sq ft,ATGOMARMOS404149
+manhattan-basketweave-grey-black-dot-border-marble-4x12-mosaic,UPDATE,Marble,"4"" x 12""",Basketweave,Polished,White,8,8.0,0.375,19.20,sq ft,MEBLMARMOS50517
+manhattan-basketweave-grey-white-dot-border-marble-4x12-mosaic,UPDATE,Marble,"4"" x 12""",Basketweave,Polished,White,8,8.0,0.375,19.20,sq ft,MEBLMARMOS315509
+micro-basketweave-black-dot-border-marble-mosaic,UPDATE,Marble,"12"" x 12""",Basketweave,Polished,Grey,8,8.0,0.375,19.20,sq ft,MIBLMARMOS776565
+micro-basketweave-grey-dot-border-marble-mosaic,UPDATE,Marble,"12"" x 12""",Basketweave,Polished,Grey,1,,0.375,19.20,piece,MIGRMARMOS911093
+blomma-honed-marble-mosaic-tile-in-bianco,UPDATE,Marble,"11 7/8"" x 11 7/8""",,Matte,White,10,9.81,0.375,30.39,sq ft,BLMAMARMOS198773
+monet-honed-marble-mosaic-4-tile-in-oriental-white,UPDATE,Marble,"10 7/8"" x 12 1/8""",,Matte,White,5,4.58,0.375,30.39,sq ft,MOMAMARMOS013365
+monet-honed-marble-mosaic-6-tile-in-oriental-white,UPDATE,Marble,"12 1/8"" x 12 1/8""",,Matte,White,5,5.1,0.375,30.39,sq ft,MOMAMARMOS886901
+monet-honed-marble-mosaic-7-tile-in-oriental-white,UPDATE,Marble,"12"" x 12 1/4""",Brick,Matte,White,5,5.1,0.375,30.39,sq ft,MOMAMARMOS760949
+statuary-white-polished-1x6-herringbone-marble-mosaic,UPDATE,Marble,"1"" x 6""",Herringbone,Polished,White,10,9.6,0.375,19.25,sq ft,STWHMARMOS013813
+thassos-white-greek-marble-mosaic-3-8-triple-weave-w-ming-green-dots,UPDATE,Marble,"1"" x 2""",Basketweave,Polished,White,6,6.39,0.375,3.19,sq ft,THWHMARMOS761461
+ming-green-marble-12x12-tumbled-tile,UPDATE,Marble,"12"" x 12""",,Tumbled,Green,7,7.0,0.375,19.04,sq ft,MIGRMARTIL727093
+palisandro-marble-chevron-tile,UPDATE,Marble,"12"" x 12""",Chevron,,Beige,10,10.0,0.375,25.96,sq ft,PAMAMARMOS841077
+carwhtmos1397,UPDATE,Marble,"12"" x 12""",,Polished,White,8,8.0,0.375,9.73,sq ft,CAITMARMOS003937
+bianco-dolomite-marble-chevron-pattern,UPDATE,Marble,"12"" x 12""",Chevron,,White,10,10.0,0.375,25.84,sq ft,BIDOMARTIL268469
+symra-limestone-tile-24-x-24-1-2-brushed-tile,UPDATE,Limestone,"24"" x 24""",Square,Brushed,Beige,1,,0.375,37.20,piece,SYLILIMTIL285493
+statuary-white-matte-18x18-marble-tile,UPDATE,Marble,"18"" x 18""",Square,Matte,White,3,6.75,0.375,39.15,sq ft,STWHMARTIL444853
+slvtrvmol1501,UPDATE,Travertine,"1/2"" x 12""",,Matte,Grey,1,,0.75,57.20,piece,SITRTRATRI393377
+hexagon-dusk-11-75-x-12-mosaic-tile,UPDATE,Marble,"11 3/4"" x 12""",Hexagon,,Grey,11,10.77,0.375,27.19,sq ft,HEAGMARMOS230517
+statuarietto-italian-marble-tile-16-x-16-3-8-polished-tile-micro-beveled,UPDATE,Marble,"16"" x 16""",Square,Polished,White,1,,0.375,29.74,piece,STITMARTIL013301
+tetri-florita-blanco-pattern-tile,UPDATE,Marble,"6"" x 6""",,,White,20,5.0,0.375,38.94,sq ft,TEFLMARTIL624245
+hexagon-city-grey-11-75-x-12-mosaic-tile,UPDATE,Marble,"11 3/4"" x 12""",Hexagon,,Grey,11,10.77,0.375,33.75,sq ft,HEAGMARMOS827125
+cremrfmos1337,UPDATE,Marble,"1"" x 1""",Penny Round,Polished,Beige,8,8.0,0.375,18.80,sq ft,CRMAMARMOS392161
+emperador-light-marble-1x1-polished-square-mosaic,UPDATE,Marble,"1"" x 1""",Square,Polished,Brown,8,8.0,0.375,8.99,sq ft,EMLIMARMOS434549
+checkers-marble-mosaic-2x2-with-bianco-carrara-bardiglio-imperiale,UPDATE,Marble,"2"" x 2""",Square,,White,8,8.0,0.375,16.20,sq ft,CHMAMARMOS628021
+qnbgtil1216,UPDATE,Marble,,Versailles,Leathered,Beige,16,16.0,0.375,8.45,sq ft,QUBEMARVER675937
+modni-arlo-honed-marble-mosaic-tile-in-cool-blend,UPDATE,Marble,"10 1/8"" x 15 7/8""",,Matte,,6,5.6,0.375,27.99,sq ft,MOARMARMOS769845
+modni-beckett-honed-marble-mosaic-tile-in-cool-blend,UPDATE,Marble,"11 3/4"" x 12 7/8""",,Matte,,11,10.51,0.375,27.99,sq ft,MOBEMARMOS877365
+modni-emery-honed-marble-mosaic-tile-in-cool-blend,UPDATE,Marble,"13 5/8"" x 13 5/8""",,Matte,,13,12.89,0.375,27.99,sq ft,MOEMMARMOS469173
+modni-lennox-honed-marble-mosaic-tile-in-cool-blend,UPDATE,Marble,"16"" x 16""",,Matte,,9,8.85,0.375,27.99,sq ft,MOLEMARMOS803765
+modni-jett-honed-marble-mosaic-tile-in-cool-blend,UPDATE,Marble,"12"" x 12""",,Matte,,10,10.1,0.375,27.99,sq ft,MOJEMARMOS430965
+modni-monroe-honed-marble-mosaic-tile-in-cool-blend,UPDATE,Marble,"12"" x 12""",Square,Matte,,10,10.1,0.375,27.99,sq ft,MOMOMARMOS896309
+modni-quin-honed-marble-mosaic-tile-in-cool-blend,UPDATE,Marble,"11 5/8"" x 11 5/8""",,Matte,,9,9.3,0.375,27.99,sq ft,MOQUMARMOS733621
+modni-zayden-honed-marble-mosaic-tile-in-cool-blend,UPDATE,Marble,"11 3/4"" x 12 5/8""",,Matte,,10,10.3,0.375,27.99,sq ft,MOZAMARMOS858101
+phltrvmos1308,UPDATE,Travertine,"1"" x 2""",Herringbone,Tumbled,Beige,8,8.0,0.375,10.90,sq ft,PHTRTRAMOS332449
+aphrodite-spain-12-x-12-mosaic-tile,UPDATE,Marble,"12"" x 12""",,,Beige,11,11.0,0.375,33.05,sq ft,APSPMARMOS815925
+rojo-alicante-marble-12x12-wall-floor-tile,UPDATE,Marble,"12"" x 12""",Square,Polished,Red,5,5.0,0.375,17.70,sq ft,ROALMARTIL100725
+aphrodite-rose-12-x-12-mosaic-tile,UPDATE,Marble,"12"" x 12""",,,Red,8,8.0,0.375,33.05,sq ft,APROMARMOS682357
+herringbone-marfil-11-x-12-5-mosaic-tile,UPDATE,Marble,"11"" x 12 1/2""",Herringbone,,Beige,10,10.5,0.375,25.97,sq ft,HEMAMARMOS203509
+mocha-noce-travertine-coping-12x12-2-tumbled,UPDATE,Travertine,"12"" x 12""",,Tumbled,Beige,1,,1.25,17.60,piece,MONOTRAPOO909217
+walnut-travertine-coping-12x12-2-tumbled,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Brown,1,,1.25,17.60,piece,WATRTRAPOO511457
+sandy-creek-limestone-coasters-4x4,UPDATE,Limestone,"4"" x 4""",Square,,Beige,1,,0.375,19.95,piece,SACRLIMACC028789
+sicily-brown-matte-marble-coasters-4x4,UPDATE,Marble,"4"" x 4""",Square,Matte,Brown,1,,0.375,19.95,piece,SIBRMARACC119349
+haisa-light-white-wood-limestone-molding-1-2-x-12-honed-pencil-liner,UPDATE,Limestone,"1/2"" x 12""",,Matte,White,1,,0.75,63.00,piece,HALILIMTRI368821
+hexagon-basalt-10-25-x-11-75-mosaic-tile,UPDATE,Marble,"10 1/4"" x 11 3/4""",Hexagon,,Grey,13,12.73,0.375,25.31,sq ft,HEAGMARMOS912885
+blue-oak-marble-mosaic-large-chevron,UPDATE,Marble,"10 1/2"" x 10 1/2""",Chevron,,Blue,6,6.16,0.375,22.09,sq ft,BLOAMARMOS586293
+eclipse-crystal-ocean-12-25-x-12-25-mosaic-tile,UPDATE,Marble,"12 1/4"" x 12 1/4""",Hexagon,,Blue,11,11.0,0.375,33.05,sq ft,ECCRMARMOS283061
+phltrvmos1312,UPDATE,Travertine,"2"" x 2""",Hexagon,Tumbled,Beige,8,8.0,0.375,12.26,sq ft,PHTRTRAMOS594593
+gray-basalt-wall-and-floor-tile,UPDATE,Basalt,"4"" x 12""",,Brushed,Grey,21,7.0,0.375,22.74,sq ft,GRBABASTIL200181
+arrow-ocean-12-x-12-75-mosaic-tile,UPDATE,Marble,"12"" x 12 3/4""",,,White,12,11.69,0.375,31.10,sq ft,AROCMARMOS263285
+spanish-grey-marble-12x12-wall-floor-tile,UPDATE,Marble,"12"" x 12""",Square,Matte,Grey,5,5.0,0.375,19.38,sq ft,SPGRMARTIL784885
+extra-light-travertine-24-x-24-tumbled-pavers,UPDATE,Travertine,"24"" x 24""",Square,Tumbled,Beige,1,,1.25,18.18,piece,EXTRTRAEXT701685
+hope-gmm091-cube-glass-and-marble-mixed-mosaic-tile,UPDATE,Marble,,,,White,10,9.9,0.375,20.40,sq ft,HOGMMARMOS174581
+manhattan-weave-black-white-dot-corner-marble-polished-accent,UPDATE,Marble,"11 3/4"" x 11 3/4""",Basketweave,Polished,White,8,7.68,0.375,16.67,sq ft,MEBLMARMOS969781
+slvtrvmos1311,UPDATE,Travertine,"12"" x 12""",Versailles,Tumbled,Grey,8,8.0,0.375,10.36,sq ft,SITRTRAMOS229537
+valtrvmos1308,UPDATE,Travertine,"1"" x 2""",Herringbone,Tumbled,Brown,8,8.0,0.375,10.36,sq ft,VATRTRAMOS957025
+scbstrvcop310039,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Gold,1,,1.25,16.50,piece,SCTRTRAPOO467489
+scatrvmos1316,UPDATE,Travertine,"2"" x 2""",Hexagon,Tumbled,Gold,8,8.0,0.375,11.72,sq ft,SCTRTRAMOS756129
+scatrvmos1327,UPDATE,Travertine,"1"" x 2""",Herringbone,Tumbled,Gold,8,8.0,0.375,10.08,sq ft,SCTRTRAMOS001313
+belgium-blue-matte-subway-limestone-tile-3x12,UPDATE,Limestone,"3"" x 12""",Subway,Matte,Black,39,9.84,0.375,33.30,sq ft,BEBLMARTIL418101
+belgium-blue-matte-limestone-tile-12x24,UPDATE,Limestone,"12"" x 24""",,Matte,Black,5,10.0,0.375,33.30,sq ft,BEBLMARTIL113973
+porto-beige-12x12-leather-tumbled-square-tile,UPDATE,Limestone,"12"" x 12""",Square,Tumbled,Beige,5,5.0,0.375,23.32,sq ft,POBELIMTIL662005
+labyrinth-limestone-taupe-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Grey,1,,0.375,18.95,piece,LALILIMTIL244853
+leaves-limestone-taupe-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Grey,1,,0.375,18.95,piece,LELILIMTIL750197
+leaves-noce-travertine-6x6-laser-engraved-tile,UPDATE,Travertine,"6"" x 6""",Square,,Brown,1,,0.375,18.95,piece,LENOTRATIL560501
+madellion-limestone-taupe-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Grey,1,,0.375,18.95,piece,MALILIMTIL351221
+serene-crest-limestone-taupe-6x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Grey,1,,0.375,18.95,piece,SECRLIMTIL696565
+serene-crest-noce-travertine-6x6-laser-engraved-tile,UPDATE,Travertine,"6"" x 6""",Square,,Brown,1,,0.375,18.95,piece,SECRTRATIL021941
+nocetrvtil1216,UPDATE,Travertine,"18"" x 18""",Square,Brushed,Brown,1,,0.375,14.72,piece,NOTRTRATIL206305
+ivrtrvtil1229,UPDATE,Travertine,"18"" x 18""",Square,Polished,Beige,3,6.75,0.375,8.72,sq ft,IVTRTRATIL511073
+valtrvtil1206,UPDATE,Travertine,"18"" x 18""",,Matte,Brown,1,,0.375,18.41,piece,VATRTRATIL432737
+scatrvmos1326,UPDATE,Travertine,"12"" x 12""",Versailles,Tumbled,Gold,8,8.0,0.375,9.81,sq ft,SCTRTRAMOS935777
+lymra-capri-limestone-tile-12-x-24-5-8-corduroy-tile,UPDATE,Limestone,"12"" x 24""",,,Beige,1,,0.375,31.80,piece,LYMRATIL1224C
+fossil-brown-limestone-limestone-tile-12-x-24-1-2-leathered,UPDATE,Limestone,"12"" x 24""",,Leathered,Brown,1,,0.375,21.90,piece,FOBRLIMTIL736053
+extra-light-travertine-12-x-12-tumbled-pavers,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Beige,1,,1.25,14.58,piece,EXTRTRAEXT242933
+extra-light-travertine-12-x-12-bullnose-coping,UPDATE,Travertine,"12"" x 12""",,,Beige,1,,0.75,17.98,piece,EXTRTRAPOO872245
+slvtrvmos1308,UPDATE,Travertine,"1"" x 2""",Herringbone,Tumbled,Grey,8,8.0,0.375,9.81,sq ft,SITRTRAMOS098465
+tiramisu-travertine-12-x-12-bullnose-coping,UPDATE,Travertine,"12"" x 12""",,,Beige,1,,0.75,17.58,piece,TIBUTRAPOO675637
+latttrvpav130159,UPDATE,Travertine,"16"" x 16""",Square,Tumbled,Beige,1,,1.25,14.87,piece,LATRTRAEXT202401
+slvtrvmos1312,UPDATE,Travertine,"2"" x 2""",Hexagon,Tumbled,Grey,8,8.0,0.375,10.63,sq ft,SITRTRAMOS360609
+dark-grey-hexagon-mosaic,UPDATE,Basalt,"1"" x 1""",Hexagon,,Grey,7,7.2,0.375,21.90,sq ft,DAGRBASMOS071541
+scbstrvcop310048,UPDATE,Travertine,"12"" x 12""",Square,Matte,Brown,1,,1.25,17.00,piece,SCTRTRAPOO565793
+nctrvpav130039,UPDATE,Travertine,"16"" x 16""",Square,Tumbled,Brown,1,,1.25,13.63,piece,NOTRTRAEXT842593
+scatrvmos1306,UPDATE,Travertine,"1"" x 1""",Square,Split Face,Brown,8,8.0,0.375,11.99,sq ft,SCTRTRAMOS231841
+ivrtrvpav130025,UPDATE,Travertine,,Versailles,Tumbled,Beige,16,16.0,1.25,8.55,sq ft,IVTRTRAEXT812129
+lagos-blue-matte-1x6-herringbone-limestone-mosaic,UPDATE,Limestone,"1"" x 6""",Herringbone,Matte,Grey,8,7.52,0.375,16.29,sq ft,LABLLIMMOS954229
+graphite-antiqued-2-inch-hexagon-limestone-mosaic,UPDATE,Limestone,"2"" x 2""",Hexagon,Antiqued,Grey,8,7.76,0.375,12.82,sq ft,GRANLIMMOS677493
+latttrvpav130165,UPDATE,Travertine,,Versailles,Tumbled,Brown,16,16.0,1.25,8.40,sq ft,10001281
+symra-shell-beige-limestone-paver-french-pattern-1-25-tumbled,UPDATE,Limestone,,Versailles,Tumbled,White,16,16.0,1.25,8.25,sq ft,SYSHLIMEXT367969
+scatrvtil1213,UPDATE,Travertine,"18"" x 18""",Square,Matte,Brown,1,,0.375,15.32,piece,SCTRTRATIL642017
+phltrvmos1301,UPDATE,Travertine,"5/8"" x 5/8""",Square,Tumbled,Beige,8,8.0,0.375,12.54,sq ft,PHTRTRAMOS939233
+scatrvmos1332,UPDATE,Travertine,"12"" x 12""",,Tumbled,Gold,8,8.0,0.375,12.54,sq ft,SCTRTRAMOS182433
+scatrvmos1323,UPDATE,Travertine,"3"" x 6""",Diamond,Polished,Brown,6,5.6,0.375,16.00,sq ft,SCTRTRAMOS123297
+scbstrvpav130032,UPDATE,Travertine,,Versailles,Tumbled,Gold,16,16.0,1.25,7.80,sq ft,SCTRTRAEXT286689
+plaid-beige-limestone-6-x6-laser-engraved-tile,UPDATE,Limestone,"6"" x 6""",Square,,Beige,1,,0.375,14.95,piece,PLBELIMTIL331637
+scatrvmos1303,UPDATE,Travertine,"5/8"" x 5/8""",Square,Polished,Beige,8,8.0,0.375,12.26,sq ft,SCTRTRAMOS570357
+scatrvmos1307,UPDATE,Travertine,"1"" x 2""",Brick,Tumbled,Gold,8,8.0,0.375,12.26,sq ft,SCTRTRAMOS264609
+scatrvmos1313,UPDATE,Travertine,"2"" x 2""",Square,Tumbled,Gold,8,8.0,0.375,12.26,sq ft,SCTRTRAMOS493985
+scatrvmos1321,UPDATE,Travertine,"2"" x 4""",Brick,Tumbled,Gold,8,8.0,0.375,12.26,sq ft,SCTRTRAMOS985505
+phltrvmos1304,UPDATE,Travertine,"1"" x 2""",Brick,Split Face,Beige,8,8.0,0.375,10.90,sq ft,PHTRTRAMOS748085
+valtrvmos1307,UPDATE,Travertine,"2"" x 4""",Brick,Split Face,Brown,8,8.0,0.375,10.90,sq ft,VATRTRAMOS924257
+flash-bluegranite-tile-12x12-polished,UPDATE,Granite,"12"" x 12""",Square,Polished,Blue,5,5.0,0.375,11.99,sq ft,FLBLGRATIL313653
+golden-carioca-granite-tile-12x12-polished,UPDATE,Granite,"12"" x 12""",Square,Polished,Gold,5,5.0,0.375,11.99,sq ft,GOCAGRATIL534325
+ivory-coast-dark-granite-tile-12-x-12-polished,UPDATE,Granite,"12"" x 12""",Square,Polished,,5,5.0,0.375,11.99,sq ft,IVCOGRATIL710517
+ivory-coast-light-granite-tile-12-x-12-polished,UPDATE,Granite,"12"" x 12""",Square,Polished,,5,5.0,0.375,11.99,sq ft,IVCOGRATIL580597
+ivory-white-granite-tile-12x12-polished,UPDATE,Granite,"12"" x 12""",Square,Polished,White,5,5.0,0.375,11.99,sq ft,IVWHGRATIL732085
+jerusalem-gold-limestone-12x12-polished-tile,UPDATE,Limestone,"12"" x 12""",Square,Polished,Gold,5,5.0,0.375,11.99,sq ft,JEGOLIMTIL666869
+juparana-royal-granite-tile-12-x-12-polished,UPDATE,Granite,"12"" x 12""",Square,Polished,Beige,5,5.0,0.375,11.99,sq ft,JUROGRATIL253749
+juparana-pink-gray-cloud-granite-tile-12-x-12-polished,UPDATE,Granite,"12"" x 12""",Square,Polished,Grey,5,5.0,0.375,11.99,sq ft,JUPIGRATIL888693
+slvtrvmos1301,UPDATE,Travertine,"5/8"" x 5/8""",Square,Tumbled,Grey,8,8.0,0.375,11.99,sq ft,SITRTRAMOS803553
+ivrtrvtil1220,UPDATE,Travertine,"12"" x 24""",,Matte,Beige,1,,0.375,15.26,piece,IVTRTRATIL938209
+tiramisu-travertine-12-x-12-tumbled-pavers,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Beige,1,,1.25,11.98,piece,TITRTRAEXT570613
+valtrvmos1301,UPDATE,Travertine,"5/8"" x 5/8""",Square,Tumbled,Brown,8,8.0,0.375,11.99,sq ft,VATRTRAMOS563809
+walnut-travertine-paver-16x16-1-25-tumbled,UPDATE,Travertine,"16"" x 16""",,Tumbled,Brown,1,,1.25,11.86,piece,WATRTRAEXT001377
+nocetrvtil1214,UPDATE,Travertine,"18"" x 18""",Square,Matte,Brown,1,,0.375,14.11,piece,NOTRTRATIL108001
+scatrvmos1305,UPDATE,Travertine,"1"" x 1""",Square,Split Face,Brown,8,8.0,0.375,10.63,sq ft,SCTRTRAMOS199073
+scatrvmos1320,UPDATE,Travertine,"2"" x 4""",Brick,Split Face,Brown,8,8.0,0.375,10.63,sq ft,SCTRTRAMOS952737
+graphite-antiqued-1x6-herrinbone-limestone-mosaic,UPDATE,Limestone,"1"" x 6""",,Antiqued,Grey,8,7.52,0.375,16.29,sq ft,GRANLIMMOS755701
+slvrtrvcop310101,UPDATE,Travertine,"12"" x 12""",Square,Matte,Grey,1,,1.25,18.70,piece,SITRTRAPOO760097
+scatrvtil1218,UPDATE,Travertine,,Versailles,Tumbled,Gold,16,16.0,0.375,6.54,sq ft,SCTRTRAVER871393
+walnut-travertine-tile-cross-cut-18x18-1-2-unfilled-brushed-chiseled,UPDATE,Travertine,"18"" x 18""",Square,Brushed,Brown,3,6.75,0.375,6.54,sq ft,WATRTRATIL406369
+slvtrvmos1307,UPDATE,Travertine,"2"" x 4""",Brick,Split Face,Grey,8,8.0,0.375,10.36,sq ft,SITRTRAMOS065697
+valtrvmos1304,UPDATE,Travertine,"1"" x 2""",Brick,Split Face,Brown,8,8.0,0.375,10.36,sq ft,VATRTRAMOS793185
+scatrvmos1330,UPDATE,Travertine,"12"" x 12""",,Tumbled,Beige,8,8.0,0.375,11.00,sq ft,SCTRTRAMOS165153
+gray-basalt-10-x10-hexagon-honed-mosaic-tile,UPDATE,Basalt,"10"" x 10""",Hexagon,Matte,Grey,1,,0.375,15.40,piece,GRBABASMOS237557
+scatrvmos1319,UPDATE,Travertine,"2"" x 4""",Brick,Matte,Brown,8,8.0,0.375,12.81,sq ft,SCTRTRAMOS919969
+phltrvmos1302,UPDATE,Travertine,"1"" x 1""",Square,Tumbled,Beige,8,8.0,0.375,10.90,sq ft,PHTRTRAMOS576693
+phltrvmos1303,UPDATE,Travertine,"1"" x 2""",Brick,Tumbled,Beige,8,8.0,0.375,10.90,sq ft,PHTRTRAMOS096693
+phltrvmos1309,UPDATE,Travertine,"12"" x 12""",,Tumbled,Beige,8,8.0,0.375,10.90,sq ft,PHTRTRAMOS496289
+phltrvmos1310,UPDATE,Travertine,,,Tumbled,Beige,8,8.0,0.375,10.90,sq ft,PHTRTRAMOS529057
+dark-grey-basalt-penny-round-mosaic-tile,UPDATE,Basalt,"5/8"" x 1/2""",Penny Round,,Grey,8,7.84,0.375,23.24,sq ft,DAGRBASMOS246517
+valtrvtil1207,UPDATE,Travertine,,Versailles,Unfilled,Brown,16,16.0,0.375,8.18,sq ft,VATRTRAVER079009
+scatrvtil1203,UPDATE,Travertine,"4"" x 4""",Square,,Brown,63,7.0,0.375,12.33,sq ft,SCTRTRATIL117729
+ivrtrvcop310072,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Beige,1,,1.25,10.78,piece,IVLITRAPOO780789
+scatrvmos1310,UPDATE,Travertine,"1"" x 2""",Brick,Split Face,Brown,8,8.0,0.375,9.81,sq ft,SCTRTRAMOS395681
+slvtrvmos1304,UPDATE,Travertine,"1"" x 2""",Brick,Split Face,Grey,8,8.0,0.375,9.81,sq ft,SITRTRAMOS901857
+scatrvmos1311,UPDATE,Travertine,"1"" x 2""",Diamond,Tumbled,Gold,8,8.0,0.375,10.63,sq ft,SCTRTRAMOS050165
+scatrvmos1312,UPDATE,Travertine,"2"" x 2""",Square,Matte,Brown,8,8.0,0.375,12.26,sq ft,SCTRTRAMOS461217
+extra-light-travertine-12-x12-tumbled-tile,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Beige,5,5.0,0.375,10.38,sq ft,EXTRTRATIL870005
+ivrtrvtil1231,UPDATE,Travertine,,Versailles,Brushed,Beige,16,16.0,0.375,7.43,sq ft,IVRTRVTIL1231
+black-basalt-10-x10-hexagon-mosaic-tile,UPDATE,Basalt,"10"" x 10""",Hexagon,Flamed,Black,1,,0.375,14.00,piece,BLBABASMOS549429
+valtrvmos1303,UPDATE,Travertine,"1"" x 2""",Brick,Tumbled,Brown,8,8.0,0.375,10.36,sq ft,VATRTRAMOS662113
+valtrvmos1302,UPDATE,Travertine,"1"" x 1""",Square,Tumbled,Brown,8,8.0,0.375,10.36,sq ft,VATRTRAMOS629345
+valtrvmos1305,UPDATE,Travertine,"2"" x 2""",Square,Tumbled,Brown,8,8.0,0.375,10.36,sq ft,VATRTRAMOS858721
+valtrvmos1306,UPDATE,Travertine,"2"" x 4""",Brick,Tumbled,Brown,8,8.0,0.375,10.36,sq ft,VATRTRAMOS891489
+valtrvmos1309,UPDATE,Travertine,"12"" x 12""",,Tumbled,Brown,8,8.0,0.375,10.36,sq ft,VATRTRAMOS022561
+golden-coast-slate-chair-rail-trim-tile,UPDATE,Slate,"2"" x 12""",,,Blue,1,,0.75,19.48,piece,GOCOSLATRI115637
+rustic-amber-slate-1x2-tumbled-subway-mosaic-tile,UPDATE,Slate,"1"" x 2""",Brick,Tumbled,Grey,8,8.0,0.375,10.20,sq ft,RUAMSLAMOS176501
+checkerboard-durango-cream-silver-tumbled-travertine-18x18-tile,UPDATE,Travertine,"18"" x 18""",Checkerboard,Tumbled,Beige,10,22.5,0.375,12.49,sq ft,CHDUTRATIL157429
+scatrvmos1331,UPDATE,Travertine,"12"" x 12""",,Matte,Brown,8,8.0,0.375,11.72,sq ft,SCTRTRAMOS660449
+copper-slate-2-x2-tumbled-mosaic-wall-floor-tile,UPDATE,Slate,"2"" x 2""",Square,Tumbled,Brown,8,8.0,0.375,9.97,sq ft,COSLSLAMOS747957
+tiramisu-travertine-16-x-16-chiseled-brushed-tile,UPDATE,Travertine,"16"" x 16""",Square,Brushed,Brown,3,5.33,0.375,7.18,sq ft,TITRTRATIL901557
+chakra-slate-wall-and-floor-square-mosaic-tile,UPDATE,Slate,"2"" x 2""",Square,,Black,8,8.0,0.375,18.87,sq ft,CHSLSLAMOS788277
+checkers-with-ivory-light-silver-tumbled-travertine-24x24-tile,UPDATE,Travertine,"24"" x 24""",Checkerboard,Tumbled,Beige,10,40.01,0.375,11.81,sq ft,CHIVTRATIL388277
+gldtrvmos1305,UPDATE,Travertine,"1"" x 2""",Brick,Tumbled,Gold,8,8.0,0.375,9.81,sq ft,GOTRTRAMOS116449
+scatrvmos1308,UPDATE,Travertine,"1"" x 2""",Brick,Polished,Brown,8,8.0,0.375,9.81,sq ft,SCTRTRAMOS451489
+scatrvmos1325,UPDATE,Travertine,"12"" x 12""",,Tumbled,Gold,8,8.0,0.375,9.81,sq ft,SCTRTRAMOS575329
+slvtrvmos1302,UPDATE,Travertine,"1"" x 1""",Square,Tumbled,Grey,8,8.0,0.375,9.81,sq ft,SITRTRAMOS836321
+slvtrvmos1303,UPDATE,Travertine,"1"" x 2""",Brick,Tumbled,Grey,8,8.0,0.375,9.81,sq ft,SITRTRAMOS869089
+slvtrvmos1305,UPDATE,Travertine,"2"" x 2""",Square,Tumbled,Grey,8,8.0,0.375,9.81,sq ft,SITRTRAMOS934625
+slvtrvmos1306,UPDATE,Travertine,"2"" x 4""",Brick,Tumbled,Grey,8,8.0,0.375,9.81,sq ft,SITRTRAMOS000161
+slvtrvmos1309,UPDATE,Travertine,"12"" x 12""",,Tumbled,Grey,8,8.0,0.375,9.81,sq ft,SITRTRAMOS131233
+walnut-travertine-3-pcs-mini-pattern-mosaic-non-interlocking-3-8-tumbled,UPDATE,Travertine,"12"" x 12""",,Tumbled,Brown,8,8.0,0.375,9.81,sq ft,WATRTRAMOS981409
+walnut-travertine-opus-mini-pattern-4-pcs-mosaic-interlocking-3-8-tumbled,UPDATE,Travertine,"12"" x 12""",,Tumbled,Brown,8,8.0,0.375,9.81,sq ft,WATRTRAMOS927905
+extra-light-travertine-18-x-18-matte-filled-tile,UPDATE,Travertine,"18"" x 18""",Square,Matte,Beige,3,6.75,0.375,10.98,sq ft,EXTRTRATIL327541
+fossil-brown-limestone-limestone-tile-12-x-24-1-2-polished,UPDATE,Limestone,"12"" x 24""",,Polished,Brown,1,,0.375,19.20,piece,FOBRLIMTIL517877
+nocetrvmos1309,UPDATE,Travertine,"1"" x 2""",Brick,Split Face,Brown,8,8.0,0.375,8.45,sq ft,NOTRTRAMOS106849
+lagos-blue-matte-2-inch-hexagon-limestone-mosaic,UPDATE,Limestone,"2"" x 2""",Hexagon,Matte,Grey,8,7.76,0.375,12.83,sq ft,LABLLIMMOS052917
+checkerboard-durango-cream-noce-tumbled-travertine-18x18-tile,UPDATE,Travertine,"18"" x 18""",Checkerboard,Tumbled,Beige,10,22.49,0.375,11.48,sq ft,CHDUTRATIL938101
+ivrtrvmos1316,UPDATE,Travertine,"2"" x 4""",Brick,Matte,Beige,8,8.0,0.375,10.90,sq ft,IVTRTRAMOS590113
+walnut-travertine-tile-cross-cut-18x18-1-2-filled-polished,UPDATE,Travertine,"18"" x 18""",Square,Polished,Brown,1,,0.375,14.72,piece,WATRTRATIL775201
+checkerboard-durango-cream-gold-yellow-tumbled-travertine-12x12-tile,UPDATE,Travertine,"12"" x 12""",Checkerboard,Tumbled,Beige,10,10.0,0.375,11.14,sq ft,CHDUTRATIL894133
+checkerboard-durango-cream-scabos-tumbled-travertine-12x12-tile,UPDATE,Travertine,"12"" x 12""",Checkerboard,Tumbled,Beige,10,10.0,0.375,11.14,sq ft,CHDUTRATIL122357
+grey-foussana-split-face-1x1-limestone-mosaic,UPDATE,Limestone,"1"" x 1""",,Split Face,Grey,8,8.0,0.375,12.44,sq ft,GRFOLIMMOS227253
+walnut-travertine-brick-mosaic-1x2-3-8-tumbled,UPDATE,Travertine,"1"" x 2""",Brick,Tumbled,Brown,8,8.0,0.375,8.99,sq ft,WATRTRAMOS483937
+walnut-travertine-brick-mosaic-2x4-3-8-tumbled,UPDATE,Travertine,"2"" x 4""",Brick,Tumbled,Brown,8,8.0,0.375,8.99,sq ft,WATRTRAMOS113121
+dark-autumn-slate-1x1-square-tumbled-mosaic-tile,UPDATE,Slate,"1"" x 1""",Square,Tumbled,Grey,8,8.0,0.375,8.99,sq ft,DAAUSLAMOS949749
+golden-green-slate-2-x2-tumbled-mosaic-wall-floor-tile,UPDATE,Slate,"2"" x 2""",Square,Tumbled,Green,8,8.0,0.375,8.99,sq ft,GOGRSLAMOS388981
+golden-green-slate-1-x1-tumbled-mosaic-wall-floor-tile,UPDATE,Slate,"1"" x 1""",Square,Tumbled,Green,8,8.0,0.375,8.99,sq ft,GOGRSLAMOS946037
+escabesa-travertine-12-x-12-tumbled-pavers,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Brown,1,,1.25,10.98,piece,ESTRTRAEXT079093
+light-classic-travertine-12-x-12-tumbled-pavers,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Beige,1,,1.25,8.78,piece,LICLTRAEXT406773
+walnut-travertine-french-pattern-premium-1-2-unfilled-brushed-chiseled,UPDATE,Travertine,,Versailles,Brushed,Brown,16,16.0,0.375,5.72,sq ft,WATRTRAVER867297
+walnut-travertine-roman-pattern-midi-versailles-1-2-unfilled-brushed-chiseled,UPDATE,Travertine,,Versailles,Brushed,Brown,16,16.0,0.375,5.72,sq ft,WATRTRAVER200225
+scatrvmos1328,UPDATE,Travertine,"5/8"" x 2""",,Tumbled,Gold,8,8.0,0.375,8.66,sq ft,SCTRTRAMOS066849
+scatrvmos1329,UPDATE,Travertine,"5/8"" x 2""",,Tumbled,Gold,8,8.0,0.375,8.66,sq ft,SCTRTRAMOS099617
+dark-grey-basalt-strips-mosaic-tile,UPDATE,Basalt,"5/8"" x 6""",,,Grey,8,7.84,0.375,19.93,sq ft,DAGRBASMOS801973
+black-basalt-6-matte-hexagon-tile,UPDATE,Basalt,"6"" x 6""",Hexagon,Matte,Black,1,,0.375,13.42,piece,BLBABASTIL298421
+dark-grey-basalt-grid-mosaic-tile,UPDATE,Basalt,"1 1/4"" x 1 1/4""",Square,,Grey,8,8.0,0.375,19.17,sq ft,DAGRBASMOS232821
+graphite-antiqued-2x2-limestone-square-mosaic,UPDATE,Limestone,"2"" x 2""",Square,Antiqued,Grey,8,8.0,0.375,11.17,sq ft,GRANLIMMOS976693
+checkerboard-durango-cream-noce-tumbled-travertine-12x12-tile,UPDATE,Travertine,"12"" x 12""",Checkerboard,Tumbled,Beige,10,10.0,0.375,10.80,sq ft,CHDUTRATIL003637
+rainbow-slate-1x1-square-tumbled-mosaic-tile,UPDATE,Slate,"1"" x 1""",Square,Tumbled,Brown,8,8.0,0.375,8.50,sq ft,RASLSLAMOS509237
+scbstrvpav130044,UPDATE,Travertine,"16"" x 16""",Square,Tumbled,Gold,1,,1.25,14.87,piece,SCTRTRAEXT188385
+extra-light-travertine-12-x12-matte-filled-tile,UPDATE,Travertine,"12"" x 12""",Square,Matte,Beige,5,5.0,0.375,9.98,sq ft,EXTRTRATIL559285
+haisa-light-white-wood-limestone-mosaic-2-x-2-3-8-honed-hexagon-mosaic,UPDATE,Limestone,"2"" x 2""",Hexagon,Matte,White,8,8.0,0.375,12.90,sq ft,HALILIMMOS317941
+ivrtrvtil1226,UPDATE,Travertine,"18"" x 18""",Square,Brushed,Beige,3,6.75,0.375,7.63,sq ft,IVTRTRATIL183393
+noce-travertine-tumbled-3-4-x1-2-mini-brick-mosaic,UPDATE,Travertine,"3/4"" x 1 1/2""",Brick,Tumbled,Brown,6,6.24,0.375,12.76,sq ft,NOTRTRAMOS266421
+valtrvtil1204,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Brown,5,5.0,0.375,8.18,sq ft,VATRTRATIL367201
+lymra-capri-limestone-tile-18-x-18-1-2-honed-tile,UPDATE,Limestone,"18"" x 18""",,Matte,Beige,1,,0.375,19.58,piece,LYMRATIL1818
+scbstrvcop310025,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Gold,1,,1.25,10.46,piece,SCTRTRAPOO369185
+checkerboard-durango-cream-silver-tumbled-travertine-12x12-tile,UPDATE,Travertine,"12"" x 12""",Checkerboard,Tumbled,Beige,10,10.0,0.375,10.25,sq ft,CHDUTRATIL891829
+checkerboard-durango-cream-noce-filled-honed-travertine-18x18-tile,UPDATE,Travertine,"18"" x 18""",Checkerboard,Matte,Brown,10,22.5,0.375,11.81,sq ft,CHDUTRATIL332469
+checkers-with-ivory-light-gold-yellow-tumbled-travertine-18x18-tile,UPDATE,Travertine,"18"" x 18""",Checkerboard,Tumbled,Beige,4,10.0,0.375,10.13,sq ft,CHIVTRATIL476533
+checkers-with-ivory-light-noce-filled-polished-travertine-18x18-tile,UPDATE,Travertine,"18"" x 18""",Checkerboard,Polished,Beige,10,22.51,0.375,10.12,sq ft,CHIVTRATIL792693
+checkers-with-ivory-light-scabos-tumbled-travertine-18x18-tile,UPDATE,Travertine,"18"" x 18""",Checkerboard,Tumbled,Beige,10,22.51,0.375,10.12,sq ft,CHIVTRATIL963445
+checkers-with-ivory-light-silver-tumbled-travertine-18x18-tile,UPDATE,Travertine,"18"" x 18""",Checkerboard,Tumbled,Beige,10,22.51,0.375,10.12,sq ft,CHIVTRATIL404085
+oyster-travertine-mosaic-2-x-2-3-8-filled-honed-hexagon-mosaic,UPDATE,Travertine,"2"" x 2""",Hexagon,Matte,Beige,8,8.0,0.375,12.30,sq ft,OYTRTRAMOS637749
+extra-light-travertine-6-x-6-tumbled-tile,UPDATE,Travertine,"6"" x 6""",Square,Tumbled,Beige,28,7.0,0.375,7.38,sq ft,EXTRTRATIL867637
+valtrvtil1203,UPDATE,Travertine,"6"" x 6""",Square,Tumbled,Brown,28,7.0,0.375,7.36,sq ft,VATRTRATIL334433
+ivrtrvwp230017,UPDATE,Travertine,"6"" x 24""",,Brushed,Beige,1,,0.6,18.00,piece,IVRTRVWP230017
+ivrtrvpav130040,UPDATE,Travertine,,Versailles,Tumbled,Beige,16,16.0,1.25,8.55,sq ft,IVTRTRAVER746593
+ivory-rustic-travertine-12-x-12-tumbled-pavers,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Beige,1,,1.25,9.98,piece,IVRUTRAEXT341237
+slvrtrvcop300088,UPDATE,Travertine,"12"" x 12""",Square,Matte,Grey,1,,1.25,11.56,piece,SITRTRAPOO432417
+scatrvtil1208,UPDATE,Travertine,"12"" x 12""",Square,Polished,Brown,5,5.0,0.375,6.81,sq ft,SCTRTRATIL379873
+slvtrvtil1204,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Grey,5,5.0,0.375,6.81,sq ft,SITRTRATIL443105
+latttrvpav130158,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Brown,1,,1.25,7.35,piece,10001285
+walnut-travertine-paver-12x12-1-25-tumbled,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Brown,5,5.0,1.25,6.60,sq ft,WATRTRAEXT730465
+valtrvtil1202,UPDATE,Travertine,"4"" x 4""",Square,Tumbled,Brown,63,7.0,0.375,6.57,sq ft,VATRTRATIL268897
+graphite-antiqued-12x24-limestone-tile,UPDATE,Limestone,"12"" x 24""",,Antiqued,Grey,5,10.0,0.375,10.14,sq ft,GRANLIMTIL854325
+scbstrvpav130068,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Gold,1,,1.25,6.94,piece,SCTRTRAEXT057313
+colorado-travertine-12-x-12-tumbled-pavers,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Brown,1,,1.25,11.58,piece,COTRTRAEXT177397
+scbstrvtrvcop310046,UPDATE,Travertine,"12"" x 12""",Square,Matte,Brown,1,,1.25,11.00,piece,SCTRTRAPOO205345
+slvrtrvpav130061,UPDATE,Travertine,,Versailles,Tumbled,White,16,16.0,1.25,9.14,sq ft,SITRTRAEXT644833
+nctrvpav130028,UPDATE,Travertine,,Versailles,Tumbled,Brown,16,16.0,1.25,7.20,sq ft,NOTRTRAVER973665
+walnut-travertine-coping-6x12-2-tumbled,UPDATE,Travertine,"6"" x 12""",,Tumbled,Brown,1,,1.25,4.40,piece,WATRTRAPOO686689
+slvrtrvpav130067,UPDATE,Travertine,"8"" x 8""",Square,Tumbled,Grey,1,,1.25,4.02,piece,SITRTRAEXT120545
+latttrvpav130164,UPDATE,Travertine,"8"" x 8""",Square,Tumbled,Beige,1,,1.25,3.30,piece,10001287
+latttrvpav130162,UPDATE,Travertine,"6"" x 6""",Square,Tumbled,Brown,1,,1.25,1.72,piece,LATRTRAEXT038561
+absolute-black-granite-wall-floor-tile,UPDATE,Granite,"12"" x 12""",Square,Polished,Black,5,5.0,0.375,8.33,sq ft,ABBLGRATIL637429
+chakra-slate-pencil-liner-trim-tile,UPDATE,Slate,"3/4"" x 12""",,,Black,1,,0.75,12.43,piece,CHSLSLATRI257973
+golden-coast-slate-pencil-liner-trim-tile,UPDATE,Slate,"3/4"" x 12""",,,Blue,1,,0.75,12.43,piece,GOCOSLATRI741365
+american-chestnut-travertine-12-x-12-tumbled-pavers,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Brown,1,,1.25,10.58,piece,AMCHTRAEXT111861
+scbstrvpav130013,UPDATE,Travertine,"6"" x 6""",Square,Tumbled,Gold,1,,1.25,1.68,piece,SCTRTRAEXT631329
+nctrvpav130056,UPDATE,Travertine,"6"" x 6""",Square,Tumbled,Brown,1,,1.25,1.56,piece,NOTRTRAEXT482145
+ivrtrvpav130166,UPDATE,Travertine,,,Tumbled,Beige,16,16.0,1.25,7.06,sq ft,IVTRTRAEXT844897
+walnut-travertine-coping-12x12-1-25-tumbled,UPDATE,Travertine,"12"" x 12""",,Tumbled,Brown,1,,1.25,10.46,piece,WATRTRAPOO831393
+golden-coast-slate-versailles-wall-and-floor-tile,UPDATE,Slate,,Versailles,,Grey,16,16.0,0.375,5.58,sq ft,GOCOSLAVER201909
+rustic-amber-slate-versailles-wall-and-floor-tile,UPDATE,Slate,,Versailles,,Grey,16,16.0,0.375,5.10,sq ft,RUAMSLAVER845813
+nctrvpav130081,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Brown,1,,1.25,6.82,piece,NOTRTRAEXT613217
+golden-coast-slate-mosaic-wall-and-floor-tile,UPDATE,Slate,"2"" x 2""",Square,,Grey,8,8.0,0.375,10.57,sq ft,GOCOSLAMOS128309
+nctrvcop310024,UPDATE,Travertine,"12"" x 12""",Square,Tumbled,Brown,1,,1.25,9.90,piece,NOTRTRAPOO368033
+ivrtrvcop310051,UPDATE,Travertine,"6"" x 12""",,Tumbled,Beige,1,,1.25,5.39,piece,IVTRTRAPOO337569
+rustic-amber-slate-mosaic-wall-and-floor-tile,UPDATE,Slate,"2"" x 2""",Square,,Grey,8,8.0,0.375,10.20,sq ft,RUAMSLAMOS991541
+slvrtrvwp230023,UPDATE,Travertine,"6"" x 24""",,Split Face,Grey,1,,0.6,10.12,piece,SITRTRALED217057
+rainbow-slate-wall-and-floor-tile,UPDATE,Slate,"3"" x 6""",,Tumbled,Blue,56,7.0,0.375,5.61,sq ft,RASLSLATIL971829
+rustic-amber-slate-wall-and-floor-tile,UPDATE,Slate,"3"" x 6""",,Tumbled,Green,56,7.0,0.375,5.10,sq ft,RUAMSLATIL902389
+chakra-slate-tile,UPDATE,Slate,"3"" x 6""",,Tumbled,Black,56,7.0,0.375,4.93,sq ft,CHSLSLATIL387317
+golden-coast,UPDATE,Slate,"3"" x 6""",,Tumbled,Green,56,7.0,0.375,4.76,sq ft,GOCOSLATIL290229
+amazon-multicolor-slate-wall-and-floor-tile,UPDATE,Slate,"12"" x 12""",Square,,,7,7.0,0.375,7.65,sq ft,AMMUSLATIL440373
+amazon-black-slate-wall-and-floor-tile-1,UPDATE,Slate,"12"" x 24""",,,Grey,3,6.0,0.375,6.63,sq ft,AMGRSLATIL641525
