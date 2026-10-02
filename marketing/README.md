@@ -1,12 +1,13 @@
 # Henry Harlow — Meta ve Pinterest reklam altyapısı
 
-Bu klasör reklamların üç parçasını kurar:
+Bu klasör reklamların dört parçasını kurar:
 
 | Parça | Ne yapar | Nerede |
 |---|---|---|
 | **İzleme** (pixel + Conversions API) | Ziyaret, ürün görüntüleme, sepet, ödeme ve satın alma olaylarını tarayıcıdan ve sunucudan gönderir | Shopify'ın resmi **Facebook & Instagram** ve **Pinterest** uygulamaları |
 | **Numune olayı** | Numune içeren siparişi ayrı bir olay olarak gönderir (Meta: `SampleOrder`, Pinterest: `lead`) | `sample-order-pixel.js` → Shopify Customer events |
 | **Ürün kataloğu** | Fiyat, stok ve görselleri canlı mağazadan alır, malzeme/desen/renk/fiyat etiketlerini ekler, her sabah yeniler | `build_feeds.py` → `feeds/meta.csv`, `feeds/pinterest.csv` |
+| **Reklam görselleri** | 15 konsept × 4 boyut = 60 hazır görsel ve platform metinleri | `build_creatives.py` → `creatives/` |
 
 İzleme için uygulamaları kullanıyoruz, çünkü Shopify'ın ödeme sayfasına kendi kodumuzu koyamıyoruz ve sunucu tarafı olayları (CAPI) uygulamalar kendisi kuruyor. Kataloğu ise kendimiz üretiyoruz. Uygulamaların senkronladığı katalogda reklamları bölmek için gereken desen, renk, fiyat kademesi ve iç/dış mekân bilgisi yok.
 
@@ -144,3 +145,46 @@ Başlangıçta bütçenin ~%70'i soğuk kitleye, ~%30'u yeniden hedeflemeye gide
   python3 marketing/build_feeds.py --store https://<mağaza-adresi>
   python3 -m unittest discover -s marketing
   ```
+
+---
+
+## 8. Reklam görselleri
+
+`creatives/` klasöründe 15 konsept var. Her konsept dört boyutta:
+
+| Dosya eki | Boyut | Nerede |
+|---|---|---|
+| `meta-1x1` | 1080×1080 | Meta akış, sağ sütun, carousel |
+| `meta-4x5` | 1080×1350 | Meta akış (Facebook ve Instagram'da en çok alan kaplayan) |
+| `meta-9x16` | 1080×1920 | Stories ve Reels. Yazı üst %14 ve alt %25 dışında; testler bunu kontrol eder |
+| `pinterest-2x3` | 1000×1500 | Pinterest standart pin reklamı |
+
+Konseptler:
+
+| Tür | Konseptler | Amaç |
+|---|---|---|
+| Tekil ürün (8) | Dama, şevron, altıgen, arabesk, iki desenli mermer, Versailles, Rojo Alicante | Soğuk kitle; hangi ürünün tıklandığını görmek |
+| Koleksiyon (4) | Checkerboard Floors, Herringbone & Chevron, Patterned Marble, Versailles Pattern | Soğuk kitle; Pinterest desen aramaları |
+| Numune (1) | "See it in your own light." | **Numune siparişi** optimizasyonu, retargeting |
+| Marka (2) | "Quarried, not printed.", "No two pieces alike." | Doğal taş ile baskılı porselen farkı |
+
+Hızlı bakış için: `creatives/overview.jpg`.
+
+**Metinler:** `creatives/ad-copy.csv` her konsept için şunları içerir: Meta *primary text*, *headline* ve *description*; Pinterest *title* ve *description*; hedef link (`/products/...` veya `/collections/...`, başına mağaza adresi eklenir). Metinler İngilizce (ABD pazarı). Karakter sınırları araç tarafından denetlenir.
+
+**Kurulum:**
+- **Meta:** Reklam düzeyinde 4:5 görseli yükle. *Placement asset customization* ile Stories/Reels için 9:16'yı, sağ sütun için 1:1'i seç. Dosya adları konsepti gösterir; reklam adı olarak konsept adını kullan (ör. `HH | META | Sales | Broad | Tümü` altında `checkerboard-nero-calacatta`).
+- **Pinterest:** 2:3 görseli standart pin olarak yükle. Hedef URL'ye `?utm_source=pinterest&utm_medium=paid_social&utm_campaign=<kampanya>` ekle.
+- İlk testte konsept başına bir reklam aç ve 1–2 hafta sonra kazananları koru. Görseller aynı tasarım dilinde olduğu için farkı ürün yaratır; böylece hangi taşın ve desenin ilgi çektiği net görünür.
+
+**Yeni koleksiyonlar:** Herringbone & Chevron ve Patterned Marble reklamları `/collections/herringbone-chevron` ve `/collections/patterned-marble` adreslerine gider. Bu iki koleksiyon mağazada henüz yok. **Reklamları açmadan önce** `data/collections_ads.csv` dosyasını Matrixify ile içe aktar:
+- **Herringbone & Chevron:** "Herringbone" veya "Chevron" etiketli 46 ürün.
+- **Patterned Marble:** adı Stellare, Elara, Verona, Serratone ya da Sora ile başlayan 25 ürün.
+
+**Değiştirme veya yeni konsept ekleme:** `marketing/creatives.json` içinde bir konsepti kopyala, `handle` veya `handles` ile metinleri değiştir, sonra şunu çalıştır:
+```
+pip install -r marketing/requirements.txt
+python3 marketing/build_creatives.py              # hepsi
+python3 marketing/build_creatives.py samples      # tek konsept
+```
+Ürün görselleri `images/` klasöründen olduğu gibi kullanılır; rötuş yapılmaz. Font olarak logonun yüzü Cormorant Garamond ve küçük etiketler için Jost kullanılır (ikisi de `brand/fonts/`, OFL lisanslı).

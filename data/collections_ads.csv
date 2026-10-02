@@ -1,0 +1,8 @@
+Handle,Command,Title,Body HTML,Sort Order,Published,Must Match,Rule: Product Column,Rule: Relation,Rule: Condition
+herringbone-chevron,NEW,Herringbone & Chevron,"<p>Herringbone and chevron mosaics in marble and travertine, mesh-mounted for backsplashes, shower walls and floors. Sold by the box with 4 inch samples available. Ships across the continental US.</p>",best-selling,TRUE,any condition,Tag,Equals,Herringbone
+herringbone-chevron,,,,,,,Tag,Equals,Chevron
+patterned-marble,NEW,Patterned Marble,"<p>Geometric tiles that pair Carrara or Oriental White with Nero Marquina, Giallo Reale, Rojo Alicante or Verde Alpi, cut from natural marble. Sold by the box with 4 inch samples available. Ships across the continental US.</p>",best-selling,TRUE,any condition,Title,Starts With,Stellare
+patterned-marble,,,,,,,Title,Starts With,Elara
+patterned-marble,,,,,,,Title,Starts With,Verona
+patterned-marble,,,,,,,Title,Starts With,Serratone
+patterned-marble,,,,,,,Title,Starts With,Sora

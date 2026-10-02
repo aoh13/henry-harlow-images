@@ -1,0 +1,244 @@
+{
+  "_note": "Each concept renders in every format in build_creatives.py. Image text stays short; the platform copy carries the detail. Limits: meta_headline 40, meta_description 30, meta_primary_text 300, pinterest_title 100, pinterest_description 500.",
+  "concepts": [
+    {
+      "id": "checkerboard-nero-calacatta",
+      "type": "product",
+      "handle": "checkers-with-nero-marquina-calacatta-gold-24x24-honed-tile",
+      "kicker": "Checkerboard",
+      "headline": "Nero Marquina & Calacatta Gold",
+      "link": "/products/checkers-with-nero-marquina-calacatta-gold-24x24-honed-tile",
+      "meta_primary_text": "Black Nero Marquina and gold-veined Calacatta, laid as a checkerboard. It's real marble, so the veining changes from square to square. Order a 4-inch sample before you commit.",
+      "meta_headline": "Marble Checkerboard Floor Tile",
+      "meta_description": "4-inch samples available",
+      "pinterest_title": "Nero Marquina & Calacatta Gold Marble Checkerboard Floor Tile",
+      "pinterest_description": "A black-and-white checkerboard in natural marble: Nero Marquina and Calacatta Gold with a matte finish. Every piece is quarried, so the veining shifts from square to square. 4-inch samples available. Ships across the continental US."
+    },
+    {
+      "id": "chevron-thassos-black",
+      "type": "product",
+      "handle": "thassos-white-greek-marble-mosaic-3-8-chevron-large-thassos-black-thin-strips-mosaic",
+      "kicker": "Chevron Mosaic",
+      "headline": "Thassos White with Black Strips",
+      "link": "/products/thassos-white-greek-marble-mosaic-3-8-chevron-large-thassos-black-thin-strips-mosaic",
+      "meta_primary_text": "Bright Thassos marble cut into a large chevron, edged with thin black strips. A graphic backsplash or shower wall in real stone. Order a sample first.",
+      "meta_headline": "Thassos Marble Chevron Mosaic",
+      "meta_description": "4-inch samples available",
+      "pinterest_title": "Thassos White Marble Chevron Mosaic with Black Strips",
+      "pinterest_description": "Polished Thassos white marble in a large chevron, outlined with thin black strips: a graphic backsplash or shower wall in natural stone. 4-inch samples available. Ships across the continental US."
+    },
+    {
+      "id": "hexagon-thassos",
+      "type": "product",
+      "handle": "thassos-hexagon-12x13-mosaic-tile",
+      "kicker": "Hexagon Mosaic",
+      "headline": "Thassos Marble Hexagon",
+      "link": "/products/thassos-hexagon-12x13-mosaic-tile",
+      "meta_primary_text": "White Thassos marble hexagons, broken up by gold triangle accents. A backsplash or powder room wall in real stone. Order a 4-inch sample.",
+      "meta_headline": "Thassos Hexagon Mosaic",
+      "meta_description": "4-inch samples available",
+      "pinterest_title": "Thassos White Marble Hexagon Mosaic Tile",
+      "pinterest_description": "White Thassos marble hexagons with gold triangle accents, mesh-mounted. A natural stone mosaic for backsplashes, bathrooms and powder rooms. 4-inch samples available. Ships across the continental US."
+    },
+    {
+      "id": "arabesque-calacatta",
+      "type": "product",
+      "handle": "alice-precious-calacatta-11-5-x-12-waterjet-mosaic",
+      "kicker": "Waterjet Mosaic",
+      "headline": "Calacatta Arabesque",
+      "link": "/products/alice-precious-calacatta-11-5-x-12-waterjet-mosaic",
+      "meta_primary_text": "Calacatta marble, waterjet-cut into soft arabesque shapes. Every sheet carries different veining, because every block of stone does. Order a sample first.",
+      "meta_headline": "Calacatta Arabesque Mosaic",
+      "meta_description": "4-inch samples available",
+      "pinterest_title": "Calacatta Marble Arabesque Waterjet Mosaic Tile",
+      "pinterest_description": "Calacatta marble waterjet-cut into an arabesque pattern for backsplashes and bathroom walls. Natural stone, so veining varies from sheet to sheet. 4-inch samples available. Ships across the continental US."
+    },
+    {
+      "id": "patterned-giallo",
+      "type": "product",
+      "handle": "elara-with-carrara-white-and-giallo-reale-marble",
+      "kicker": "Patterned Marble",
+      "headline": "Carrara & Giallo Reale",
+      "link": "/products/elara-with-carrara-white-and-giallo-reale-marble",
+      "meta_primary_text": "Grey-veined Carrara and golden Giallo Reale, cut into triangles and set as one tile. A pattern you can only get from real marble.",
+      "meta_headline": "Carrara & Giallo Reale Marble",
+      "meta_description": "4-inch samples available",
+      "pinterest_title": "Carrara & Giallo Reale Patterned Marble Tile, Triangles",
+      "pinterest_description": "Carrara white and Giallo Reale marble cut into a triangle pattern with a matte finish. A statement floor or wall in natural stone. 4-inch samples available. Ships across the continental US."
+    },
+    {
+      "id": "patterned-rojo",
+      "type": "product",
+      "handle": "verona-with-carrara-and-rojo-alicante-patterned-marble",
+      "kicker": "Patterned Marble",
+      "headline": "Carrara & Rojo Alicante",
+      "link": "/products/verona-with-carrara-and-rojo-alicante-patterned-marble",
+      "meta_primary_text": "Carrara white framed in Rojo Alicante, a warm red marble from Spain. A matte patterned tile for a floor people will ask about.",
+      "meta_headline": "Carrara & Rojo Alicante Marble",
+      "meta_description": "4-inch samples available",
+      "pinterest_title": "Carrara & Rojo Alicante Patterned Marble Floor Tile",
+      "pinterest_description": "Carrara white and red Rojo Alicante marble in a geometric pattern, matte finish. Natural stone for floors and feature walls. 4-inch samples available. Ships across the continental US."
+    },
+    {
+      "id": "versailles-antico-onyx",
+      "type": "product",
+      "handle": "antico-ony-travertine-tile-versailles-pattern-antiqued-hand-tumbled-french-pattern",
+      "kicker": "Versailles Pattern",
+      "headline": "Antico Onyx Travertine",
+      "link": "/products/antico-ony-travertine-tile-versailles-pattern-antiqued-hand-tumbled-french-pattern",
+      "meta_primary_text": "The French pattern, in hand-tumbled Antico Onyx travertine. Several sizes in one repeating module, with the worn edges of an old courtyard from day one.",
+      "meta_headline": "Versailles Pattern Travertine",
+      "meta_description": "4-inch samples available",
+      "pinterest_title": "Antico Onyx Travertine Versailles Pattern Tile, Hand Tumbled",
+      "pinterest_description": "Hand-tumbled Antico Onyx travertine in the Versailles (French) pattern, sold as a repeating multi-size module. Antiqued edges for kitchens, patios and entryways. 4-inch samples available. Ships across the continental US."
+    },
+    {
+      "id": "rojo-alicante",
+      "type": "product",
+      "handle": "rojo-alicante-marble-12x12-wall-floor-tile",
+      "kicker": "Polished Marble",
+      "headline": "Rojo Alicante",
+      "link": "/products/rojo-alicante-marble-12x12-wall-floor-tile",
+      "meta_primary_text": "Rojo Alicante: a red Spanish marble shot through with white veins, polished to a shine. For the bathroom that shouldn't look like everyone else's.",
+      "meta_headline": "Rojo Alicante Marble Tile",
+      "meta_description": "4-inch samples available",
+      "pinterest_title": "Rojo Alicante Red Marble Tile, Polished, 12 x 12",
+      "pinterest_description": "Rojo Alicante, a red Spanish marble with white veining, polished, 12\" x 12\". Natural stone for bathroom floors, walls and fireplace surrounds. 4-inch samples available. Ships across the continental US."
+    },
+    {
+      "id": "collection-checkerboard",
+      "type": "collection",
+      "headline": "Checkerboard Floors",
+      "subline": "{count} checkerboards in natural stone",
+      "count": {
+        "pattern": [
+          "Checkerboard"
+        ]
+      },
+      "handles": [
+        "checkers-with-nero-marquina-calacatta-gold-24x24-honed-tile",
+        "checkerboard-thassos-white-crema-marfil-24x24-polished-tile",
+        "checkerboard-bardiglio-calacatta-gold-18x18-polished-tile",
+        "checkerboard-thassos-white-nero-marquina-18x18-polished-tile"
+      ],
+      "link": "/collections/checkerboard-floors",
+      "meta_primary_text": "Black and white, cream and grey, gold-veined and plain: two-tone checkerboard floors cut from real marble and travertine. Order 4-inch samples and see the pair in your own light.",
+      "meta_headline": "Marble Checkerboard Floors",
+      "meta_description": "4-inch samples available",
+      "pinterest_title": "Marble Checkerboard Floor Tile: Black & White, Cream & Grey",
+      "pinterest_description": "Two-tone checkerboard floors in natural marble and travertine: Nero Marquina, Calacatta Gold, Thassos, Crema Marfil, Bardiglio and more, polished or matte. 4-inch samples available. Ships across the continental US."
+    },
+    {
+      "id": "collection-herringbone",
+      "type": "collection",
+      "headline": "Herringbone & Chevron",
+      "subline": "{count} natural stone mosaics",
+      "count": {
+        "pattern": [
+          "Herringbone",
+          "Chevron"
+        ]
+      },
+      "handles": [
+        "herringbone-calacatta-gold-honed-11-25-x-11-25-mosaic-tile",
+        "thassos-white-greek-marble-mosaic-3-8-chevron-large-thassos-black-thin-strips-mosaic",
+        "herringbone-blue-11-x-12-5-mosaic-tile",
+        "herringbone-marfil-11-x-12-5-mosaic-tile"
+      ],
+      "link": "/collections/herringbone-chevron",
+      "meta_primary_text": "Herringbone and chevron mosaics in marble and travertine, mesh-mounted for backsplashes, shower walls and floors. Order a sample of the one you're circling.",
+      "meta_headline": "Herringbone & Chevron Mosaics",
+      "meta_description": "4-inch samples available",
+      "pinterest_title": "Marble Herringbone & Chevron Mosaic Tile for Backsplashes and Showers",
+      "pinterest_description": "Herringbone and chevron mosaics in natural marble and travertine: Calacatta, Thassos, Crema Marfil, blue marble and more. For backsplashes, shower walls and floors. 4-inch samples available. Ships across the continental US."
+    },
+    {
+      "id": "collection-patterned-marble",
+      "type": "collection",
+      "headline": "Patterned Marble",
+      "subline": "Geometric tiles in natural stone",
+      "handles": [
+        "stellare-with-carrara-white-and-giallo-reale-marble",
+        "verona-with-carrara-and-rojo-alicante-patterned-marble",
+        "elara-with-carrara-white-and-nero-marquina-marble",
+        "stellare-with-carrara-white-and-empress-green-marble"
+      ],
+      "link": "/collections/patterned-marble",
+      "meta_primary_text": "Carrara paired with Nero Marquina, Giallo Reale, Rojo Alicante or Verde Alpi, cut into geometric tiles. Floors with the colour built into the stone.",
+      "meta_headline": "Patterned Marble Tile",
+      "meta_description": "4-inch samples available",
+      "pinterest_title": "Patterned Marble Floor Tile: Geometric Designs in Natural Stone",
+      "pinterest_description": "Geometric patterned marble tiles that pair Carrara white with Nero Marquina, Giallo Reale, Rojo Alicante or Verde Alpi, matte finish. Statement floors and feature walls in natural stone. 4-inch samples available. Ships across the continental US."
+    },
+    {
+      "id": "collection-versailles",
+      "type": "collection",
+      "headline": "Versailles Pattern",
+      "subline": "{count} French-pattern styles",
+      "count": {
+        "pattern": [
+          "Versailles"
+        ]
+      },
+      "handles": [
+        "antico-ony-travertine-tile-versailles-pattern-antiqued-hand-tumbled-french-pattern",
+        "scatrvtil1219",
+        "scatrvmos1326",
+        "antico-onyx-travertine-tumbled-mini-versailles-mosaic"
+      ],
+      "link": "/collections/versailles-pattern",
+      "meta_primary_text": "The Versailles pattern in travertine and marble: several sizes in one repeating module, tumbled or brushed and chiseled. For kitchens, entryways and patios.",
+      "meta_headline": "Versailles Pattern Travertine",
+      "meta_description": "4-inch samples available",
+      "pinterest_title": "Versailles Pattern Stone Tile for Kitchens, Entryways and Patios",
+      "pinterest_description": "French-pattern travertine and marble sold as a repeating multi-size module: tumbled, brushed and chiseled, full size and mini mosaic. Natural stone for kitchens, entryways and patios. 4-inch samples available. Ships across the continental US."
+    },
+    {
+      "id": "samples",
+      "type": "samples",
+      "headline": "See it in your own light.",
+      "subline": "Order 4-inch samples before you commit",
+      "handles": [
+        "calacatta-viola-marble-12x24-inch-polished-wall-floor-tile",
+        "hnyonxtil1203",
+        "rosso-levanto-4x4-leather-tumbled-square-tile",
+        "atlantic-grey-marble-12-x24-matte-floor-wall-tile",
+        "empress-green-12x12-leather-tumbled-square-tile",
+        "valtrvtil1206"
+      ],
+      "link": "/collections/all",
+      "meta_primary_text": "Stone looks different at noon and at dusk, next to your cabinets and under your lights. Order 4-inch samples of the ones you like and decide at home.",
+      "meta_headline": "Order Natural Stone Samples",
+      "meta_description": "Marble, travertine, limestone",
+      "pinterest_title": "Order Natural Stone Tile Samples: Marble, Travertine, Limestone",
+      "pinterest_description": "See marble, travertine, limestone and slate in your own light before you commit to a floor or wall. 4-inch samples available. Ships across the continental US."
+    },
+    {
+      "id": "brand-quarried",
+      "type": "brand",
+      "handle": "calacatta-viola-marble-12x24-inch-polished-wall-floor-tile",
+      "headline": "Quarried, not printed.",
+      "subline": "Marble, travertine, limestone & slate",
+      "link": "/",
+      "meta_primary_text": "Marble-look porcelain is a photograph printed onto a tile. Our tiles are the stone itself: quarried, cut and finished, with veining no two pieces share. Order 4-inch samples.",
+      "meta_headline": "Natural Stone Tile",
+      "meta_description": "4-inch samples available",
+      "pinterest_title": "Natural Stone Tile: Real Marble, Travertine, Limestone & Slate",
+      "pinterest_description": "Tile cut from real stone, not printed porcelain: marble, travertine, limestone and slate for floors, walls, backsplashes and showers. 4-inch samples available. Ships across the continental US.",
+      "crop": 0.45
+    },
+    {
+      "id": "brand-no-two-alike",
+      "type": "brand",
+      "handle": "empress-green-12x12-leather-tumbled-square-tile",
+      "headline": "No two pieces alike.",
+      "subline": "Every tile is cut from real stone",
+      "link": "/",
+      "meta_primary_text": "Every block comes out of the quarry differently, so shade and veining shift from piece to piece. That variation is the material itself. Order a sample and see yours.",
+      "meta_headline": "Natural Stone Tile",
+      "meta_description": "4-inch samples available",
+      "pinterest_title": "Natural Stone Tile Where No Two Pieces Are Alike",
+      "pinterest_description": "Marble, travertine and limestone tile in which shade and veining shift from piece to piece, because every block comes out of the quarry differently. 4-inch samples available. Ships across the continental US."
+    }
+  ]
+}
