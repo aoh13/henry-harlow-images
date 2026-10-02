@@ -1,0 +1,53 @@
+name: Ad catalog feeds
+
+# Rebuilds feeds/meta.csv and feeds/pinterest.csv from the live store every
+# morning, before Meta and Pinterest fetch them. Needs the repository variable
+# STORE_URL (Settings > Secrets and variables > Actions > Variables).
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/import_update.csv"
+      - "marketing/build_feeds.py"
+      - "marketing/feed_config.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ad-feeds
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test feed builder
+        run: python3 -m unittest discover -s marketing
+
+      - name: Build feeds
+        if: vars.STORE_URL != ''
+        run: python3 marketing/build_feeds.py --store "${{ vars.STORE_URL }}"
+
+      - name: Commit feeds
+        if: vars.STORE_URL != ''
+        run: |
+          git add feeds
+          if git diff --cached --quiet; then
+            echo "Feeds unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh ad catalog feeds"
+          git push
+
+      - name: Report missing store URL
+        if: vars.STORE_URL == ''
+        run: echo "::warning::Set the STORE_URL repository variable to build the feeds."
