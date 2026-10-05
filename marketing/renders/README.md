@@ -52,6 +52,7 @@
 pip install bpy==4.2.0 Pillow numpy
 python3 marketing/renders/render_room.py golden-coast-shower --preview   # 400x600, ~20 sn
 python3 marketing/renders/render_room.py golden-coast-shower             # 1000x1500, ~15 dk (4 çekirdek CPU)
+marketing/renders/render_all.sh                                          # hepsi, sırayla (~2 saat)
 python3 marketing/renders/pins.py --store https://<mağaza-adresi>
 python3 -m unittest discover -s marketing/renders
 ```
