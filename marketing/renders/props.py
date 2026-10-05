@@ -67,11 +67,10 @@ def freestanding_tub(loc, rot_z=0.0, length=1.65, width=0.78, height=0.58, rgb=(
     tub.scale = (length, width, 1)
     tub.location = loc
     tub.rotation_euler.z = rot_z
-    water = cylinder("tub-water", 0.385, 0.001, (0, 0, height - 0.17), mat("water", (210, 225, 225), rough=0.0,
+    water = cylinder("tub-water", 0.37, 0.001, (0, 0, height - 0.17), mat("water", (210, 225, 225), rough=0.0,
                                                                               transmission=1.0, ior=1.33),
                      round_=0)
-    water.scale = (length, width, 1)
-    water.parent = tub
+    water.parent = tub  # inherits the tub's stretch; scaling it again would push it through the ends
     return tub
 
 
