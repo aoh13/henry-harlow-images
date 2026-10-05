@@ -64,15 +64,24 @@ def empress_green_bath(atlas_dir, assets):
 
     P.freestanding_tub((1.5, r.d - 0.62, 0), 0.0)
     P.wall_spout(r, "back", 1.5, 0.78, P.brass(), reach=0.2, spread=0.22)
+    teak = wood((150, 104, 66), (104, 70, 44), name="teak")
+    kit.box("tub-caddy", (0.2, 0.88, 0.022), (1.95, r.d - 0.62, 0.575), teak, round_=0.004)
+    P.books((1.93, r.d - 0.72, 0.597), math.pi / 2, [(214, 200, 176), (120, 96, 72)], height=0.2, depth=0.14,
+            lying=True)
+    P.jar((1.95, r.d - 0.42, 0.597), 0.035, 0.07, (232, 226, 214), rough=0.4)
     for s in (0.55, 2.45):
         P.sconce(r, "back", s, 1.75, P.brass(), energy=4)
-    P.stool((2.62, r.d - 1.05, 0), wood((176, 132, 92), (120, 84, 56), name="oak"), height=0.46)
+    oak = wood((176, 132, 92), (120, 84, 56), name="oak")
+    P.stool((2.62, r.d - 1.05, 0), oak, height=0.46)
     P.towel_stack((2.62, r.d - 1.05, 0.46), 0.2, [(232, 224, 210), (214, 202, 182)])
     P.vase_branches((2.58, r.d - 1.0, 0.57), vase_rgb=(220, 206, 186), height=0.45, vase_h=0.18)
-    P.paddle_plant((0.4, r.d - 1.45, 0), height=1.35)
+    P.bath_mat((1.45, r.d - 1.38, FLOOR_T), 0.02, size=(0.85, 0.52), rgb=(208, 196, 176))
+    P.paddle_plant((0.42, r.d - 1.45, 0), height=1.35)
+    for y in (1.6, 2.9):
+        P.downlight((1.5, y, r.h), energy=6)
     kit.daylight(sun_elevation=30, sun_azimuth=192, sky_strength=0.3, sun_strength=14)
-    kit.area_light("fill", (2.2, 0.3, 2.2), (2.0, 1.0), 60, (1.5, 2.0, 1.0))
-    kit.camera((2.55, 0.3, 1.3), (0.9, r.d, 1.3), lens=22, shift_y=-0.1)
+    kit.area_light("fill", (2.2, 0.3, 2.2), (2.0, 1.0), 40, (1.5, 2.0, 1.0))
+    kit.camera((2.48, 0.32, 1.22), (0.95, r.d, 1.22), lens=24, shift_y=-0.08, focus=2.9)
     return dict(floor=floor["tiles"], wall=back["tiles"])
 
 
@@ -113,17 +122,25 @@ def golden_coast_shower(atlas_dir, assets):
 
     P.glass_panel((1.62, r.d - FLOOR_T - 0.01), (1.62, r.d - 1.1), FLOOR_T, 2.0, P.black_metal())
     P.rain_shower(r, "back", 2.3, 2.15, P.black_metal(), arm=0.42)
-    P.stool((2.45, r.d - 0.55, FLOOR_T), wood((150, 104, 66), (104, 70, 44), name="teak"), height=0.44, radius=0.15)
+    P.linear_drain((1.78, r.d - 0.16, FLOOR_T), (2.72, r.d - 0.16, FLOOR_T), FLOOR_T)
+    teak = wood((150, 104, 66), (104, 70, 44), name="teak")
+    P.stool((2.45, r.d - 0.55, FLOOR_T), teak, height=0.44, radius=0.15)
+    P.bottle((2.4, r.d - 0.55, FLOOR_T + 0.44), liquid_rgb=(226, 214, 190), h=0.2, r=0.03)
+    P.bottle((2.5, r.d - 0.5, FLOOR_T + 0.44), liquid_rgb=(120, 140, 110), h=0.17, r=0.03)
     top = P.floating_vanity(r, "back", 0.18, 1.32, (226, 216, 200), oak, height=0.84, depth=0.48, sink="vessel",
                             basin_rgb=(236, 230, 220))
     P.wall_spout(r, "back", 0.75, 1.05, P.black_metal(), reach=0.17, handles=False)
     P.mirror(r, "back", 0.75, 1.62, "round", (0.68, 0.68), P.black_metal())
     P.vase_branches((1.12, top.y - 0.06, top.z), vase_rgb=(196, 168, 136), height=0.42, vase_h=0.16, seed=9)
+    P.soap_pump((0.36, top.y - 0.08, top.z), tray_mat=teak)
     P.towel((0.22, r.d - 0.6, 1.15), math.pi / 2, size=(0.4, 0.6), rgb=(226, 214, 196))
+    P.bath_mat((0.78, r.d - 0.95, FLOOR_T), 0.0, size=(0.75, 0.48), rgb=(196, 180, 158))
     P.paddle_plant((0.35, 0.85, 0), height=1.25, pot_rgb=(196, 170, 140))
+    for x, y in ((0.75, r.d - 1.0), (2.25, r.d - 0.6)):
+        P.downlight((x, y, r.h), energy=6)
     kit.daylight(sun_elevation=38, sun_azimuth=196, sky_strength=0.3, sun_strength=13)
-    kit.area_light("fill", (1.45, 0.25, 2.1), (2.0, 1.0), 50, (1.45, 2.0, 1.0))
-    kit.camera((1.45, 0.28, 1.32), (1.45, r.d, 1.32), lens=22, shift_y=-0.08)
+    kit.area_light("fill", (1.45, 0.25, 2.1), (2.0, 1.0), 35, (1.45, 2.0, 1.0))
+    kit.camera((1.22, 0.3, 1.24), (1.62, r.d, 1.24), lens=24, shift_y=-0.07, focus=2.9)
     return dict(floor=floor["tiles"], back=back["tiles"], side=side["tiles"])
 
 
@@ -172,10 +189,18 @@ def rainbow_kitchen(atlas_dir, assets):
                     wood((150, 108, 72), (100, 70, 46), name="board2"))
     P.bowl(tuple(r.point("back", 3.2, counter_h, 0.3)), 0.15, 0.09, (232, 226, 214), rough=0.6)
     P.lemons(tuple(r.point("back", 3.2, counter_h + 0.02, 0.3)), n=5)
-    P.jar(tuple(r.point("back", 1.35, counter_h, 0.18)), 0.055, 0.22, (120, 128, 98))
+    P.utensil_crock(tuple(r.point("back", 1.4, counter_h, 0.16)), rgb=(120, 128, 98))
+    P.bottle(tuple(r.point("back", 2.55, counter_h, 0.14)), liquid_rgb=(156, 136, 44))
+    for s_ in (0.98, 3.2):
+        P.outlet(r, "back", s_, 1.12, out=0.0125)
+    bar_z = 0.12 + 0.91 * 0.55 + 0.03
+    P.towel(tuple(r.point("back", 2.12, bar_z + 0.01, 0.68)), P.facing(r, "back"), size=(0.24, 0.42),
+            rgb=(196, 182, 156), folded_over=0.022, kind="linen", stripe_rgb=(150, 86, 60))
+    for x in (0.9, 2.0, 3.1):
+        P.downlight((x, r.d - 0.75, r.h), energy=7)
     kit.daylight(sun_elevation=34, sun_azimuth=-24, sky_strength=0.3, sun_strength=11)
-    kit.area_light("fill", (2.0, 0.4, 2.2), (2.5, 1.0), 70, (2.0, 2.5, 1.2))
-    kit.camera((2.0, 0.45, 1.42), (2.0, r.d, 1.42), lens=26, shift_y=0.02)
+    kit.area_light("fill", (2.0, 0.4, 2.2), (2.5, 1.0), 50, (2.0, 2.5, 1.2))
+    kit.camera((1.72, 0.55, 1.34), (2.15, r.d, 1.34), lens=27, shift_y=0.03, focus=2.85)
     return dict(backsplash=splash["tiles"])
 
 
@@ -200,12 +225,29 @@ def rosso_powder(atlas_dir, assets):
     P.wall_spout(r, "back", 0.9, 1.1, P.brass(), reach=0.17 + out, handles=False)
     P.mirror(r, "back", 0.9, 1.62, "round", (0.58, 0.58), P.brass(), out=0.02 + out)
     for s in (0.32, 1.48):
-        P.sconce(r, "back", s, 1.68, P.brass(), shade="linen", energy=9)
+        P.sconce(r, "back", s, 1.68, P.brass(), shade="linen", energy=12)
     P.vase_branches((top.x + 0.36, top.y - 0.05, top.z), vase_rgb=(214, 200, 180), height=0.3, vase_h=0.14, seed=31)
-    kit.point_light("ceiling-light", (0.9, 1.1, 2.5), 25, radius=0.15)
-    kit.area_light("fill", (0.9, 0.05, 1.9), (1.0, 0.6), 18, (0.9, 2.0, 1.2), color=(1.0, 0.92, 0.84))
-    world = bpy_world_dark()
-    kit.camera((0.9, 0.06, 1.38), (0.9, r.d, 1.38), lens=19, shift_y=-0.04)
+    P.soap_pump((top.x - 0.34, top.y - 0.06, top.z), glass_rgb=(60, 56, 52))
+    ring = r.point("left", 1.15, 1.3, out + 0.04)
+    kit.tube("towel-ring", [tuple(ring + kit.Vector((0, 0.08 * math.cos(t), 0.08 * math.sin(t))))
+                            for t in [2 * math.pi * k / 32 for k in range(33)]], 0.005, P.brass(), bezier=False)
+    P.towel((ring.x + 0.012, ring.y, ring.z - 0.06), math.pi / 2, size=(0.26, 0.42), rgb=(232, 222, 206),
+            folded_over=0.024)
+    casing = mat("casing", (236, 230, 220), rough=0.4, coat=0.1)
+    r.door("front", 0.5, 1.3, 2.05, casing)
+    # the hall the photo is taken from: oak floor, a lit wall behind the camera for the mirror to see
+    hall_wall = plaster((226, 218, 206), name="hall-plaster")
+    kit.box("hall-floor", (3.0, 2.0, 0.02), (0.9, -1.15, -0.02), wood((172, 132, 94), (124, 90, 60), name="hall-oak"),
+            round_=0)
+    kit.box("hall-back", (3.0, 0.1, 2.6), (0.9, -2.2, 0.0), hall_wall, round_=0)
+    kit.box("hall-ceiling", (3.0, 2.2, 0.05), (0.9, -1.1, 2.6), mat("ceiling", (226, 212, 200), rough=0.9), round_=0)
+    for x in (-0.65, 2.45):
+        kit.box("hall-side", (0.1, 2.2, 2.6), (x, -1.1, 0.0), hall_wall, round_=0)
+    P.downlight((0.9, 1.15, r.h), energy=18)
+    kit.area_light("inside", (0.9, 1.2, 2.5), (0.8, 0.8), 30, (0.9, 1.2, 0.0), color=(1.0, 0.9, 0.8))
+    kit.area_light("hall", (0.9, -1.4, 2.5), (1.2, 0.8), 70, (0.9, -1.4, 0.0), color=(1.0, 0.92, 0.84))
+    bpy_world_dark()
+    kit.camera((0.9, -1.0, 1.4), (0.9, r.d, 1.4), lens=26, shift_y=-0.03, focus=2.6, fstop=4.0)
     return dict(floor=floor["tiles"], back=back["tiles"], left=left["tiles"], right=right["tiles"])
 
 
@@ -220,7 +262,7 @@ def bpy_world_dark():
 
 # --- 5. travertine living room ---------------------------------------------------
 
-@room("walnut-travertine-living-room", "Warm Travertine Floor Living Room with Curved Sofa",
+@room("walnut-travertine-living-room", "Warm Travertine Floor Living Room",
       "walnut-travertine-tile-cross-cut-18x18-1-2-unfilled-brushed-chiseled",
       "Whole floor, 18\" x 18\" straight lay, 1/8\" joints")
 def travertine_living(atlas_dir, assets):
@@ -237,9 +279,10 @@ def travertine_living(atlas_dir, assets):
         P.curtain(r, "back", s1 - 0.05, s1 + 0.25, 2.75, (236, 228, 214), folds=4)
     r.baseboard(["left", "right", "back"], 0.08, wall)
     fabric = P.boucle((234, 226, 212))
-    P.curved_sofa((2.5, 3.3, 0.0125), 0.0, fabric, length=2.6, curve=-0.35)
-    P.cushion((1.75, 3.6, 0.47), (math.radians(-15), 0, 0.2), (0.45, 0.14, 0.42), P.linen((176, 118, 82)))
-    P.cushion((3.25, 3.6, 0.47), (math.radians(-15), 0, -0.2), (0.45, 0.14, 0.42), P.linen((196, 176, 140)))
+    P.sofa((2.5, 3.45, 0.0125), 0.0, fabric, length=2.5)
+    P.cushion((1.72, 3.62, 0.5), (math.radians(-14), 0, 0.15), (0.46, 0.15, 0.44), P.linen((176, 118, 82)))
+    P.cushion((3.28, 3.62, 0.5), (math.radians(-14), 0, -0.15), (0.46, 0.15, 0.44), P.linen((196, 176, 140)))
+    P.throw((3.05, 3.22, 0.43), 0.12, size=(0.5, 0.36, 0.05), rgb=(150, 120, 92))
     oak_dark = wood((122, 88, 60), (82, 58, 40), name="oak-dark")
     P.coffee_table((2.5, 2.35, 0.0125), 0.46, 0.36, oak_dark)
     P.books((2.35, 2.3, 0.375), 0.25, [(214, 200, 176), (120, 96, 72)], height=0.26, depth=0.2, lying=True)
@@ -249,9 +292,10 @@ def travertine_living(atlas_dir, assets):
     P.art(r, "left", 2.3, 1.95, (0.75, 0.95), assets / "art-terracotta.png", oak_dark)
     kit.box("side-table", (0.45, 0.45, 0.5), (4.3, 3.05, 0.0125), oak_dark, round_=0.01)
     P.vase_branches((4.3, 3.05, 0.5125), vase_rgb=(176, 120, 86), height=0.4, vase_h=0.2, seed=44)
-    kit.daylight(sun_elevation=26, sun_azimuth=68, sky_strength=0.3, sun_strength=12)
-    kit.area_light("fill", (2.5, 0.3, 2.4), (3.0, 1.2), 90, (2.5, 2.5, 0.8))
-    kit.camera((2.5, 0.2, 1.5), (2.5, r.d, 1.5), lens=22, shift_y=-0.2)
+    P.outlet(r, "left", 1.2, 0.35, rgb=(238, 234, 226))
+    kit.daylight(sun_elevation=30, sun_azimuth=62, sky_strength=0.32, sun_strength=6)
+    kit.area_light("fill", (2.5, 0.3, 2.4), (3.0, 1.2), 60, (2.5, 2.5, 0.8))
+    kit.camera((1.95, 0.25, 1.3), (2.75, r.d, 1.3), lens=24, shift_y=-0.15, focus=3.1)
     return dict(floor=floor["tiles"])
 
 
@@ -284,7 +328,7 @@ def chakra_mudroom(atlas_dir, assets):
             oak, rot_z=rot, round_=0.003)
     hooks = P.hooks(r, "back", [0.75, 1.3, 1.85], 1.42, P.brass())
     P.hat((hooks[0].x, hooks[0].y + 0.06, hooks[0].z - 0.22))
-    P.towel((hooks[2].x, hooks[2].y - 0.02, hooks[2].z), 0.0, size=(0.32, 0.55), rgb=(196, 170, 132))
+    P.tote((hooks[2].x, hooks[2].y - 0.03, hooks[2].z), 0.0)
     for s in (0.7, 1.3, 1.9):
         P.basket(tuple(r.point("back", s, 1.885, 0.2)), 0.15, 0.2)
     P.cushion(tuple(r.point("back", 0.85, 0.47, 0.25)), (0, 0, rot), (0.6, 0.38, 0.06), P.linen((222, 210, 190)))
@@ -292,9 +336,10 @@ def chakra_mudroom(atlas_dir, assets):
     P.basket((0.35, 0.65, 0.0125), 0.17, 0.28, (170, 136, 96))
     P.vase_branches((2.4, 1.0, 0.0125), vase_rgb=(120, 104, 88), height=0.9, vase_h=0.45, seed=55,
                     leaf=(0.06, 0.04))
+    P.downlight((1.3, 1.35, r.h), energy=8)
     kit.daylight(sun_elevation=32, sun_azimuth=-20, sky_strength=0.3, sun_strength=12)
-    kit.area_light("fill", (1.3, 0.25, 2.2), (2.0, 1.0), 50, (1.3, 2.0, 0.6))
-    kit.camera((1.3, 0.22, 1.45), (1.3, r.d, 1.45), lens=21, shift_y=-0.17)
+    kit.area_light("fill", (1.3, 0.25, 2.2), (2.0, 1.0), 35, (1.3, 2.0, 0.6))
+    kit.camera((1.08, 0.22, 1.32), (1.45, r.d, 1.32), lens=22, shift_y=-0.15, focus=2.3)
     return dict(floor=floor["tiles"])
 
 
@@ -335,9 +380,15 @@ def rojo_kitchen(atlas_dir, assets):
     P.vase_branches((2.6, 2.9, 0.9325), vase_rgb=(176, 120, 86), height=0.45, vase_h=0.22, seed=66)
     for x in (1.55, 2.65):
         P.pendant((x, 2.75, 2.9), 0.85, P.brass(), shade_rgb=(232, 224, 210), radius=0.2, energy=10)
+    for s_ in (0.8, 3.45):
+        P.outlet(r, "back", s_, 1.12)
+    P.utensil_crock(tuple(r.point("back", 1.25, 0.91, 0.18)), rgb=(232, 226, 214))
+    P.bottle(tuple(r.point("back", 2.85, 0.91, 0.14)), liquid_rgb=(156, 136, 44))
+    P.towel((2.75, 2.75 - 0.49, 0.92), 0.0, size=(0.26, 0.4), rgb=(204, 188, 160), folded_over=0.022, kind="linen",
+            stripe_rgb=(70, 86, 112))
     kit.daylight(sun_elevation=30, sun_azimuth=78, sky_strength=0.3, sun_strength=12)
-    kit.area_light("fill", (2.1, 0.3, 2.4), (3.0, 1.0), 80, (2.1, 2.5, 0.8))
-    kit.camera((2.1, 0.2, 1.55), (2.1, r.d, 1.55), lens=21, shift_y=-0.22)
+    kit.area_light("fill", (2.1, 0.3, 2.4), (3.0, 1.0), 55, (2.1, 2.5, 0.8))
+    kit.camera((1.72, 0.25, 1.45), (2.35, r.d, 1.45), lens=22, shift_y=-0.2, focus=2.6)
     return dict(floor=floor["tiles"])
 
 
@@ -365,10 +416,15 @@ def amazon_japandi(atlas_dir, assets):
     P.glass_panel((1.75, r.d - FLOOR_T - 0.01), (1.75, r.d - 1.05), FLOOR_T, 2.0, P.black_metal())
     P.rain_shower(r, "back", 2.38, 2.15, P.black_metal(), arm=0.4)
     P.bench((1.95, r.d - 0.3, 0), (2.85, r.d - 0.3, 0), 0.3, 0.42, oak)
-    P.towel_stack((0.3, 2.85, 0.0125), 0.1, [(234, 228, 216), (210, 200, 186), (234, 228, 216)])
+    P.towel_stack((2.62, r.d - 0.3, 0.42), 0.0, [(234, 228, 216), (210, 200, 186)])
     P.vase_branches((top.x - 0.05, top.y + 0.42, top.z), vase_rgb=(60, 58, 54), height=0.38, vase_h=0.16, seed=74)
+    P.soap_pump((top.x - 0.05, top.y - 0.36, top.z), glass_rgb=(60, 56, 52))
+    P.bath_mat((0.78, 1.3, FLOOR_T), math.pi / 2, size=(0.8, 0.5), rgb=(204, 196, 182))
+    P.linear_drain((1.9, r.d - 0.12, FLOOR_T), (2.85, r.d - 0.12, FLOOR_T), FLOOR_T)
     P.paddle_plant((0.42, 2.72, 0), height=1.3, pot_rgb=(120, 112, 104))
+    for x, y in ((1.3, 1.3), (2.35, r.d - 0.55)):
+        P.downlight((x, y, r.h), energy=6)
     kit.daylight(sun_elevation=36, sun_azimuth=188, sky_strength=0.3, sun_strength=12)
-    kit.area_light("fill", (2.4, 0.3, 2.2), (2.0, 1.0), 60, (1.5, 2.0, 1.0))
-    kit.camera((2.55, 0.3, 1.35), (0.6, r.d - 0.6, 1.35), lens=22, shift_y=-0.08)
+    kit.area_light("fill", (2.4, 0.3, 2.2), (2.0, 1.0), 40, (1.5, 2.0, 1.0))
+    kit.camera((2.55, 0.3, 1.25), (0.6, r.d - 0.6, 1.25), lens=24, shift_y=-0.07, focus=2.4)
     return dict(floor=floor["tiles"], back=back["tiles"])

@@ -15,6 +15,7 @@ sys.path.insert(0, str(HERE))
 
 import assets  # noqa: E402
 import kit  # noqa: E402
+import photo  # noqa: E402
 import products  # noqa: E402
 import rooms  # noqa: E402
 
@@ -22,7 +23,7 @@ import rooms  # noqa: E402
 def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("room", choices=sorted(rooms.ROOMS))
-    ap.add_argument("--preview", action="store_true", help="small, fast and noisy")
+    ap.add_argument("--preview", action="store_true", help="500x750, fast and a little noisy")
     ap.add_argument("--samples", type=int, default=256)
     ap.add_argument("--out", type=Path, default=HERE / "build" / "out")
     ap.add_argument("--build", type=Path, default=HERE / "build")
@@ -38,14 +39,18 @@ def main(argv=None):
 
     kit.reset()
     if args.preview:
-        kit.setup_render(400, 600, samples=24)
+        kit.setup_render(500, 750, samples=40)
     else:
         kit.setup_render(1000, 1500, samples=args.samples)
     used = spec["build"](atlas_dir, asset_dir)
+    kit.lens_effects()
     args.out.mkdir(parents=True, exist_ok=True)
-    path = args.out / f"{args.room}{'-preview' if args.preview else ''}.png"
+    name = f"{args.room}{'-preview' if args.preview else ''}"
+    raw = args.out / f"{name}-raw.png"
+    path = args.out / f"{name}.png"
     t = time.time()
-    kit.render(path)
+    kit.render(raw)
+    photo.develop(raw, path, seed=sum(map(ord, args.room)))
     info = {"room": args.room, "title": spec["title"], "handle": spec["handle"], "surfaces": spec["surfaces"],
             "tiles": used, "seconds": round(time.time() - t)}
     (args.out / f"{args.room}.json").write_text(json.dumps(info, indent=2))

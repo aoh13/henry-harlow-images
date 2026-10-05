@@ -4,7 +4,9 @@ primitives so every scene is self-contained and reproducible."""
 import math
 import random
 
-import kit  # imports bpy, which provides mathutils
+import bpy
+
+import kit
 from kit import box, cylinder, lathe, mat, tube
 from mathutils import Vector
 
@@ -46,6 +48,223 @@ def ceramic(rgb, rough=0.35):
 
 def frosted():
     return mat("frosted", (250, 246, 240), rough=0.5, transmission=0.9, ior=1.45)
+
+
+def soft_box(name, size, loc, material, rot=(0.0, 0.0, 0.0), round_=None, wrinkle=0.004, wrinkle_size=0.05,
+             levels=2):
+    """A cushion, towel or mat: a rounded box smoothed and lightly creased."""
+    sx, sy, sz = size
+    obj = box(name, size, loc, material, round_=0)
+    obj.rotation_euler = rot
+    bev = obj.modifiers.new("round", "BEVEL")
+    bev.width = round_ if round_ is not None else min(size) * 0.45
+    bev.segments = 3
+    sub = obj.modifiers.new("smooth", "SUBSURF")
+    sub.levels = sub.render_levels = levels
+    if wrinkle:
+        tex = bpy.data.textures.new(f"crease-{name}", "CLOUDS")
+        tex.noise_scale = wrinkle_size
+        tex.noise_depth = 2
+        dis = obj.modifiers.new("creases", "DISPLACE")
+        dis.texture = tex
+        dis.texture_coords = "GLOBAL"
+        dis.strength = wrinkle
+    obj.data.shade_smooth()
+    return obj
+
+
+def _fabric(name, rgb, ribs=None, loop_scale=260.0, loop_bump=0.9, tone=0.06, stripe_rgb=None, stripe_period=0.07):
+    """Cloth: tone mottling, a pile or weave you can see, optional ribs
+    (bands along the object's X axis, every `ribs` metres) and optional woven
+    stripes across its height (a tea towel's)."""
+    m = bpy.data.materials.new(name)
+    m.use_nodes = True
+    nt = m.node_tree
+    p = nt.nodes["Principled BSDF"]
+    tc = nt.nodes.new("ShaderNodeTexCoord")
+    mottle = nt.nodes.new("ShaderNodeTexNoise")
+    mottle.inputs["Scale"].default_value = 18.0
+    nt.links.new(tc.outputs["Object"], mottle.inputs["Vector"])
+    ramp = nt.nodes.new("ShaderNodeValToRGB")
+    ramp.color_ramp.elements[0].color = kit.srgb(tuple(c * (1 - tone) for c in rgb))
+    ramp.color_ramp.elements[1].color = kit.srgb(tuple(min(255, c * (1 + tone)) for c in rgb))
+    nt.links.new(mottle.outputs["Fac"], ramp.inputs["Fac"])
+    nt.links.new(ramp.outputs["Color"], p.inputs["Base Color"])
+    p.inputs["Roughness"].default_value = 0.96
+    p.inputs["Sheen Weight"].default_value = 0.9
+    p.inputs["Sheen Roughness"].default_value = 0.4
+    pile = nt.nodes.new("ShaderNodeTexNoise")
+    pile.inputs["Scale"].default_value = loop_scale
+    pile.inputs["Detail"].default_value = 4
+    nt.links.new(tc.outputs["Object"], pile.inputs["Vector"])
+    height = pile.outputs["Fac"]
+    if ribs:
+        wave = nt.nodes.new("ShaderNodeTexWave")
+        wave.wave_type = "BANDS"
+        wave.bands_direction = "X"
+        wave.wave_profile = "SIN"
+        wave.inputs["Scale"].default_value = 2 * math.pi / (20 * ribs)  # Blender bands repeat every 2pi/(20 scale)
+        nt.links.new(tc.outputs["Object"], wave.inputs["Vector"])
+        mix = nt.nodes.new("ShaderNodeMix")
+        mix.data_type = "FLOAT"
+        mix.inputs["Factor"].default_value = 0.35
+        nt.links.new(wave.outputs["Fac"], mix.inputs["A"])
+        nt.links.new(pile.outputs["Fac"], mix.inputs["B"])
+        height = mix.outputs["Result"]
+        shade = nt.nodes.new("ShaderNodeMix")  # the grooves read a touch darker
+        shade.data_type = "RGBA"
+        shade.blend_type = "MULTIPLY"
+        shade.inputs["Factor"].default_value = 0.25
+        nt.links.new(ramp.outputs["Color"], shade.inputs["A"])
+        nt.links.new(wave.outputs["Color"], shade.inputs["B"])
+        nt.links.new(shade.outputs["Result"], p.inputs["Base Color"])
+    if stripe_rgb:
+        bands = nt.nodes.new("ShaderNodeTexWave")
+        bands.wave_type = "BANDS"
+        bands.bands_direction = "Z"
+        bands.wave_profile = "SAW"
+        bands.inputs["Scale"].default_value = 2 * math.pi / (20 * stripe_period)
+        nt.links.new(tc.outputs["Object"], bands.inputs["Vector"])
+        step = nt.nodes.new("ShaderNodeValToRGB")
+        step.color_ramp.interpolation = "CONSTANT"
+        step.color_ramp.elements[1].position = 0.82
+        nt.links.new(bands.outputs["Fac"], step.inputs["Fac"])
+        stripe = nt.nodes.new("ShaderNodeMix")
+        stripe.data_type = "RGBA"
+        stripe.inputs["B"].default_value = kit.srgb(stripe_rgb)
+        nt.links.new(step.outputs["Color"], stripe.inputs["Factor"])
+        nt.links.new(p.inputs["Base Color"].links[0].from_socket, stripe.inputs["A"])
+        nt.links.new(stripe.outputs["Result"], p.inputs["Base Color"])
+    bump = nt.nodes.new("ShaderNodeBump")
+    bump.inputs["Strength"].default_value = loop_bump
+    bump.inputs["Distance"].default_value = 0.003
+    nt.links.new(height, bump.inputs["Height"])
+    nt.links.new(bump.outputs["Normal"], p.inputs["Normal"])
+    return m
+
+
+def terry(rgb):
+    return _fabric("terry-%d-%d-%d" % rgb, rgb, loop_scale=420.0, loop_bump=1.0)
+
+
+def ribbed_cotton(rgb):
+    return _fabric("ribbed-%d-%d-%d" % rgb, rgb, ribs=0.009, loop_scale=500.0, loop_bump=0.8)
+
+
+def linen_weave(rgb, stripe_rgb=None):
+    return _fabric("linen-weave-%d-%d-%d" % rgb, rgb, loop_scale=900.0, loop_bump=0.5, tone=0.08,
+                   stripe_rgb=stripe_rgb)
+
+
+def bath_mat(loc, rot_z, size=(0.8, 0.5), rgb=(204, 192, 172)):
+    x, y, z = loc
+    return soft_box("bath-mat", (size[0], size[1], 0.022), (x, y, z), ribbed_cotton(rgb), rot=(0, 0, rot_z),
+                    round_=0.009, wrinkle=0.004, wrinkle_size=0.22)
+
+
+def soap_pump(loc, glass_rgb=(150, 92, 40), tray_mat=None):
+    """An amber glass pump bottle, on a little stone or wood tray."""
+    x, y, z = loc
+    if tray_mat:
+        box("tray", (0.2, 0.12, 0.012), (x + 0.03, y, z), tray_mat, round_=0.004)
+        z += 0.012
+    lathe("soap-bottle", [(0.0, 0.0), (0.035, 0.0), (0.038, 0.01), (0.038, 0.13), (0.03, 0.15), (0.015, 0.16),
+                          (0.015, 0.17), (0.0, 0.17)], (x, y, z),
+          mat("amber-glass", glass_rgb, rough=0.05, transmission=0.85, ior=1.5))
+    cylinder("pump-collar", 0.017, 0.02, (x, y, z + 0.168), black_metal())
+    cylinder("pump-stem", 0.006, 0.03, (x, y, z + 0.188), black_metal())
+    tube("pump-nozzle", [(x, y, z + 0.215), (x + 0.045, y, z + 0.21)], 0.006, black_metal(), bezier=False)
+
+
+def outlet(room, wall, s, z, out=0.0, rgb=(240, 238, 232)):
+    """A duplex outlet: a plate with two receptacles."""
+    o, u, v = room.frame(wall)
+    rot = facing(room, wall)
+    box("outlet-plate", (0.07, 0.006, 0.115), tuple(room.point(wall, s, z - 0.0575, out + 0.003)),
+        mat("outlet", rgb, rough=0.35), rot_z=rot, round_=0.002)
+    for dz in (-0.022, 0.022):
+        box("receptacle", (0.034, 0.003, 0.03), tuple(room.point(wall, s, z + dz - 0.015, out + 0.0065)),
+            mat("receptacle", (226, 224, 218), rough=0.4), rot_z=rot, round_=0.003)
+
+
+def downlight(loc, energy=12.0, lit=True):
+    """A recessed ceiling light: white trim ring, warm lens, a soft cone."""
+    x, y, z = loc
+    cylinder("downlight-trim", 0.055, 0.004, (x, y, z - 0.004), mat("trim", (240, 238, 234), rough=0.4))
+    cylinder("downlight-lens", 0.04, 0.001, (x, y, z - 0.0045),
+             mat("lens-lit" if lit else "lens", (255, 226, 190), rough=0.3, emission=4.0 if lit else 0.0))
+    if lit:
+        data = bpy.data.lights.new("downlight", "SPOT")
+        data.energy = energy
+        data.spot_size = math.radians(70)
+        data.spot_blend = 0.6
+        data.shadow_soft_size = 0.03
+        data.color = (1.0, 0.84, 0.66)
+        obj = bpy.data.objects.new("downlight", data)
+        bpy.context.collection.objects.link(obj)
+        obj.location = (x, y, z - 0.01)
+
+
+def linear_drain(p0, p1, z, width=0.06):
+    p0, p1 = Vector(p0), Vector(p1)
+    d = p1 - p0
+    mid = (p0 + p1) / 2
+    rot = math.atan2(d.y, d.x)
+    steel = mat("steel", (180, 180, 176), rough=0.3, metal=1.0)
+    box("drain", (d.length, width, 0.003), (mid.x, mid.y, z), steel, rot_z=rot, round_=0.001)
+    for off in (-width / 4, 0.0, width / 4):
+        c = mid + Vector((-d.y, d.x, 0)).normalized() * off
+        box("drain-slot", (d.length - 0.03, 0.004, 0.0035), (c.x, c.y, z), mat("slot", (30, 30, 30), rough=0.6),
+            rot_z=rot, round_=0)
+
+
+def bottle(loc, liquid_rgb=(150, 130, 40), h=0.28, r=0.035):
+    """A glass bottle of oil, with a cork."""
+    x, y, z = loc
+    lathe("bottle", [(0.0, 0.0), (r * 0.95, 0.0), (r, h * 0.05), (r, h * 0.62), (r * 0.4, h * 0.82), (r * 0.32, h),
+                     (0.0, h)], (x, y, z), mat("oil-%d" % sum(liquid_rgb), liquid_rgb, rough=0.03, transmission=0.9,
+                                              ior=1.47))
+    cylinder("cork", r * 0.3, 0.025, (x, y, z + h - 0.005), mat("cork", (176, 140, 100), rough=0.9, bump=0.6,
+                                                                bump_scale=200))
+
+
+def utensil_crock(loc, rgb=(222, 212, 196), wood_mat=None, seed=8):
+    rnd = random.Random(seed)
+    x, y, z = loc
+    jar((x, y, z), 0.065, 0.16, rgb, rough=0.55)
+    wood_mat = wood_mat or mat("spoon-wood", (176, 136, 92), rough=0.6)
+    for i in range(5):
+        a = 2 * math.pi * i / 5 + rnd.uniform(-0.3, 0.3)
+        lean = rnd.uniform(0.04, 0.09)
+        top = (x + lean * math.cos(a), y + lean * math.sin(a), z + 0.16 + rnd.uniform(0.12, 0.2))
+        tube("utensil", [(x, y, z + 0.03), top], 0.006, wood_mat, bezier=False)
+        head = lathe("spoon-head", [(0.0, -0.035), (0.022, -0.02), (0.024, 0.0), (0.02, 0.02), (0.0, 0.03)], top,
+                     wood_mat, steps=24)
+        head.scale = (1, 0.35, 1)
+        head.rotation_euler = (0, 0, a)
+
+
+def throw(loc, rot_z, size=(0.55, 0.4, 0.05), rgb=(150, 120, 92)):
+    """A folded knit blanket."""
+    return soft_box("throw", size, loc, _fabric("knit-%d" % sum(rgb), rgb, ribs=0.006, loop_scale=300.0,
+                                                    loop_bump=1.0),
+                    rot=(0, 0, rot_z), round_=size[2] * 0.45, wrinkle=0.009, wrinkle_size=0.06)
+
+
+def tote(loc, rot_z, rgb=(214, 198, 168)):
+    """A canvas tote hanging from a hook at loc."""
+    x, y, z = loc
+    canvas = mat("canvas-%d" % sum(rgb), rgb, rough=0.95, bump=0.6, bump_scale=500)
+    soft_box("tote", (0.36, 0.08, 0.4), (x, y, z - 0.55), canvas, rot=(0.05, 0, rot_z), round_=0.03, wrinkle=0.006)
+    c, s_ = math.cos(rot_z), math.sin(rot_z)
+    for side in (-1, 1):
+        tube("tote-handle", [(x + side * 0.12 * c, y + side * 0.12 * s_, z - 0.16), (x, y, z)], 0.006, canvas,
+             bezier=False)
+
+
+def soil(loc, r):
+    """The top of the potting mix, a little below the pot's rim."""
+    cylinder("soil", r, 0.01, loc, mat("soil", (62, 48, 38), rough=1.0, bump=1.0, bump_scale=120), round_=0)
 
 
 # --- placing things against walls -------------------------------------------
@@ -194,18 +413,20 @@ def rain_shower(room, wall, s, z, material, arm=0.35, head_r=0.15):
          0.008, material)
 
 
-def towel(loc, rot_z, size=(0.45, 0.7), rgb=(232, 224, 210), folded_over=0.03):
-    """A towel hung over a bar at loc (its top edge)."""
+def towel(loc, rot_z, size=(0.45, 0.7), rgb=(214, 202, 182), folded_over=0.035, kind="terry", stripe_rgb=None):
+    """A towel hung over a bar or hook at loc (its top edge): soft and creased."""
     w, h = size
-    t = box("towel", (w, folded_over, h), (loc[0], loc[1], loc[2] - h), linen(rgb), rot_z=rot_z, round_=0.012)
-    return t
+    cloth = terry(rgb) if kind == "terry" else linen_weave(rgb, stripe_rgb)
+    return soft_box("towel", (w, folded_over, h), (loc[0], loc[1], loc[2] - h), cloth, rot=(0.04, 0, rot_z),
+                    round_=folded_over * 0.48, wrinkle=0.011, wrinkle_size=0.09)
 
 
-def towel_stack(loc, rot_z, rgbs, w=0.32, d=0.24, fold=0.055):
+def towel_stack(loc, rot_z, rgbs, w=0.32, d=0.24, fold=0.055, seed=4):
+    rnd = random.Random(seed)
     x, y, z = loc
     for i, rgb in enumerate(rgbs):
-        box("towel-fold", (w, d, fold), (x, y, z + i * fold), linen(rgb), rot_z=rot_z + random.uniform(-0.05, 0.05),
-            round_=0.02)
+        soft_box("towel-fold", (w, d, fold), (x + rnd.uniform(-0.01, 0.01), y + rnd.uniform(-0.01, 0.01), z + i * fold),
+                 terry(rgb), rot=(0, 0, rot_z + rnd.uniform(-0.06, 0.06)), round_=fold * 0.45, wrinkle=0.003)
 
 
 def stool(loc, wood_mat, height=0.45, radius=0.16):
@@ -237,15 +458,21 @@ def bench(p0, p1, depth, height, wood_mat, slats=5):
 
 # --- plants -------------------------------------------------------------------
 
-def _leaf_mesh(length, width, fold=0.25, steps=7):
-    """A pointed oval leaf along +X, its halves lifted slightly off the midrib."""
+def _leaf_mesh(length, width, fold=0.25, steps=7, curl=0.0, cup=0.0):
+    """A pointed oval leaf along +X: halves lifted off the midrib (fold), the
+    tip curling up or down (curl, share of length) and edges cupped (cup)."""
+    def lift(t):
+        return curl * length * t * t
+
     verts, rows = [(0.0, 0.0, 0.0)], []
     for i in range(1, steps):
         t = i / steps
         hw = width / 2 * math.sin(math.pi * t) ** 0.8
+        z = lift(t)
+        edge = z + hw * (fold + cup)
         rows.append((len(verts), len(verts) + 1, len(verts) + 2))
-        verts += [(length * t, hw, hw * fold), (length * t, 0.0, 0.0), (length * t, -hw, hw * fold)]
-    verts.append((length, 0.0, 0.0))
+        verts += [(length * t, hw, edge), (length * t, 0.0, z), (length * t, -hw, edge)]
+    verts.append((length, 0.0, lift(1.0)))
     tip = len(verts) - 1
     l0, m0, r0 = rows[0]
     faces = [(0, m0, l0), (0, r0, m0)]
@@ -301,6 +528,7 @@ def olive_tree(loc, height=1.7, pot_rgb=(196, 170, 140), seed=5):
     pot_h = 0.42
     lathe("pot", [(0.0, 0.0), (0.17, 0.0), (0.22, 0.05), (0.24, pot_h), (0.225, pot_h), (0.2, pot_h - 0.05),
                   (0.0, pot_h - 0.05)], (x, y, z), mat("terracotta-pot", pot_rgb, rough=0.85, bump=0.3, bump_scale=80))
+    soil((x, y, z + pot_h - 0.04), 0.205)
     trunk_mat = mat("bark", (96, 84, 70), rough=0.9, bump=0.6, bump_scale=40)
     trunk = [(x, y, z + pot_h - 0.05), (x + 0.03, y + 0.02, z + pot_h + 0.4), (x - 0.02, y, z + height * 0.65)]
     tube("trunk", trunk, 0.025, trunk_mat)
@@ -334,30 +562,42 @@ def vase_branches(loc, vase_rgb=(222, 210, 190), height=0.75, seed=7, leaf=(0.05
     leafy("branches", stems, leaf[0], leaf[1], list(leaf_rgbs), stem_mat, per_stem=16, seed=seed, droop=0.5)
 
 
-def paddle_plant(loc, height=1.5, pot_rgb=(232, 226, 214), seed=11):
-    """Large-leaf plant (bird of paradise / banana style) in a pot."""
+def paddle_plant(loc, height=1.5, pot_rgb=(232, 226, 214), seed=11, leaves=12):
+    """Bird-of-paradise style: long stems, broad leaves that arch and droop."""
     x, y, z = loc
     rnd = random.Random(seed)
-    pot_h = 0.45
-    lathe("pot", [(0.0, 0.0), (0.2, 0.0), (0.23, 0.04), (0.23, pot_h), (0.215, pot_h), (0.0, pot_h - 0.06)],
-          (x, y, z), ceramic(pot_rgb, 0.7))
+    pot_h, pot_r = 0.45, 0.23
+    lathe("pot", [(0.0, 0.0), (pot_r - 0.03, 0.0), (pot_r, 0.04), (pot_r, pot_h), (pot_r - 0.015, pot_h),
+                  (pot_r - 0.02, pot_h - 0.06), (0.0, pot_h - 0.06)], (x, y, z), ceramic(pot_rgb, 0.7))
+    soil((x, y, z + pot_h - 0.045), pot_r - 0.022)
     stem_mat = mat("stem-green", (96, 112, 72), rough=0.6)
-    verts, faces = [], []
-    lv, lf = _leaf_mesh(0.55, 0.2, fold=0.18, steps=10)
-    for i in range(8):
-        a = 2 * math.pi * i / 8 + rnd.uniform(-0.3, 0.3)
-        tilt = rnd.uniform(0.15, 0.55)
-        stem_h = height * rnd.uniform(0.45, 0.75)
-        top = Vector((x + math.cos(a) * tilt * 0.5, y + math.sin(a) * tilt * 0.5, z + pot_h + stem_h))
-        tube("paddle-stem", [(x, y, z + pot_h - 0.05), tuple(top)], 0.007, stem_mat, bezier=False)
-        pitch = rnd.uniform(0.5, 1.1)  # leaves rise and lean out from the stem tip
+    greens = [(66, 104, 60), (78, 116, 66), (58, 92, 54)]
+    verts, faces, mats_idx = [], [], []
+    for i in range(leaves):
+        a = 2 * math.pi * i / leaves + rnd.uniform(-0.35, 0.35)
+        lean = rnd.uniform(0.08, 0.32)
+        stem_h = height * rnd.uniform(0.35, 0.72)
+        top = Vector((x + math.cos(a) * lean, y + math.sin(a) * lean, z + pot_h + stem_h))
+        mid = Vector((x + math.cos(a) * lean * 0.35, y + math.sin(a) * lean * 0.35, z + pot_h + stem_h * 0.5))
+        tube("paddle-stem", [(x, y, z + pot_h - 0.05), tuple(mid), tuple(top)], 0.0065, stem_mat)
+        length = rnd.uniform(0.42, 0.62) * (height / 1.5)
+        lv, lf = _leaf_mesh(length, length * rnd.uniform(0.3, 0.38), fold=0.12, steps=12,
+                            curl=-rnd.uniform(0.15, 0.4), cup=0.05)
+        pitch = rnd.uniform(0.7, 1.25)  # leaves rise from the stem tip, then droop
+        roll = rnd.uniform(-0.5, 0.5)
         base = len(verts)
         for vx, vy, vz in lv:
+            vy, vz = vy * math.cos(roll) - vz * math.sin(roll), vy * math.sin(roll) + vz * math.cos(roll)
             px, pz = vx * math.cos(pitch) - vz * math.sin(pitch), vx * math.sin(pitch) + vz * math.cos(pitch)
             rx, ry = px * math.cos(a) - vy * math.sin(a), px * math.sin(a) + vy * math.cos(a)
             verts.append((top.x + rx, top.y + ry, top.z + pz))
         faces += [tuple(base + q for q in f) for f in lf]
-    obj = kit.mesh_obj("paddles", verts, faces, leaf_mat((72, 110, 66)), smooth=True)
+        mats_idx += [i % len(greens)] * len(lf)
+    obj = kit.mesh_obj("paddles", verts, faces, None, smooth=True)
+    for rgb in greens:
+        obj.data.materials.append(leaf_mat(rgb))
+    for poly, mi in zip(obj.data.polygons, mats_idx):
+        poly.material_index = mi
     return obj
 
 
@@ -515,44 +755,42 @@ def pendant(loc, drop, metal, shade_rgb=None, radius=0.18, lit=True, energy=12.0
 
 # --- living -------------------------------------------------------------------------
 
-def curved_sofa(loc, rot_z, fabric, length=2.4, depth=0.95, seat_h=0.42, back_h=0.75, curve=0.35):
-    """A softly curved sofa: a bent seat block and back, rounded hard."""
+def sofa(loc, rot_z, fabric, length=2.3, depth=0.98, seat_h=0.43, arm_w=0.2, arm_h=0.62, back_h=0.82, seats=3,
+         plinth_mat=None, seed=6):
+    """A deep modern sofa: recessed plinth, upholstered base, loose seat and
+    back cushions, rounded arms. loc is the centre of its footprint; the back
+    is on the +y side before rotation."""
+    rnd = random.Random(seed)
     x, y, z = loc
-    parts = []
-    segs = 24
-    for part, h0, h1, d0, d1 in (("seat", 0.12, seat_h, 0.0, depth), ("back", 0.12, back_h, depth - 0.24, depth)):
-        verts, faces = [], []
-        for i in range(segs + 1):
-            t = i / segs - 0.5
-            bend = curve * (2 * t) ** 2
-            px = t * length
-            for dd in (d0, d1):
-                for hh in (h0, h1):
-                    verts.append((px, dd + bend - depth / 2, hh))
-        for i in range(segs):
-            a = i * 4
-            b = a + 4
-            faces += [(a, b, b + 1, a + 1), (a + 2, a + 3, b + 3, b + 2), (a, a + 2, b + 2, b),
-                      (a + 1, b + 1, b + 3, a + 3)]
-        faces += [(0, 1, 3, 2), (segs * 4, segs * 4 + 2, segs * 4 + 3, segs * 4 + 1)]
-        o = kit.mesh_obj("sofa-" + part, verts, faces, fabric)
-        kit.bevel(o, 0.06, 5, angle=30, harden=False)
-        o.data.shade_smooth()
-        o.location = loc
-        o.rotation_euler.z = rot_z
-        parts.append(o)
-    plinth = box("sofa-plinth", (length * 0.96, depth * 0.85, 0.12), (0, 0, 0), mat("plinth", (60, 50, 42), rough=0.7),
-                 round_=0.01)
-    plinth.location = (x, y, z)
-    plinth.rotation_euler.z = rot_z
-    return parts
+    c, s_ = math.cos(rot_z), math.sin(rot_z)
+
+    def at(dx, dy, dz):  # local (along, front-to-back, up) to world
+        return (x + dx * c - dy * s_, y + dx * s_ + dy * c, z + dz)
+
+    plinth_mat = plinth_mat or mat("plinth", (52, 44, 38), rough=0.6)
+    box("sofa-plinth", (length - 0.12, depth - 0.12, 0.07), at(0, 0, 0), plinth_mat, rot_z=rot_z, round_=0.005)
+    soft_box("sofa-base", (length, depth, 0.2), at(0, 0, 0.07), fabric, rot=(0, 0, rot_z), round_=0.05,
+             wrinkle=0.002)
+    inner = length - 2 * arm_w
+    for side in (-1, 1):
+        soft_box("sofa-arm", (arm_w, depth, arm_h - 0.07), at(side * (length - arm_w) / 2, 0, 0.07), fabric,
+                 rot=(0, 0, rot_z), round_=0.07, wrinkle=0.003)
+    soft_box("sofa-back", (inner, 0.18, back_h - 0.27), at(0, depth / 2 - 0.09, 0.27), fabric, rot=(0, 0, rot_z),
+             round_=0.06, wrinkle=0.002)
+    w = inner / seats
+    for i in range(seats):
+        cx = -inner / 2 + w * (i + 0.5)
+        soft_box("seat-cushion", (w - 0.012, depth - 0.24, seat_h - 0.27), at(cx, -0.1, 0.27), fabric,
+                 rot=(0, 0, rot_z + rnd.uniform(-0.01, 0.01)), round_=0.05, wrinkle=0.006, wrinkle_size=0.07)
+        soft_box("back-cushion", (w - 0.02, 0.2, 0.48), at(cx, depth / 2 - 0.27, seat_h - 0.02), fabric,
+                 rot=(math.radians(-12), 0, rot_z + rnd.uniform(-0.02, 0.02)), round_=0.07, wrinkle=0.007,
+                 wrinkle_size=0.07)
+    return at
 
 
 def cushion(loc, rot, size, fabric):
-    c = box("cushion", size, loc, fabric, round_=min(size) * 0.45, segments=6)
-    c.rotation_euler = rot
-    return c
-
+    return soft_box("cushion", size, loc, fabric, rot=rot, round_=min(size) * 0.45, wrinkle=0.006,
+                    wrinkle_size=0.06)
 
 
 def coffee_table(loc, r, h, material):

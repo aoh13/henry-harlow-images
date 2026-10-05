@@ -33,6 +33,16 @@
 3. **Döşeme:** Her karo ayrı bir taş olarak, ürünün derz genişliği ve kalınlığıyla (3/8") modellenir. Kenarlarda gerçek kesimler vardır ve döşeme duvara ortalanır, iki uçtaki kesik karolar eşit olur. Testler (`test_renders.py`) karoların hiçbir desende üst üste binmediğini ve derz payının ölçüyle tuttuğunu kontrol eder.
 4. **Ölçek referansı:** Odadaki her şey standart ölçüde: tezgah 91 cm, lavabo dolabı 84 cm, küvet 165 cm. Göz karonun ölçeğini bunlarla doğru okur.
 
+## Doğallık: render değil fotoğraf gibi görünmesi için
+
+Temiz bir 3D sahne "bilgisayar görüntüsü" diye okunur. Gerçek bir çekimdeki küçük kusurlar bu yüzden bilerek eklendi:
+
+- **Döşeme:** Her karo ±0.2–0.35 mm kayık ve ölçü dışı küçük bir açıyla yerleşir; taşlarda seviye farkı (0.2–0.7 mm) vardır. Mozaiklerde 12" levhaların her biri kendi içinde de hafifçe kayar, böylece levha birleşimleri gerçekteki gibi sezilir. Bu kusurların toplamı en kötü durumda bile derzin %45'ini geçmez; testi `test_setter_jitter_never_closes_a_joint`. Karo ölçüsü değişmez.
+- **Derz:** Çimento derz tonlu ve kumludur, karo yüzeyinin 2.5 mm gerisindedir.
+- **Kamera:** Göz hizasına yakın (1.2–1.4 m), dikeyler düz, simetrik değil hafif açılı. Alan derinliği f/4–5.6. Pencere ve lambalarda hafif parlama, köşelerde hafif bombe ve renk saçılması (lens).
+- **Fotoğraf banyosu (`photo.py`):** Hafif vinyet, gölgelerde daha belirgin gren, gürültü gidericinin yumuşattığı detay için hafif keskinlik, yumuşak ton eğrisi.
+- **Yaşanmışlık:** Havlu ilmekli havlular, fitilli pamuk paspaslar, çizgili keten mutfak bezleri; hepsi hafif kırışık. Tavan spotları, prizler, gider, sabunluk, şişeler, kaşıklık. Saksılarda toprak. Lavabo odası kapı pervazından, koridordan bakılarak çekildi.
+
 **Sınırlar (dürüstçe):**
 - Tek karo fotoğrafı olan ürünlerde (Rosso Levanto, Rojo Alicante, Walnut 18x18, Amazon Gray) bütün karolar aynı fotoğrafın döndürülmüş hâlleridir. Gerçek taşta her karo farklıdır; varyasyon render'dakinden fazladır. Ürün sayfasındaki "taşın doğası gereği her parça farklıdır" notu bu yüzden önemli.
 - Renk, ürün fotoğrafının rengidir. Render'ın ışığı (gün ışığı, AgX ton eşleme) onu bir oda fotoğrafındaki gibi gösterir. Numune önerisi bu yüzden pin metinlerinde var.
@@ -63,5 +73,6 @@ python3 -m unittest discover -s marketing/renders
 - `props.py`: mobilya ve dekor.
 - `rooms.py`: odalar.
 - `assets.py`: pencere dışındaki bahçe ve tablolar (Pillow ile üretilir; üçüncü taraf görsel yok).
+- `photo.py`: render'ı fotoğraf gibi banyo eder.
 
 **Yeni ürün eklemek:** `products.py`'deki `PRODUCTS` sözlüğüne fotoğrafın düzenini (`sheet`, `grid` ya da `single`), taş/karo ölçüsünü, derzi ve fotoğraftaki sınırları ekle. Ardından `rooms.py`'de yeni bir `@room` fonksiyonu yaz.

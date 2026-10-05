@@ -29,9 +29,10 @@ def setup_render(width=1000, height=1500, samples=192, exposure=0.0, look="AgX -
     sc.cycles.device = "CPU"
     sc.cycles.samples = samples
     sc.cycles.use_adaptive_sampling = True
-    sc.cycles.adaptive_threshold = 0.015
+    sc.cycles.adaptive_threshold = 0.01
     sc.cycles.use_denoising = True
     sc.cycles.denoiser = "OPENIMAGEDENOISE"
+    sc.cycles.denoising_prefilter = "ACCURATE"  # keeps the stone's fine texture through denoising
     sc.cycles.max_bounces = 10
     sc.cycles.diffuse_bounces = 5
     sc.cycles.glossy_bounces = 5
@@ -48,6 +49,34 @@ def setup_render(width=1000, height=1500, samples=192, exposure=0.0, look="AgX -
     sc.render.image_settings.file_format = "PNG"
     sc.render.image_settings.color_depth = "8"
     return sc
+
+
+def lens_effects(bloom=True, distort=-0.008, dispersion=0.0035):
+    """What a real camera adds: a soft bloom around bright windows and lamps,
+    a touch of barrel distortion and colour fringing towards the corners."""
+    sc = bpy.context.scene
+    sc.use_nodes = True
+    nt = sc.node_tree
+    for node in list(nt.nodes):
+        nt.nodes.remove(node)
+    layers = nt.nodes.new("CompositorNodeRLayers")
+    last = layers.outputs["Image"]
+    if bloom:
+        glare = nt.nodes.new("CompositorNodeGlare")
+        glare.glare_type = "FOG_GLOW"
+        glare.quality = "HIGH"
+        glare.threshold = 1.0
+        glare.size = 8
+        glare.mix = -0.82
+        nt.links.new(last, glare.inputs["Image"])
+        last = glare.outputs["Image"]
+    lens = nt.nodes.new("CompositorNodeLensdist")
+    lens.use_fit = True
+    lens.inputs["Distortion"].default_value = distort
+    lens.inputs["Dispersion"].default_value = dispersion
+    nt.links.new(last, lens.inputs["Image"])
+    out = nt.nodes.new("CompositorNodeComposite")
+    nt.links.new(lens.outputs["Image"], out.inputs["Image"])
 
 
 def daylight(sun_elevation=35, sun_azimuth=210, sky_strength=0.35, sun_strength=4.0, sun_angle=1.2):
@@ -108,11 +137,16 @@ def point_light(name, loc, energy, radius=0.03, color=(1.0, 0.82, 0.6)):
     return obj
 
 
-def camera(loc, look_at, lens=26, shift_x=0.0, shift_y=0.0, level=True):
+def camera(loc, look_at, lens=26, shift_x=0.0, shift_y=0.0, level=True, focus=None, fstop=5.6):
     """A camera at eye level; `level` keeps verticals straight by aiming
-    horizontally and framing with lens shift, as architectural cameras do."""
+    horizontally and framing with lens shift, as architectural cameras do.
+    focus: distance in metres to keep sharp; depth of field as at fstop."""
     data = bpy.data.cameras.new("cam")
     data.lens = lens
+    if focus:
+        data.dof.use_dof = True
+        data.dof.focus_distance = focus
+        data.dof.aperture_fstop = fstop
     data.sensor_width = 36
     data.sensor_fit = "AUTO"
     data.shift_x, data.shift_y = shift_x, shift_y
@@ -184,7 +218,7 @@ def mat(name, rgb, rough=0.5, metal=0.0, coat=0.0, sheen=0.0, bump=0.0, bump_sca
     return m
 
 
-def plaster(rgb, rough=0.85, variation=0.05, name="plaster"):
+def plaster(rgb, rough=0.85, variation=0.08, name="plaster"):
     """Limewash-style wall: soft tonal clouds and a fine trowelled bump."""
     m, nt, p = _principled(name)
     tc = nt.nodes.new("ShaderNodeTexCoord")
@@ -298,6 +332,31 @@ def tile_mat(meta, atlas_path):
     b.inputs["Distance"].default_value = 0.0015
     nt.links.new(tex.outputs["Color"], b.inputs["Height"])
     nt.links.new(b.outputs["Normal"], p.inputs["Normal"])
+    return m
+
+
+def grout_mat(rgb, name):
+    """Cement grout: mottled a few per cent either way, sanded, dull."""
+    m, nt, p = _principled(name)
+    tc = nt.nodes.new("ShaderNodeTexCoord")
+    mottle = nt.nodes.new("ShaderNodeTexNoise")
+    mottle.inputs["Scale"].default_value = 9.0
+    mottle.inputs["Detail"].default_value = 6
+    nt.links.new(tc.outputs["Object"], mottle.inputs["Vector"])
+    ramp = nt.nodes.new("ShaderNodeValToRGB")
+    ramp.color_ramp.elements[0].color = srgb(tuple(c * 0.9 for c in rgb))
+    ramp.color_ramp.elements[1].color = srgb(tuple(min(255, c * 1.08) for c in rgb))
+    nt.links.new(mottle.outputs["Fac"], ramp.inputs["Fac"])
+    nt.links.new(ramp.outputs["Color"], p.inputs["Base Color"])
+    p.inputs["Roughness"].default_value = 0.93
+    sand = nt.nodes.new("ShaderNodeTexNoise")
+    sand.inputs["Scale"].default_value = 2500
+    nt.links.new(tc.outputs["Object"], sand.inputs["Vector"])
+    bump = nt.nodes.new("ShaderNodeBump")
+    bump.inputs["Strength"].default_value = 0.35
+    bump.inputs["Distance"].default_value = 0.0004
+    nt.links.new(sand.outputs["Fac"], bump.inputs["Height"])
+    nt.links.new(bump.outputs["Normal"], p.inputs["Normal"])
     return m
 
 
@@ -528,7 +587,8 @@ class Room:
             bar(f"mull-v{i}", (frame_w * 0.45, depth * 0.8, hh), -ww / 2 + ww * i / cols, 0)
         for j in range(1, rows):
             bar(f"mull-h{j}", (ww, depth * 0.8, frame_w * 0.45), 0, -hh / 2 + hh * j / rows)
-        pane = quad("glass", pos, u, v, ww, hh, mat("glass", (255, 255, 255), rough=0.0, transmission=1.0, ior=1.45))
+        pane = quad("glass", pos, u, v, ww, hh, mat("window-glass", (238, 248, 242), rough=0.015, transmission=1.0,
+                                                    ior=1.45))
         pane.visible_shadow = False  # thin glazing: let the sun through without caustics
         if sill_mat:
             sill = box("sill", (ww + 0.08, T * 0.5 + 0.03, 0.03), (0, 0, 0), sill_mat, round_=0.003)
@@ -543,6 +603,33 @@ class Room:
             bd.visible_shadow = False
             bd.visible_diffuse = False
         self.openings.append((wall, s0, s1, z0, z1))
+
+    def door(self, wall, s0, s1, height, casing_mat, casing_w=0.07, casing_d=0.018):
+        """A doorway with flat casing on both faces of the wall."""
+        o, u, v = self.frame(wall)
+        n = u.cross(v)
+        T = self.T
+        ww = s1 - s0
+        mid = o + u * ((s0 + s1) / 2) - n * (T / 2)
+        rot = n.to_track_quat("Y", "Z").to_euler()
+        cutter = box("door-cut", (ww, 1.0, height), (0, 0, 0), round_=0)
+        cutter.location = mid
+        cutter.rotation_euler = rot
+        boolean_cut(self.walls[wall], cutter)
+        for face in (0.0, -T):  # inside face, then the hall side
+            out = face + (casing_d / 2 if face == 0 else -casing_d / 2)
+            for su in (s0 - casing_w / 2, s1 + casing_w / 2):
+                jamb = box("casing", (casing_w, casing_d, height + casing_w), (0, 0, 0), casing_mat, round_=0.003)
+                jamb.rotation_euler = rot
+                jamb.location = o + u * su + n * out
+            head = box("casing-head", (ww + 2 * casing_w, casing_d, casing_w), (0, 0, 0), casing_mat, round_=0.003)
+            head.rotation_euler = rot
+            head.location = o + u * ((s0 + s1) / 2) + v * height + n * out
+        for su in (s0, s1):  # the jamb liners across the wall's thickness
+            liner = box("jamb", (0.02, T, height), (0, 0, 0), casing_mat, round_=0)
+            liner.rotation_euler = rot
+            liner.location = o + u * su - n * (T / 2)
+        self.openings.append((wall, s0, s1, 0.0, height))
 
     def baseboard(self, walls, height, material, depth=0.015):
         for wall in walls:
@@ -625,6 +712,28 @@ def layout(width, height, tw, th, joint, pattern="grid", angle=0.0, offset=(0.0,
             yield place((i + shift) * stepx, j * stepy, tw, th)
 
 
+def _nudge(rnd, joint, shift_share, radius, turn_share, turn_deg_cap):
+    """A random offset and turn for one piece, inside a share of the joint.
+
+    shift_share: largest sideways move, as a share of the joint;
+    turn_share: largest corner travel from turning, as a share of the joint."""
+    limit = joint * shift_share
+    dx = max(-limit, min(limit, rnd.gauss(0, limit / 2)))
+    dy = max(-limit, min(limit, rnd.gauss(0, limit / 2)))
+    cap = min(joint * turn_share / radius, math.radians(turn_deg_cap))
+    return dx, dy, max(-cap, min(cap, rnd.gauss(0, cap / 2)))
+
+
+def _turn_point(x, y, cx, cy, a):
+    c, s = math.cos(a), math.sin(a)
+    return cx + (x - cx) * c - (y - cy) * s, cy + (x - cx) * s + (y - cy) * c
+
+
+def _turn_vec(vec, a):
+    c, s = math.cos(a), math.sin(a)
+    return (vec[0] * c - vec[1] * s, vec[0] * s + vec[1] * c)
+
+
 def tile_surface(name, room, wall, s0, s1, t0, t1, meta, atlas_path, pattern="grid", angle=0.0,
                  offset=(0.0, 0.0), seed=1, thickness=0.375 * INCH, lift=0.0, grout_recess=0.0025,
                  edge=None, lippage=None, material=None):
@@ -646,11 +755,31 @@ def tile_surface(name, room, wall, s0, s1, t0, t1, meta, atlas_path, pattern="gr
     if edge is None:
         edge = (1 / 16 if rough_stone else 1 / 64) * INCH
     if lippage is None:
-        lippage = 0.0006 if rough_stone else 0.00015
+        lippage = 0.0007 if rough_stone else 0.0002
+    sheet = meta.get("kind") == "sheet"
+    ca, sa = math.cos(math.radians(angle)), math.sin(math.radians(angle))
 
     verts, faces, uvs = [], [], []
     count = 0
     for (px, py), ax, ay, w, h in layout(W, H, tw, th, joint, pattern, angle, offset):
+        # a setter's hand: every piece sits a fraction of a millimetre off and
+        # off square; mosaic chips also ride on a sheet that sits off as a whole.
+        # Budgets keep two neighbours from ever closing more than 0.9 of a joint.
+        mx = px + ax[0] * w / 2 + ay[0] * h / 2
+        my = py + ax[1] * w / 2 + ay[1] * h / 2
+        moves = [(mx, my, *_nudge(rnd, joint, 0.2, math.hypot(w, h) / 2, 0.08, 1.0 if sheet else 0.35))]
+        if sheet:
+            pa, pb = mx * ca + my * sa - offset[0], -mx * sa + my * ca - offset[1]
+            span = 12 * INCH
+            si, sj = math.floor(pa / span), math.floor(pb / span)
+            qa, qb = (si + 0.5) * span + offset[0], (sj + 0.5) * span + offset[1]
+            pivot = (qa * ca - qb * sa, qa * sa + qb * ca)
+            srnd = random.Random(f"{seed}-sheet-{si}-{sj}")
+            moves.append((*pivot, *_nudge(srnd, joint, 0.12, span * 0.71, 0.035, 0.05)))
+        for cxp, cyp, dx, dy, turn_by in moves:
+            px, py = _turn_point(px, py, cxp, cyp, turn_by)
+            px, py = px + dx, py + dy
+            ax, ay = _turn_vec(ax, turn_by), _turn_vec(ay, turn_by)
         corners = [(px, py), (px + ax[0] * w, py + ax[1] * w),
                    (px + ax[0] * w + ay[0] * h, py + ax[1] * w + ay[1] * h), (px + ay[0] * h, py + ay[1] * h)]
         poly = _clip(corners, 0, 0, W, H)
@@ -702,7 +831,7 @@ def tile_surface(name, room, wall, s0, s1, t0, t1, meta, atlas_path, pattern="gr
     # flat shading: harden_normals on thousands of small tilted n-gons smears dark streaks
     bevel(obj, edge, segments=2 if edge < 0.001 else 3, angle=50, harden=False)
     obj.data.shade_flat()
-    grout = mat("grout-" + meta["handle"][:20], tuple(meta["grout_rgb"]), rough=0.92, bump=0.3, bump_scale=900)
+    grout = grout_mat(tuple(meta["grout_rgb"]), "grout-" + meta["handle"][:20])
     g = mesh_obj(name + "-grout",
                  [base + n * (thickness - grout_recess), base + u * W + n * (thickness - grout_recess),
                   base + u * W + v * H + n * (thickness - grout_recess), base + v * H + n * (thickness - grout_recess)],

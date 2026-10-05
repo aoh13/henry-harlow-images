@@ -91,6 +91,22 @@ class LayoutTest(unittest.TestCase):
                 expected = (w * h) / ((w + j) * (h + j))
                 self.assertLess(abs(covered - expected), 0.006, f"coverage {covered:.4f} vs {expected:.4f}")
 
+    def test_setter_jitter_never_closes_a_joint(self):
+        """Each piece may move and turn a little; two neighbours together must
+        keep more than a tenth of their joint, at the worst case."""
+        import random
+        from kit import INCH, _nudge
+        joint = INCH / 16  # the tightest joint in the catalogue
+        chip_r, sheet_r = 1.33 * INCH, 8.5 * INCH
+        worst = 0.0
+        rnd = random.Random(0)
+        for _ in range(4000):
+            dx, dy, a = _nudge(rnd, joint, 0.2, chip_r, 0.08, 1.0)          # a chip on its sheet
+            sdx, sdy, sa = _nudge(rnd, joint, 0.12, sheet_r, 0.035, 0.05)   # the sheet itself
+            move = max(abs(dx), abs(dy)) + abs(a) * chip_r + max(abs(sdx), abs(sdy)) + abs(sa) * sheet_r
+            worst = max(worst, move)
+        self.assertLess(2 * worst, 0.9 * joint)
+
     def test_centred_layout_has_equal_end_cuts(self):
         from rooms import centred
         length, tile, joint = 3.0, 12 * 0.0254, 0.0254 / 16
