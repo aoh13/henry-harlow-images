@@ -662,3 +662,17 @@ def island(loc, size, body_mat, top_mat, height=0.92, overhang=0.25, rot_z=0.0):
     box("island-body", (w - 0.04, d - overhang, height - 0.13), (x, y + overhang / 2, z + 0.1), body_mat, rot_z=rot_z,
         round_=0.003)
     box("island-top", (w, d, 0.04), (x, y, z + height - 0.04), top_mat, rot_z=rot_z, round_=0.004)
+
+
+def dutch_oven(loc, rgb=(184, 82, 54), r=0.13, h=0.13):
+    """An enamelled cast-iron pot with its lid and knob."""
+    x, y, z = loc
+    enamel = ceramic(rgb, 0.25)
+    lathe("pot-body", [(0.0, 0.0), (r * 0.92, 0.0), (r, h * 0.15), (r, h), (r * 0.96, h), (r * 0.94, h * 0.2),
+                       (0.0, h * 0.18)], (x, y, z), enamel)
+    lathe("pot-lid", [(0.0, h * 0.28), (r * 0.6, h * 0.24), (r * 1.01, h * 0.02), (r * 1.01, 0.0), (0.0, 0.0)],
+          (x, y, z + h), enamel)
+    cylinder("pot-knob", 0.022, 0.025, (x, y, z + h + h * 0.27), brass())
+    for side in (-1, 1):
+        cylinder("pot-handle", 0.018, 0.035, (x + side * (r + 0.012), y, z + h * 0.75), enamel,
+                 rot=(0, math.pi / 2, 0))

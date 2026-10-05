@@ -146,6 +146,7 @@ def rainbow_kitchen(atlas_dir, assets):
     counter = mat("counter", (232, 228, 220), rough=0.22, coat=0.2, bump=0.02, bump_scale=8)
     P.shaker_run(r, "back", 0.15, 3.85, cream, counter, height=counter_h, gaps=[(1.62, 2.38)])
     P.range_cooker(r, "back", 2.0, 0.76, mat("range-black", (30, 30, 32), rough=0.35, coat=0.4))
+    P.dutch_oven(tuple(r.point("back", 1.82, counter_h + 0.015, 0.45)))
     P.plaster_hood(r, "back", 2.0, 0.98, 1.62, r.h, wall, ledge_mat=wood((120, 86, 60), (80, 56, 38), name="walnut"))
     walnut = wood((128, 92, 64), (84, 60, 42), name="walnut")
     for s0, s1 in ((0.3, 1.38), (2.62, 3.7)):
