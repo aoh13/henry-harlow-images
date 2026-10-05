@@ -866,23 +866,27 @@ def art(room, wall, s, z, size, image_path, frame_mat, depth=0.035):
     kit.quad("art", room.point(wall, s, z, depth + 0.001), u, v, w, h, kit.image_mat("art", image_path, rough=0.8))
 
 
-def curtain(room, wall, s0, s1, z_top, rgb, folds=10, depth=0.12):
-    """A softly folded linen panel hanging from z_top to the floor."""
+def curtain(room, wall, s0, s1, z_top, rgb, folds=None, depth=0.12):
+    """A linen panel hanging from a rod at z_top to the floor: folds about
+    14 cm apart, gathered at the top and opening out towards the hem."""
     o, u, v = room.frame(wall)
-    n = u.cross(v)
-    cols = folds * 6
+    folds = folds or max(1, round((s1 - s0) / 0.14))
+    cols = folds * 8
+    rows = 6
     verts, faces = [], []
-    for j in range(2):
-        z = z_top if j else 0.01
+    for j in range(rows + 1):
+        h = j / rows  # 0 at the hem, 1 at the rod
+        z = 0.01 + (z_top - 0.01) * h
+        amp = 0.028 * (1.25 - 0.45 * h)
         for i in range(cols + 1):
             t = i / cols
-            wave = math.sin(t * folds * 2 * math.pi) * 0.04 + 0.06
-            p = room.point(wall, s0 + (s1 - s0) * t, z, depth + wave)
+            p = room.point(wall, s0 + (s1 - s0) * t, z, depth + 0.05 + amp * math.sin(t * folds * 2 * math.pi))
             verts.append(p)
-    for i in range(cols):
-        faces.append((i, i + 1, cols + 2 + i, cols + 1 + i))
-    obj = kit.mesh_obj("curtain", verts, faces, mat("sheer-%d" % sum(rgb), rgb, rough=0.9, sheen=0.5,
-                                                    transmission=0.12, ior=1.2), smooth=True)
+    for j in range(rows):
+        for i in range(cols):
+            a = j * (cols + 1) + i
+            faces.append((a, a + 1, a + cols + 2, a + cols + 1))
+    obj = kit.mesh_obj("curtain", verts, faces, linen_weave(rgb), smooth=True)
     sol = obj.modifiers.new("thick", "SOLIDIFY")
     sol.thickness = 0.004
     kit.subsurf(obj, 1)

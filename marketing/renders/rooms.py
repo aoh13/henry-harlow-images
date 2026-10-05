@@ -275,8 +275,8 @@ def travertine_living(atlas_dir, assets):
     for s0, s1 in ((0.6, 1.9), (3.1, 4.4)):
         r.window("back", s0, s1, 0.45, 2.55, frame, mullions=(2, 3), backdrop=assets / "garden.png",
                  backdrop_strength=1.5)
-        P.curtain(r, "back", s0 - 0.25, s0 + 0.05, 2.75, (236, 228, 214), folds=4)
-        P.curtain(r, "back", s1 - 0.05, s1 + 0.25, 2.75, (236, 228, 214), folds=4)
+        P.curtain(r, "back", s0 - 0.3, s0 + 0.05, 2.75, (232, 224, 210))
+        P.curtain(r, "back", s1 - 0.05, s1 + 0.3, 2.75, (232, 224, 210))
     r.baseboard(["left", "right", "back"], 0.08, wall)
     fabric = P.boucle((234, 226, 212))
     P.sofa((2.5, 3.45, 0.0125), 0.0, fabric, length=2.5)
