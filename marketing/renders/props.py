@@ -73,7 +73,8 @@ def soft_box(name, size, loc, material, rot=(0.0, 0.0, 0.0), round_=None, wrinkl
     return obj
 
 
-def _fabric(name, rgb, ribs=None, loop_scale=260.0, loop_bump=0.9, tone=0.06, stripe_rgb=None, stripe_period=0.07):
+def _fabric(name, rgb, ribs=None, loop_scale=260.0, loop_bump=0.9, tone=0.06, stripe_rgb=None, stripe_period=0.07,
+            stripe_axis="Z", stripe_share=0.18):
     """Cloth: tone mottling, a pile or weave you can see, optional ribs
     (bands along the object's X axis, every `ribs` metres) and optional woven
     stripes across its height (a tea towel's)."""
@@ -121,13 +122,13 @@ def _fabric(name, rgb, ribs=None, loop_scale=260.0, loop_bump=0.9, tone=0.06, st
     if stripe_rgb:
         bands = nt.nodes.new("ShaderNodeTexWave")
         bands.wave_type = "BANDS"
-        bands.bands_direction = "Z"
+        bands.bands_direction = stripe_axis
         bands.wave_profile = "SAW"
         bands.inputs["Scale"].default_value = 2 * math.pi / (20 * stripe_period)
         nt.links.new(tc.outputs["Object"], bands.inputs["Vector"])
         step = nt.nodes.new("ShaderNodeValToRGB")
         step.color_ramp.interpolation = "CONSTANT"
-        step.color_ramp.elements[1].position = 0.82
+        step.color_ramp.elements[1].position = 1 - stripe_share
         nt.links.new(bands.outputs["Fac"], step.inputs["Fac"])
         stripe = nt.nodes.new("ShaderNodeMix")
         stripe.data_type = "RGBA"
@@ -149,6 +150,51 @@ def terry(rgb):
 
 def ribbed_cotton(rgb):
     return _fabric("ribbed-%d-%d-%d" % rgb, rgb, ribs=0.009, loop_scale=500.0, loop_bump=0.8)
+
+
+def ticking(rgb, stripe_rgb):
+    """Cushion ticking: a cotton ground with thin stripes running its length."""
+    return _fabric("ticking-%d-%d" % (sum(rgb), sum(stripe_rgb)), rgb, loop_scale=900.0, loop_bump=0.4,
+                   stripe_rgb=stripe_rgb, stripe_period=0.022, stripe_axis="X", stripe_share=0.22)
+
+
+def canvas_cloth(rgb):
+    return _fabric("canvas-%d-%d-%d" % rgb, rgb, loop_scale=700.0, loop_bump=0.7, tone=0.1)
+
+
+def woven(rgb):
+    """Seagrass or rattan basketweave: crossing strands, darker in the gaps."""
+    m = bpy.data.materials.new("woven-%d-%d-%d" % rgb)
+    m.use_nodes = True
+    nt = m.node_tree
+    p = nt.nodes["Principled BSDF"]
+    tc = nt.nodes.new("ShaderNodeTexCoord")
+    strands = []
+    for axis in ("X", "Z"):
+        w = nt.nodes.new("ShaderNodeTexWave")
+        w.wave_type = "BANDS"
+        w.bands_direction = axis
+        w.inputs["Scale"].default_value = 2 * math.pi / (20 * 0.012)  # a strand every 12 mm
+        w.inputs["Distortion"].default_value = 1.5
+        nt.links.new(tc.outputs["Object"], w.inputs["Vector"])
+        strands.append(w)
+    weave = nt.nodes.new("ShaderNodeMath")
+    weave.operation = "MULTIPLY"
+    nt.links.new(strands[0].outputs["Fac"], weave.inputs[0])
+    nt.links.new(strands[1].outputs["Fac"], weave.inputs[1])
+    ramp = nt.nodes.new("ShaderNodeValToRGB")
+    ramp.color_ramp.elements[0].color = kit.srgb(tuple(c * 0.55 for c in rgb))
+    ramp.color_ramp.elements[1].color = kit.srgb(tuple(min(255, c * 1.1) for c in rgb))
+    ramp.color_ramp.elements[1].position = 0.45
+    nt.links.new(weave.outputs["Value"], ramp.inputs["Fac"])
+    nt.links.new(ramp.outputs["Color"], p.inputs["Base Color"])
+    p.inputs["Roughness"].default_value = 0.85
+    bump = nt.nodes.new("ShaderNodeBump")
+    bump.inputs["Strength"].default_value = 1.0
+    bump.inputs["Distance"].default_value = 0.004
+    nt.links.new(weave.outputs["Value"], bump.inputs["Height"])
+    nt.links.new(bump.outputs["Normal"], p.inputs["Normal"])
+    return m
 
 
 def linen_weave(rgb, stripe_rgb=None):
@@ -254,7 +300,7 @@ def throw(loc, rot_z, size=(0.55, 0.4, 0.05), rgb=(150, 120, 92)):
 def tote(loc, rot_z, rgb=(214, 198, 168)):
     """A canvas tote hanging from a hook at loc."""
     x, y, z = loc
-    canvas = mat("canvas-%d" % sum(rgb), rgb, rough=0.95, bump=0.6, bump_scale=500)
+    canvas = canvas_cloth(rgb)
     soft_box("tote", (0.36, 0.08, 0.4), (x, y, z - 0.55), canvas, rot=(0.05, 0, rot_z), round_=0.03, wrinkle=0.006)
     c, s_ = math.cos(rot_z), math.sin(rot_z)
     for side in (-1, 1):
@@ -847,8 +893,13 @@ def curtain(room, wall, s0, s1, z_top, rgb, folds=10, depth=0.12):
 
 
 def basket(loc, r, h, rgb=(186, 152, 108)):
-    return lathe("basket", [(0.0, 0.0), (r * 0.9, 0.0), (r, h), (r * 0.96, h), (r * 0.86, 0.02), (0.0, 0.02)], loc,
-                 mat("woven-%d" % sum(rgb), rgb, rough=0.9, bump=1.0, bump_scale=140), sub=0)
+    x, y, z = loc
+    weave = woven(rgb)
+    obj = lathe("basket", [(0.0, 0.0), (r * 0.9, 0.0), (r, h), (r * 0.96, h), (r * 0.86, 0.02), (0.0, 0.02)], loc,
+                weave, sub=0)
+    tube("basket-rim", [(x + (r - 0.006) * math.cos(t), y + (r - 0.006) * math.sin(t), z + h)
+                        for t in [2 * math.pi * k / 48 for k in range(49)]], 0.009, weave, bezier=False)
+    return obj
 
 
 def hat(loc, rgb=(214, 188, 140)):

@@ -333,10 +333,11 @@ def chakra_mudroom(atlas_dir, assets):
     P.tote((hooks[2].x, hooks[2].y - 0.03, hooks[2].z), 0.0)
     for s in (0.7, 1.3, 1.9):
         P.basket(tuple(r.point("back", s, 1.885, 0.2)), 0.15, 0.2)
-    P.cushion(tuple(r.point("back", 0.85, 0.47, 0.25)), (0, 0, rot), (0.6, 0.38, 0.06), P.linen((222, 210, 190)))
-    P.cushion(tuple(r.point("back", 1.75, 0.47, 0.25)), (0, 0, rot), (0.6, 0.38, 0.06), P.linen((222, 210, 190)))
+    tick = P.ticking((226, 218, 202), (58, 72, 96))
+    P.cushion(tuple(r.point("back", 0.85, 0.47, 0.25)), (0, 0, rot + 0.03), (0.62, 0.4, 0.07), tick)
+    P.cushion(tuple(r.point("back", 1.75, 0.47, 0.25)), (0, 0, rot - 0.02), (0.62, 0.4, 0.07), tick)
     P.basket((0.35, 0.65, 0.0125), 0.17, 0.28, (170, 136, 96))
-    P.vase_branches((2.4, 1.0, 0.0125), vase_rgb=(120, 104, 88), height=0.9, vase_h=0.45, seed=55,
+    P.vase_branches((2.38, 2.2, 0.0125), vase_rgb=(120, 104, 88), height=0.9, vase_h=0.45, seed=55,
                     leaf=(0.06, 0.04))
     P.downlight((1.3, 1.35, r.h), energy=8)
     kit.daylight(sun_elevation=32, sun_azimuth=-20, sky_strength=0.3, sun_strength=12)
