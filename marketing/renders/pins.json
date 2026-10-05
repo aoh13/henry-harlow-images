@@ -1,0 +1,69 @@
+{
+  "_note": "Pinterest copy for the room renders. Limits: title 100, description 500. Every description says the image is a to-scale rendering, so nobody mistakes it for a customer photo.",
+  "pins": [
+    {
+      "room": "empress-green-bath",
+      "label": "Empress Green Marble · 12″ × 12″",
+      "board": "Green Marble Bathroom Ideas",
+      "title": "Green Marble Bathroom with a Freestanding Tub | Empress Green 12x12 Tile",
+      "description": "A green marble bathroom in Empress Green (Verde Alpi): 12\" x 12\" matte tiles stacked floor to ceiling and across the floor with 1/16\" joints, a freestanding tub and brass fixtures. Shown to scale in a 3D rendering made from the photograph of the tile we ship. 4-inch samples available. Ships across the continental US.",
+      "keywords": "green marble bathroom, green bathroom ideas, verde alpi marble, marble tile bathroom, freestanding tub, green tile"
+    },
+    {
+      "room": "golden-coast-shower",
+      "label": "Golden Coast Slate · 2″ × 2″ Mosaic",
+      "board": "Slate Shower Ideas",
+      "title": "Earthy Slate Mosaic Walk-In Shower | Golden Coast Slate 2x2 Mosaic",
+      "description": "A walk-in shower wrapped in Golden Coast slate: 2\" x 2\" tumbled chips on 12\" sheets, floor to ceiling and across the whole floor, with matte black fixtures and a fixed glass panel. Shown to scale in a 3D rendering made from the photograph of the mosaic we ship. 4-inch samples available. Ships across the continental US.",
+      "keywords": "slate shower, slate mosaic tile, walk in shower ideas, earthy bathroom, natural stone shower, mosaic shower floor"
+    },
+    {
+      "room": "rainbow-slate-kitchen",
+      "label": "Rainbow Slate · 3″ × 6″ Tumbled",
+      "board": "Kitchen Backsplash Ideas",
+      "title": "Rainbow Slate Backsplash with a Plaster Range Hood | 3x6 Tumbled Slate",
+      "description": "A counter-to-ceiling backsplash in Rainbow slate: 3\" x 6\" tumbled tiles laid in a half offset with 1/8\" joints, behind a plaster hood, walnut shelves and cream shaker cabinets. Shown to scale in a 3D rendering made from the photograph of the tile we ship. 4-inch samples available. Ships across the continental US.",
+      "keywords": "slate backsplash, kitchen backsplash ideas, rainbow slate tile, plaster range hood, earthy kitchen, natural stone backsplash"
+    },
+    {
+      "room": "rosso-levanto-powder-room",
+      "label": "Rosso Levanto Marble · 12″ × 12″",
+      "board": "Powder Room Ideas",
+      "title": "Burgundy Marble Powder Room with Brass Sconces | Rosso Levanto 12x12",
+      "description": "A moody powder room lined in Rosso Levanto, a burgundy marble: 12\" x 12\" leather tumbled tiles on every wall and the floor with 1/8\" joints, a walnut vanity and brass sconces. Shown to scale in a 3D rendering made from the photograph of the tile we ship. 4-inch samples available. Ships across the continental US.",
+      "keywords": "powder room ideas, burgundy marble, red marble tile, moody bathroom, rosso levanto, marble powder room"
+    },
+    {
+      "room": "walnut-travertine-living-room",
+      "label": "Walnut Travertine · 18″ × 18″",
+      "board": "Travertine Floor Ideas",
+      "title": "Warm Travertine Floor Living Room | Walnut Travertine 18x18 Tile",
+      "description": "A warm minimal living room on a Walnut travertine floor: 18\" x 18\" brushed and chiseled tiles laid straight with 1/8\" joints, a curved sofa and linen curtains. Shown to scale in a 3D rendering made from the photograph of the tile we ship. 4-inch samples available. Ships across the continental US.",
+      "keywords": "travertine floor, travertine tile living room, warm minimalist living room, natural stone floor, travertine flooring"
+    },
+    {
+      "room": "chakra-slate-mudroom",
+      "label": "Chakra Slate · 3″ × 6″ Herringbone",
+      "board": "Herringbone Floor Ideas",
+      "title": "Herringbone Slate Mudroom Floor with a Sage Bench | Chakra Slate 3x6",
+      "description": "A mudroom floor in Chakra slate: 3\" x 6\" tumbled tiles laid in a 45 degree herringbone with 1/8\" joints, under a sage built-in bench with brass hooks. Shown to scale in a 3D rendering made from the photograph of the tile we ship. 4-inch samples available. Ships across the continental US.",
+      "keywords": "herringbone floor, slate floor tile, mudroom ideas, herringbone tile, entryway floor, sage green mudroom"
+    },
+    {
+      "room": "rojo-alicante-kitchen",
+      "label": "Rojo Alicante Marble · 12″ × 12″",
+      "board": "Marble Floor Ideas",
+      "title": "Red Marble Kitchen Floor on the Diagonal | Rojo Alicante 12x12 Polished",
+      "description": "A Mediterranean kitchen on a Rojo Alicante floor: 12\" x 12\" polished red marble laid on the diagonal with 1/16\" joints, white shaker cabinets, an island and brass fittings. Shown to scale in a 3D rendering made from the photograph of the tile we ship. 4-inch samples available. Ships across the continental US.",
+      "keywords": "red marble floor, marble kitchen floor, mediterranean kitchen, rojo alicante, diagonal tile floor, marble floor tile"
+    },
+    {
+      "room": "amazon-slate-japandi-bath",
+      "label": "Amazon Gray Slate · 12″ × 24″",
+      "board": "Japandi Bathroom Ideas",
+      "title": "Japandi Bathroom in Large Grey Slate | Amazon Gray Slate 12x24 Tile",
+      "description": "A calm Japandi bathroom in Amazon Gray slate: 12\" x 24\" tiles in a one-third offset with 1/8\" joints on the shower wall and floor, a light oak vanity and matte black fixtures. Shown to scale in a 3D rendering made from the photograph of the tile we ship. 4-inch samples available. Ships across the continental US.",
+      "keywords": "japandi bathroom, grey slate tile, slate bathroom, large format tile, walk in shower, minimalist bathroom"
+    }
+  ]
+}

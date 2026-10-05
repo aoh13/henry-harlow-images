@@ -188,3 +188,13 @@ python3 marketing/build_creatives.py              # hepsi
 python3 marketing/build_creatives.py samples      # tek konsept
 ```
 Ürün görselleri `images/` klasöründen olduğu gibi kullanılır; rötuş yapılmaz. Font olarak logonun yüzü Cormorant Garamond ve küçük etiketler için Jost kullanılır (ikisi de `brand/fonts/`, OFL lisanslı).
+
+---
+
+## 9. Oda render'ları (Pinterest)
+
+NestTile satış verisindeki en çok satan doğal taşlardan Henry Harlow'da bulunanlar için 8 oda render'ı: banyo, duş, iki mutfak, lavabo odası, salon, giriş ve Japandi banyo. Karolar katalogdaki ölçüyle modellenir ve ürünün kendi fotoğrafıyla kaplanır, yani görseldeki ürün satılan ürünle aynıdır.
+
+- **Görseller:** `creatives/rooms/` (temiz render ve Pinterest pini).
+- **Pinterest toplu yükleme:** `python3 marketing/renders/pins.py --store https://<mağaza-adresi>` → `creatives/rooms/pins.csv`.
+- **Yöntem, doğruluk, sınırlar ve yeniden üretme:** `marketing/renders/README.md`.
