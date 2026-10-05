@@ -211,42 +211,43 @@ def plaster(rgb, rough=0.85, variation=0.05, name="plaster"):
     return m
 
 
-def wood(light=(196, 152, 104), dark=(132, 92, 58), rough=0.5, ring_scale=38.0, name="wood"):
-    """Timber with its grain along the object's X axis: growth rings around X,
-    so long faces show fine parallel lines and end grain shows rings."""
+def wood(light=(196, 152, 104), dark=(132, 92, 58), rough=0.5, name="wood"):
+    """Rift-cut timber with its grain along the object's X axis: fine streaks
+    of irregular spacing, stretched along the grain, over broad tone shifts."""
     m, nt, p = _principled(name)
     tc = nt.nodes.new("ShaderNodeTexCoord")
-    mapping = nt.nodes.new("ShaderNodeMapping")
-    mapping.inputs["Scale"].default_value = (0.15, 1.0, 1.0)
-    nt.links.new(tc.outputs["Object"], mapping.inputs["Vector"])
-    wave = nt.nodes.new("ShaderNodeTexWave")
-    wave.wave_type = "RINGS"
-    wave.rings_direction = "X"
-    wave.inputs["Scale"].default_value = ring_scale
-    wave.inputs["Distortion"].default_value = 5.0
-    wave.inputs["Detail"].default_value = 4
-    wave.inputs["Detail Scale"].default_value = 2.0
-    nt.links.new(mapping.outputs["Vector"], wave.inputs["Vector"])
-    noise = nt.nodes.new("ShaderNodeTexNoise")  # board-to-board tone shifts
-    noise.inputs["Scale"].default_value = 3.0
-    noise.inputs["Detail"].default_value = 2
-    nt.links.new(mapping.outputs["Vector"], noise.inputs["Vector"])
+
+    def stretched(sx, syz):
+        mp = nt.nodes.new("ShaderNodeMapping")
+        mp.inputs["Scale"].default_value = (sx, syz, syz)
+        nt.links.new(tc.outputs["Object"], mp.inputs["Vector"])
+        return mp
+
+    grain = nt.nodes.new("ShaderNodeTexNoise")
+    grain.inputs["Scale"].default_value = 1.0
+    grain.inputs["Detail"].default_value = 10
+    grain.inputs["Roughness"].default_value = 0.62
+    nt.links.new(stretched(0.6, 90.0).outputs["Vector"], grain.inputs["Vector"])
+    tone = nt.nodes.new("ShaderNodeTexNoise")
+    tone.inputs["Scale"].default_value = 1.0
+    tone.inputs["Detail"].default_value = 3
+    nt.links.new(stretched(0.8, 6.0).outputs["Vector"], tone.inputs["Vector"])
     mix = nt.nodes.new("ShaderNodeMix")
     mix.data_type = "FLOAT"
-    mix.inputs["Factor"].default_value = 0.45
-    nt.links.new(wave.outputs["Fac"], mix.inputs["A"])
-    nt.links.new(noise.outputs["Fac"], mix.inputs["B"])
+    mix.inputs["Factor"].default_value = 0.4
+    nt.links.new(grain.outputs["Fac"], mix.inputs["A"])
+    nt.links.new(tone.outputs["Fac"], mix.inputs["B"])
     ramp = nt.nodes.new("ShaderNodeValToRGB")
     ramp.color_ramp.elements[0].color = srgb(dark)
     ramp.color_ramp.elements[1].color = srgb(light)
-    ramp.color_ramp.elements[0].position = 0.2
-    ramp.color_ramp.elements[1].position = 0.75
+    ramp.color_ramp.elements[0].position = 0.35
+    ramp.color_ramp.elements[1].position = 0.62
     nt.links.new(mix.outputs["Result"], ramp.inputs["Fac"])
     nt.links.new(ramp.outputs["Color"], p.inputs["Base Color"])
     p.inputs["Roughness"].default_value = rough
     b = nt.nodes.new("ShaderNodeBump")
-    b.inputs["Strength"].default_value = 0.04
-    nt.links.new(wave.outputs["Fac"], b.inputs["Height"])
+    b.inputs["Strength"].default_value = 0.03
+    nt.links.new(grain.outputs["Fac"], b.inputs["Height"])
     nt.links.new(b.outputs["Normal"], p.inputs["Normal"])
     return m
 
