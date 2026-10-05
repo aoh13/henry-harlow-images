@@ -202,8 +202,6 @@ def rosso_powder(atlas_dir, assets):
     for s in (0.32, 1.48):
         P.sconce(r, "back", s, 1.68, P.brass(), shade="linen", energy=9)
     P.vase_branches((top.x + 0.36, top.y - 0.05, top.z), vase_rgb=(214, 200, 180), height=0.3, vase_h=0.14, seed=31)
-    hook = r.point("right", 0.7, 1.25, out)
-    P.towel((hook.x - 0.04, hook.y, hook.z), math.pi / 2, size=(0.34, 0.5), rgb=(232, 222, 206))
     kit.point_light("ceiling-light", (0.9, 1.1, 2.5), 25, radius=0.15)
     kit.area_light("fill", (0.9, 0.05, 1.9), (1.0, 0.6), 18, (0.9, 2.0, 1.2), color=(1.0, 0.92, 0.84))
     world = bpy_world_dark()

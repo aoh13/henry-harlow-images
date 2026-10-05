@@ -664,13 +664,14 @@ def tile_surface(name, room, wall, s0, s1, t0, t1, meta, atlas_path, pattern="gr
         if len(cells) > 1:  # several photographed pieces: any piece, any way up
             turn = rnd.choice((0, 2) if not square else (0, 1, 2, 3))
         else:
-            # one photo: turn neighbours a quarter (squares) or by row (oblongs),
-            # so no tile sits next to its own copy or its own half-turn
+            # one photo: neighbours always differ by a quarter turn (squares, by
+            # checkerboard parity, otherwise at random) or by row (oblongs), so no
+            # tile sits next to its own copy or its own half-turn
             mx = px + ax[0] * w / 2 + ay[0] * h / 2
             my = py + ax[1] * w / 2 + ay[1] * h / 2
             i = math.floor((mx * ax[0] + my * ax[1]) / (w + joint) + 1e-6)
             j = math.floor((mx * ay[0] + my * ay[1]) / (h + joint) + 1e-6)
-            turn = (i + j) % 4 if square else 2 * (j % 2)
+            turn = (i + j) % 2 + 2 * rnd.randrange(2) if square else 2 * (j % 2)
         top = thickness + rnd.uniform(-lippage, lippage)
         tilt = (rnd.uniform(-1, 1) * lippage / w, rnd.uniform(-1, 1) * lippage / h)
 
