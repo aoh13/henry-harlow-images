@@ -302,7 +302,7 @@ def image_mat(name, path, rough=0.6, emission=0.0):
 FINISH = {  # roughness, bump strength, sheen of the stone face
     "polished": (0.06, 0.02),
     "honed": (0.32, 0.04),
-    "brushed": (0.55, 0.12),
+    "brushed": (0.68, 0.12),  # brushed travertine has almost no sheen
     "tumbled": (0.5, 0.1),
     "cleft": (0.6, 0.22),
 }

@@ -280,8 +280,10 @@ def travertine_living(atlas_dir, assets):
     r.baseboard(["left", "right", "back"], 0.08, wall)
     fabric = P.boucle((234, 226, 212))
     P.sofa((2.5, 3.45, 0.0125), 0.0, fabric, length=2.5)
-    P.cushion((1.72, 3.62, 0.5), (math.radians(-14), 0, 0.15), (0.46, 0.15, 0.44), P.linen((176, 118, 82)))
-    P.cushion((3.28, 3.62, 0.5), (math.radians(-14), 0, -0.15), (0.46, 0.15, 0.44), P.linen((196, 176, 140)))
+    P.cushion((1.74, 3.55, 0.47), (math.radians(-16), math.radians(6), 0.22), (0.5, 0.22, 0.5),
+              P.linen((176, 118, 82)))
+    P.cushion((3.26, 3.55, 0.47), (math.radians(-16), math.radians(-5), -0.18), (0.5, 0.22, 0.5),
+              P.linen((196, 176, 140)))
     P.throw((3.05, 3.22, 0.43), 0.12, size=(0.5, 0.36, 0.05), rgb=(150, 120, 92))
     oak_dark = wood((122, 88, 60), (82, 58, 40), name="oak-dark")
     P.coffee_table((2.5, 2.35, 0.0125), 0.46, 0.36, oak_dark)

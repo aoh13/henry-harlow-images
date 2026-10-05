@@ -789,8 +789,11 @@ def sofa(loc, rot_z, fabric, length=2.3, depth=0.98, seat_h=0.43, arm_w=0.2, arm
 
 
 def cushion(loc, rot, size, fabric):
-    return soft_box("cushion", size, loc, fabric, rot=rot, round_=min(size) * 0.45, wrinkle=0.006,
-                    wrinkle_size=0.06)
+    """A plump throw pillow: thick in the middle, pinched at the corners."""
+    obj = soft_box("cushion", size, loc, fabric, rot=rot, round_=min(size) * 0.48, wrinkle=0.012,
+                   wrinkle_size=0.07, levels=3)
+    obj.scale = (1.0, 0.82, 1.0)  # the fill sags towards the seams
+    return obj
 
 
 def coffee_table(loc, r, h, material):
@@ -833,7 +836,7 @@ def curtain(room, wall, s0, s1, z_top, rgb, folds=10, depth=0.12):
     for i in range(cols):
         faces.append((i, i + 1, cols + 2 + i, cols + 1 + i))
     obj = kit.mesh_obj("curtain", verts, faces, mat("sheer-%d" % sum(rgb), rgb, rough=0.9, sheen=0.5,
-                                                    transmission=0.35, ior=1.2), smooth=True)
+                                                    transmission=0.12, ior=1.2), smooth=True)
     sol = obj.modifiers.new("thick", "SOLIDIFY")
     sol.thickness = 0.004
     kit.subsurf(obj, 1)
