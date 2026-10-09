@@ -1,0 +1,20 @@
+{
+  "language": "en",
+  "currency": "USD",
+  "customer": "",
+  "attn": "",
+  "offer_no": "0910202626",
+  "offer_date": "October 9, 2026",
+  "valid_until": "November 8, 2026",
+  "prepared_by": "Onur H.",
+  "company": {
+    "name": "Mona Steel LLC",
+    "footer": ["Mona Steel LLC   |   720 Debra Ln, Anaheim, CA 92680",
+               "Phone: (949) 200-3797   Email: contact@monasteel.com   www.monasteel.com"]
+  },
+  "line_items": [
+    {"size": "W16 x 67", "shape": "Wide Flange", "grade": "", "lb_ft": 67, "length_ft": 40, "qty": 1, "unit_price": 0},
+    {"size": "W16 x 77", "shape": "Wide Flange", "grade": "", "lb_ft": 77, "length_ft": 40, "qty": 2, "unit_price": 0},
+    {"size": "W14 x 61", "shape": "Wide Flange", "grade": "", "lb_ft": 61, "length_ft": 40, "qty": 2, "unit_price": 0}
+  ]
+}
