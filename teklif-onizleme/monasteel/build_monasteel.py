@@ -21,6 +21,9 @@ def patch(old, new):
     src = src.replace(old, new)
 
 
+# ── Brand colour: Mona Steel charcoal (from the logo) instead of Yilmaz orange ─
+patch("ORANGE   = colors.HexColor('#E8420A')", "ORANGE   = colors.HexColor('#2D2D2D')")
+
 # ── Page: US Letter, footer rule anchored to the bottom edge ─────────────────
 patch('from reportlab.lib.pagesizes import A4', 'from reportlab.lib.pagesizes import letter as A4')
 patch('bot_rule_y = H - 791', 'bot_rule_y = 51')
@@ -119,7 +122,6 @@ US_TERMS = [
                         'certified scale weights govern at shipment.'),
     ('Partial Orders',  'This quotation is based on the full quantity listed. Partial orders are subject to re-quote.'),
     ('Price Adjustment','Prices are subject to adjustment if steel costs change by more than 5%.'),
-    ('Governing Law',   ''),
     ('Bank Details',    ''),
 ]
 
