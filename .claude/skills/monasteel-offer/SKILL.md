@@ -22,6 +22,18 @@ Prints `OK | Grand total: USD X | Total weight: N lbs | <path>`.
 Always look at the rendered PNG before sending, and send **both** the PNG
 (the chat preview cannot always show PDFs) and the PDF.
 
+**Editable Excel version** (same layout, same config; when Onur wants to edit
+the quote himself):
+
+```bash
+python <skill dir>/scripts/build_monasteel_xlsx.py config.json MSDDMMYYYYNN.xlsx
+python <xlsx skill dir>/scripts/recalc.py MSDDMMYYYYNN.xlsx 60   # must report 0 errors
+```
+
+Live formulas: Total Wt. = lb/ft × ft × qty, Extended = qty × unit price,
+Subtotal/TOTAL, Valid Through = Quote Date + 30. Ten item rows (blank rows stay
+empty), prints on one US Letter page, a "How to use" sheet lists the editable cells.
+
 ---
 
 ## ⚠️ Strict rules
